@@ -65,7 +65,7 @@ rss: /atom.xml ## RSS address.
 
 #### Image
 imglogo:
-  enable: true             ## display image logo true/false.
+  enable: false             ## display image logo true/false.
   src: img/logo_hitchhiker.png        ## `.svg` and `.png` are recommended,please put image into the theme folder `/jacman/source/img`.
 favicon: img/favicon_hitchhiker.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/jacman/source/img`.
 apple_icon: img/apple-touch-icon-precomposed.png ## size:114px*114px,please put image into the theme folder `/jacman/source/img`.
@@ -79,7 +79,7 @@ index:
 
 close_aside: false  #close sidebar in post page if true
 mathjax: true      #enable mathjax if true
-share_to: true #enable share-to buttons if true
+share_to: false #enable share-to buttons if true
 
 #### Author information
 author:
