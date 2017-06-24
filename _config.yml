@@ -28,8 +28,8 @@ defaults:
 paginate: 20
 
 #### Site
-title : 데이터 은하수를 여행하는 히치하이커를 위한 안내서
-tagline: The Hitchhiker's Guide to the Data Galaxy
+title : The Hitchhiker's Guide to the Data Galaxy
+tagline: 데이터 은하수를 여행하는 히치하이커를 위한 안내서
 assets: /assets
 baseurl:
 
@@ -84,8 +84,8 @@ share_to: true #enable share-to buttons if true
 #### Author information
 author:
   name: HKim      ## e.g. wuchong Author name
-  intro_line1:  "Hello ,I'm Larry Page in Google."    ## your introduction on the bottom of the page
-  intro_line2:  "This is my blog,believe it or not."  ## the 2nd line
+  intro_line1:  "I may not have gone where I intend to go,"    ## your introduction on the bottom of the page
+  intro_line2:  "but I think I've ended up where I needed to be."  ## the 2nd line
   weibo:      ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
   weibo_verifier:  ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
   tsina:      ## e.g. 2176287895  Your weibo ID,It will be used in share button.
