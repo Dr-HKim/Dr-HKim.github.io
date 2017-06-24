@@ -1,10 +1,10 @@
 # Site Info
 title: The Hitchhiker's Guide to the Data Galaxy
-tagline: 'The Hitchhiker's Guide to the Data Galaxy'
+tagline: "The Hitchhiker's Guide to the Data Galaxy"
 description: 'A Jekyll theme adapted from <a href="http://lanyon.getpoole.com/" target="_blank">Lanyon</a>. Made by <a href="http://codinfox.github.io" target="_blank">@codinfox</a>.'
 # baseurl: "/lanyon"
 url: http://codinfox.github.io
-logo: '/public/logo.png'
+logo: '/public/logo_hitchhiker.png'
 
 # Site configurations
 gems:
@@ -24,9 +24,10 @@ version: 1.0.0
 
 # About/contact
 author:
-  name: Codinfox
+  name: HKim
   description: A passionate <strong>developer and researcher</strong>, learning to be a giant.
-  gravatar: 3c2986ad7ac1f2230ea3596f44563328 # md5 hash of your email address
+  gravatar: 1f74895caa412511db56783db9798547
+  # gravatar: 3c2986ad7ac1f2230ea3596f44563328 # md5 hash of your email address
   contact:
     # linkedin:  https://www.linkedin.com/in/lizhihao
     github:    https://github.com/yui7890
@@ -53,7 +54,7 @@ tag_page: '/blog/tags/'
 category_page: '/blog/categories/'
 
 hero:
-  image: /public/img/we_will_be_giants_by_yalestewart.jpg
+  image: /public/img/the-hitchhikers-guide-to-the-galaxy-movie-poster-2005.jpg
   caption: Original Artwork &copy; <a href="http://yalestewart.deviantart.com/art/We-Will-Be-Giants-370176475">Yale Stewart</a>
 
 # Puglins
