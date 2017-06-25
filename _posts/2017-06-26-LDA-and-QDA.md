@@ -97,7 +97,7 @@ $$
 
 ### p > 1 인 경우
 
-설명변수가 $p$ 개 인 경우입니다. 즉, $X = \left( X_1, X_2, ... , X_p \right)$ 가 multivariate normal distribution 을 따르는 경우를 말합니다.
+설명변수가 2개 이상($p>1$)인 경우입니다. 즉, $X = \left( X_1, X_2, ... , X_p \right)$ 가 multivariate normal distribution 을 따르는 경우를 말합니다.
 
 (ISLR eq 4.18):
 
