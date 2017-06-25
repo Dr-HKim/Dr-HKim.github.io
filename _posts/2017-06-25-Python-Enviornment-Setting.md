@@ -52,7 +52,7 @@ MYENV 라는 이름의 가상환경을 파이썬 3.5 버전으로 만드는 예�
 - C:\Users\Username\AppData\Local\conda\conda\envs\MYENV
 - C:\ProgramData\Anaconda3\envs\MYENV
 
-가상환경을 실행하거나 종료할 때는 다음을 실행합다:
+가상환경을 실행하거나 종료할 때는 다음을 실행합니다:
 
 ```
 # 가상환경 실행
@@ -162,60 +162,66 @@ direc = direc.split('\0', 1)[0] # 이 부분만 수정하면 됩니다.
 
 IDE란 Integrated Development Enviornment (통합개발환경) 를 말합니다.
 
-Python 이 R 이라면 IDE 는 R-Studio 이다.  
-R 을 요즘 VisualStudio 로 많이 쓴다 (공짜로 풀림)  
-R 보다 Python 이 대체로 더 빠르다  
+R 이 익숙한 분들에게, Python 이 R 이라면 IDE 는 R-Studio 를 말합니다.  
 
-홈페이지에서 community 버전을 설치한다.
+참고: R 은 요즘 VisualStudio 로 많이 쓴다고 합니다. R 보다 Python 이 대체로 더 빠르다고 합니다.
+
+Pycharm 홈페이지에서 community 버전을 다운받아 설치합니다.
 
 Pycharm에서 가상환경(Virtual Enviorment) 선택 방법:
 
 - File > Setting > Project:untitled > Project Interpreter
 - Project Interpreter 옆에 톱니바퀴 클릭
-- 설정에 따라 다음 경로를 찾아서 python.exe 를 선택한다.
+- 설정에 따라 다음 경로를 찾아서 python.exe 를 선택
 - C:\Users\Username\AppData\Local\conda\conda\envs\MYENV\python.exe
 - C:\ProgramData\Anaconda3\envs\MYENV\python.exe
 
+
 ## Jupyter 실행
 
-Jupyter Notebook 은 파이썬 코드를 한줄 한줄 실행하며 바로 결과를 볼 수 있어 교육 목적으로 적당하다.
+Jupyter Notebook 은 파이썬 코드를 한줄 한줄 실행하며 바로 결과를 볼 수 있어 교육 목적으로 적당합니다. 마크다운 형식으로 노트를 작성하는 것도 가능합니다. 브라우저에서 실행되므로 설정에 따라 외부접속도 가능해서 실제 개발환경으로도 좋습니다.
 
-마크다운 형식으로 노트를 작성하는 것도 가능하다.
 
-실행 방법:  
-cmd 에서 가상환경에 들어간 뒤 다음을 실행한다.
+실행 방법: cmd 에서 가상환경에 들어간 뒤 다음을 실행합니다.
 
 ```
-(MYENV) $ jupyter notebook
+C:\> activate MYENV
+(MYENV) C:\> jupyter notebook
 ```
 
-익스플로러에서는 잘 실행되지 않을 수 있다. 이 경우 크롬을 기본 브라우저로 설정하고 실행.
+익스플로러에서는 잘 실행되지 않을 수도 있습니다. 이 경우 크롬을 기본 브라우저로 설정하고 실행합니다.
 
-Jupyter 를 실행했다면 새로운 파이썬 노트를 만들고 다음을 실행해보자: (실행은 shift+Enter)
+Jupyter 를 실행했다면 새로운 파이썬 노트를 만들어봅시다.
+새로운 노트를 만드는 방법은 우상단 아이콘을 클릭합니다.
+
+Jupyter Notebook에서 다음을 실행해봅시다: (실행은 shift+Enter)
 
 ```python
 print("Hello World!")
 ```
 
-다음을 실행하면 jupyter notebook 이 실행중인 파이썬 버전을 확인할 수 있다.
-가상환경 설정과 동일한지 확인한다.
+다음을 실행하면 jupyter notebook 이 실행중인 파이썬 버전을 확인할 수 있습니다.
+가상환경 설정과 동일한지 확인해두는 것이 좋습니다.
+
 ```python
 import sys
 sys.version
 sys.version_info
 ```
 
-jupyter notebook 을 종료해도 cmd 창에는 여전히 실행 중인데, 다른 종료 방법은 찾지 못했다. ctrl+C 를 눌러 종료하자.
+jupyter notebook 을 종료해도 cmd 창에는 여전히 실행 중인 것을 확인할 수 있습니다. Ctrl+C 를 입력하면 종료됩니다.
+
 
 # Appendex: Anaconda Python 삭제 방법 (Windows)
 
-참고(https://docs.continuum.io/anaconda/install)
+다음 링크를 참고하였습니다: https://docs.continuum.io/anaconda/install
 
-cmd 환경에서 다음과 같이 삭제 패키지를 실행한다:
+cmd 에서 다음과 같이 삭제 패키지를 실행합니다:
+
 ```
-conda install anaconda-clean
-anaconda-clean
-anaconda-clean --yes
+C:\> conda install anaconda-clean
+C:\> anaconda-clean
+C:\> anaconda-clean --yes
 ```
 
 윈도우 제어판 > 프로그램 제거 >  Python 3.6 (Anaconda)
@@ -224,46 +230,53 @@ anaconda-clean --yes
 
 # Appendix: Jupyter notebook 외부접속 설정
 
-다음을 참조한다:
-http://goodtogreate.tistory.com/entry/IPython-Notebook-%EC%84%A4%EC%B9%98%EB%B0%A9%EB%B2%95
+다음 링크를 참고하였습니다: http://goodtogreate.tistory.com/entry/IPython-Notebook-%EC%84%A4%EC%B9%98%EB%B0%A9%EB%B2%95
 
+포트포워딩이 익숙한 경우 보안을 위해 바꿔줍시다.
 
-**포트포워딩**
-iptime config 192.168.0.1
+**포트포워딩**  
+iptime config 192.168.0.1  
 포트포워딩 설정 외부 8888 내부 8888
 
-**방화벽 인바운드 규칙 설정**
-windows 방화벽 고급설정
+**방화벽 인바운드 규칙 설정**  
+windows 방화벽 고급설정  
 인바운드 규칙 > jupyter 8888 허용
 
-**jupyter config 설정**
-터미널에서 다음을 입력하면 config 파일이 생성된다.
+**jupyter config 설정**  
+터미널에서 다음을 입력하면 config 파일이 생성됩니다.
+
 ```
 $ jupyter notebook --generate-config
 ```
 
-jupyter 에서 다음 코드를 실행해서 key 값을 뽑는다.
+jupyter 에서 다음 코드를 실행해서 암호에 사용될 key 값을 뽑습니다.
+
 ```
 In [1]: from notebook.auth import passwd
 
 In [2]: passwd()
 Enter password:
 Verify password:
-Out[2]: 'sha1:f24baff49ac5:863dd2ae747212ede58125302d227f0ca7b12bb3'
+Out[2]: 'sha1:q2df542sd425:542hj2ae754682edk542sd25302d227f0ca7bdf541'
 ```
-jupyter_notebook_config.py를 열어서 아래의 내용을 입력한다.
 
-```
+jupyter_notebook_config.py를 열어서 아래의 내용을 입력합니다.
+
+```python
 # Password to use for web authentication
 c = get_config()
 c.NotebookApp.password =
-u'sha1:f24baff49ac5:863dd2ae747212ede58125302d227f0ca7b12bb3'
+u'sha1:q2df542sd425:542hj2ae754682edk542sd25302d227f0ca7bdf541'
 ```
-다음을 추가로 수정한다.
-```
+
+참고: sha1 값은 설정한 패스워드에 따라 달라집니다. 예시에 들어간 sha1 값은 임의로 수정한 값입니다.
+
+다음을 추가로 수정합니다.
+
+```python
 # The IP address the notebook server will listen on.
 # c.NotebookApp.ip = 'localhost'
-c.NotebookApp.ip = '192.168.0.10' #jupyter 구동 PC 내부 IP
+c.NotebookApp.ip = '192.168.0.1' #jupyter 구동 PC 내부 IP
 # c.NotebookApp.port_retries = 50
 c.NotebookApp.port_retries = 8888
 ```
@@ -271,16 +284,16 @@ c.NotebookApp.port_retries = 8888
 
 # Appendix: Jupyter Notebook 에서 R kernel 설정
 
-참고: https://www.continuum.io/blog/developer/jupyter-and-conda-r
+다음 링크를 참고하였습니다: https://www.continuum.io/blog/developer/jupyter-and-conda-r
 
 현재 환경(current environment)에 R Essentials를 설치할 때
 
-```sh
-$ conda install -c r r-essentials
+```
+(MYENV) C:\> conda install -c r r-essentials
 ```
 
 새로운 환경(MYENV)을 만들어 R Essentials를 설치할 때
 
-```sh
-$ conda create -n MYENV -c r r-essentials
+```
+C:\> conda create -n MYENV -c r r-essentials
 ```
