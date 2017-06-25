@@ -26,7 +26,7 @@ Anaconda 다운로드 링크: https://www.continuum.io/downloads#windows
 
 Anaconda 의 장점 가운데 하나는 가상환경을 구성해서 사용하기 쉽다는 것입니다.
 
-개발하는 내용에 따라 사용하는 패키지가 다르고, 패키지마다 충돌이 일어나는 등 문제가 발생할 수 있으므로 프로젝트 별로 다음과 가팅 가상환경을 구성해서 개발하는 것을 추천합니다.
+개발하는 내용에 따라 사용하는 패키지가 다르고, 패키지마다 충돌이 일어나는 등 문제가 발생할 수 있으므로 프로젝트 별로 다음과 같이 가상환경을 구성해서 개발하는 것을 추천합니다.
 
 - 가상환경1(프로젝트1): 파이썬2.7, 패키지 A, B, C, D
 - 가상환경2(프로젝트2): 파이썬3.5, 패키지 X, Y, Z
@@ -48,8 +48,8 @@ MYENV 라는 이름의 가상환경을 파이썬 3.5 버전으로 만드는 예�
 
 이렇게 구성된 가상환경은 설정에 따라 다음 폴더에 저장됩니다:
 
-- C:\Users\Username\AppData\Local\conda\conda\envs\MYENV
-- C:\ProgramData\Anaconda3\envs\MYENV
+- `C:\Users\USERNAME\AppData\Local\conda\conda\envs\MYENV`
+- `C:\ProgramData\Anaconda3\envs\MYENV`
 
 가상환경을 실행하거나 종료할 때는 다음을 실행합니다:
 
@@ -143,7 +143,7 @@ https://stackoverflow.com/questions/34004063/error-on-import-matplotlib-pyplot-o
 
 파이썬 오류로 나타나는 현상입니다.  
 `C:\ProgramData\Anaconda3\envs\MYENV\Lib\site-packages\matplotlib\font_manager.py` 혹은
-`C:\Users\Username\AppData\Local\conda\conda\envs\MYENV\Lib\site-packages\matplotlib\font_manager.py`  
+`C:\Users\USERNAME\AppData\Local\conda\conda\envs\MYENV\Lib\site-packages\matplotlib\font_manager.py`  
 를 열고 win32InstalledFonts() 함수를 찾아 다음과 같이 수정합니다:
 
 ```python
@@ -171,9 +171,9 @@ Pycharm에서 가상환경(Virtual Enviorment) 선택 방법:
 
 - File > Setting > Project:untitled > Project Interpreter
 - Project Interpreter 옆에 톱니바퀴 클릭
-- 설정에 따라 다음 경로를 찾아서 python.exe 를 선택
-- C:\Users\Username\AppData\Local\conda\conda\envs\MYENV\python.exe
-- C:\ProgramData\Anaconda3\envs\MYENV\python.exe
+- 설정에 따라 다음 경로를 찾아서 `python.exe` 를 선택
+- `C:\Users\USERNAME\AppData\Local\conda\conda\envs\MYENV\python.exe`
+- `C:\ProgramData\Anaconda3\envs\MYENV\python.exe`
 
 
 # Jupyter 실행
@@ -211,9 +211,11 @@ sys.version_info
 jupyter notebook 을 종료해도 cmd 창에는 여전히 실행 중인 것을 확인할 수 있습니다. Ctrl+C 를 입력하면 종료됩니다.
 
 
-# Appendex: Anaconda Python 삭제 방법 (Windows)
+# Appendix: Anaconda Python 삭제
 
 다음 링크를 참고하였습니다: https://docs.continuum.io/anaconda/install
+
+윈도우에서 Anaconda 를 삭제하는 방법입니다.
 
 cmd 에서 다음과 같이 삭제 패키지를 실행합니다:
 
