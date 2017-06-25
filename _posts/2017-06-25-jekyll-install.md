@@ -3,12 +3,10 @@ layout: post
 title: 윈도우에서 Jekyll 설치하는 방법  
 date: 2017-06-25  
 tags: [jekyll]  
-published: true
+published: false
 ---
 
-이번 포스트에서는 윈도우 환경에서 Jekyll을 설치하는 방법을 다룹니다.
-
-지킬(Jekyll)은 마크다운 문서로 본문 작성이 가능한 설치형 블로그로, GitHub을 이용하면 별 다른 호스팅 없이 쉽게 블로그를 개설할 수 있는 장점이 있습니다.
+이번 포스트에서는 윈도우 환경에서 Jekyll을 설치하는 방법을 다룹니다. 지킬(Jekyll)은 마크다운 문서로 본문 작성이 가능한 설치형 블로그로, GitHub을 이용하면 별 다른 호스팅 없이 쉽게 블로그를 개설할 수 있는 장점이 있습니다.
 
 
 # Jekyll 설치 방법
@@ -32,7 +30,7 @@ Ruby 를 설치하고 나면 CMD 창에 Ruby Installer 2 for Windows 가 뜨면�
 모든 설치가 종료되어도 [] 라는 형태로 선택지가 뜨는 경우 엔터를 치면 종료됩니다.
 
 
-CMD 에서 다음 명령어를 실행시켜 gem 버전이 나오면 바르게 설치된 것이다.
+CMD 에서 다음 명령어를 실행시켜 gem 버전이 나오면 바르게 설치된 것입니다.
 
 ```
 C:\Users\Username\gem -v
@@ -49,6 +47,7 @@ gem install jekyll
 ```
 
 
+## Jekyll 블로그 설치 및 실행
 
 
 
