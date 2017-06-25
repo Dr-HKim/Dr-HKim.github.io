@@ -1,85 +1,83 @@
-# Jekyll-Jacman
+# Jacman
 
-**中文 | [English](/README_en.md)**
+**[中文](/README.md) | English**
 
-Jekyll-Jacman 是为 [Jekyll](http://jekyllrb.com) 设计的一款清新且具有响应式的主题，拥有更丰富的特性并支持了很多的国内服务。Jacman 始于 [Hexo Jacman](https://github.com/wuchong/jacman) 移植而来。
+Jacman is a fresh looking and responsive theme for [Jekyll](http://jekyllrb.com) with more features and some build-in Chinese service based on [Hexo Jacman](https://github.com/wuchong/jacman).  
 
- * [主题演示](http://simpleyyt.github.io/jekyll-jacman/)
+ * [Demo](http://simpleyyt.github.io/jekyll-jacman/)
  * [Yitao's Blog](http://simpleyyt.github.io)
  * [如何使用 Jacman 主题](http://simpleyyt.github.io/jekyll-jacman/jekyll/2015/09/20/how-to-use-jacman)
 
-## 本地搭建
+## Local Setup
 
-确保已安装`Ruby 2.1.0` 或更高版本：
+Check whether you have `Ruby 2.1.0` or higher installed:
 
 ```sh
 ruby --version
 ```
 
-安装`Bundler`：
+Install `Bundler`:
 
 ```sh
 gem install bundler
 ```
 
-下载 Jacman 主题：
+Clone Jacman theme:
 
 ```sh
 git clone https://github.com/Simpleyyt/jekyll-jacman.git
 cd jekyll-jacman
 ```
 
-安装依赖：
+You can change the `language` setting to `en` in `_config.yml`.
+
+You can also disable share buttons by setting `share_to` to `false`.
+
+Install Jekyll and other dependencies from the GitHub Pages gem:
 
 ```sh
 bundle install
 ```
 
-运行 Jekyll：
+Run your Jekyll site locally:
 
 ```sh
 bundle exec jekyll server
 ```
 
-更多细节可以参考：[Setting up your GitHub Pages site locally with Jekyll](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/)
+More Details：[Setting up your GitHub Pages site locally with Jekyll](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/)
 
-## 功能
+## Features
 
-- **菜单 menu**  
- 主导航菜单
-- **控件 widget**  
- 侧边栏的控件。包括：Github 名片	、分类、标签、RSS、友情链接、微博秀。
-- **图片相关 Image**  
- 设置网站图标、网站logo、作者头像、博客顶部大图等。还提供了多种图片样式`img-logo`,`img-topic`,`img-center`等。
-- **首页模式 index**  
- 主题提供了两种首页展示模式。
-- **作者 author**  
- 作者信息，主要用于展示网站右下角的社交网络链接。包括：微博、豆瓣、知乎、邮箱、GitHub、StackOverflow、Twitter、Facebook、Linkedin、Google+。
-- **目录 toc**  
- 在文章中和侧边栏可以显示目录。
-- **评论 comments**  
- 支持 [多说](http://duoshuo.com/) & [disqus](https://disqus.com/) 评论。
-- **分享 jiathis**  
- 启用 内建分享工具 或 [加网](http://www.jiathis.com/) 分享系统。
-- **网站统计 Analytiscs**  
- 支持 [谷歌统计](http://www.google.com/analytics/) & [百度统计](http://tongji.baidu.com/) & [CNZZ站长统计](http://www.cnzz.com/)。
+- **menu**  
+ Main navigation menu.
+- **widget**  
+ Widgets displaying in sidebar.The github card, category,tag,rss,archive,tagcloud,links,weibo are supported.
+- **Image**  
+ Images about favicon, site logo, author image, banner image. Support different image styles like `img-logo`,`img-topic`,`img-center` etc.
+- **index**  
+ Two different home page display modes.You can visit [Demo](http://jacman.wuchong.me) to check the difference.
+- **author**  
+ Author imformation, used to show your social network links on the bottom right. Including github, stackoverflow, twitter, facebook, linkedin, google+, weibo, douban, zhihu, email.
+- **toc**  
+ Show Table Of Contents in article & aside.
+- **comments**  
+ [duoshuo](http://duoshuo.com/) & [disqus](https://disqus.com/) are supported.
+- **jiathis**  
+ Build-in share tool or [JiaThis](http://www.jiathis.com/) share buttons at the bottom of articles.
+- **Analytiscs**  
+ [Google analytics](http://www.google.com/analytics/) & [Baidu tongji](http://tongji.baidu.com/) & [CNZZ tongji](http://www.cnzz.com/) are all supported.
 - **Search**  
- 支持 [谷歌自定义搜索](https://www.google.com/cse/ ) & [百度站内搜索](http://zn.baidu.com/)  &[微搜索](http://tinysou.com/)。
+ [Googlle Custom Search](https://www.google.com/cse/ ) & [Baidu Site Search](http://zn.baidu.com/) & [Tiny Search](http://tinysou.com/) are supported.
 - **totop**  
- 回到顶部。
+ Scroll to top
 - **rss**  
- RSS 订阅链接。
+ RSS subscription link (change if using Feedburner).
 - **fancybox**  
- 图片查看的 [Fancybox](http://fancyapps.com/fancybox/) 工具。
-- **其他**
- 你可以设置侧边栏在博文页面中不显示。
+ Enable [Fancybox](http://fancyapps.com/fancybox/)
+- **others**
+ You can configure sidebar not show in post pages.
 
-## 协议
+## License
 
 [MIT](/LICENSE)
-
-## 捐赠
-
-支付宝捐赠链接还是要有的，万一真的有人捐呢。
-
-![支付宝扫码捐赠](http://p1.bpimg.com/567571/9a4a158daee8aa69.png)
