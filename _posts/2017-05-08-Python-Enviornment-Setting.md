@@ -3,6 +3,7 @@ layout: post
 title: 파이썬(Python) 설치 및 환경설정
 date: 2017-05-08
 tags: [python]
+published: false
 ---
 
 # Python 설치 방법

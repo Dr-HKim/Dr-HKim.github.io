@@ -6,6 +6,7 @@ tags:
 - Jacman
 categories: Jekyll
 description: Jacman 是一款扁平化，有着响应式设计的 Jekyll 主题。本站正式使用了 Jacman 主题。Jacman 基于 Jacman 的 Hexo 主题修改而来。你可以前往本站和 Demo 预览更多关于本主题的更多效果。如果你有任何问题或意见欢迎到 GitHub 发表 issue。
+published: false
 ---
 ## 主题介绍
 Jekyll-Jacman 是为 [Jekyll](http://jekyllrb.com) 设计的一款清新且具有响应式的主题，拥有更丰富的特性并支持了很多的国内服务。Jacman 始于 [Jacman](https://github.com/wuchong/jacman) 移植而来。
@@ -24,14 +25,14 @@ menu:
   关于: /about
 
 #### 控件
-widgets: 
+widgets:
 - category
 - tag
 - links
 - rss
 
-#### RSS 
-rss: /atom.xml 
+#### RSS
+rss: /atom.xml
 
 #### 图片相关
 imglogo:
@@ -62,7 +63,7 @@ author:
   email:     
   twitter:   
   github:     
-  facebook: 
+  facebook:
   linkedin:   
   google_plus:   
   stackoverflow:  
@@ -77,17 +78,17 @@ toc:
 links:
   码农圈: https://coderq.com,一个面向程序员交流分享的新一代社区
   Jark's Blog: http://wuchong.me
-  
+
 #### 评论
-duoshuo_shortname: 
+duoshuo_shortname:
 disqus_shortname:  
 
 #### 分享按钮
 jiathis:
   enable: false   ## 默认使用主题内建分享
   id:    
-  tsina: 
-  
+  tsina:
+
 #### 网站统计
 google_analytics:
   enable: false
@@ -106,16 +107,16 @@ fancybox: true
 totop: true           
 
 #### 自定义搜索
-google_cse: 
+google_cse:
   enable: false
   cx:  
 baidu_search:    
   enable: false
   id:   
-  site: http://zhannei.baidu.com/cse/search 
+  site: http://zhannei.baidu.com/cse/search
 tinysou_search:     ## http://tinysou.com/
   enable: false
-  id: "4ac092ad8d749fdc6293" 
+  id: "4ac092ad8d749fdc6293"
 ```
 
 ### 属性功能
@@ -135,7 +136,7 @@ title: tags (或categories)
 提供了7种小工具。包括标签、分类、RSS、友情链接、微博秀。
 
  **友情链接**：友情链接的网址添加可以在`links`属性下添加。
- 
+
  **微博秀**：需要注意的是，如果要启用微博秀，您必须填上`author`属性下`tsina`和`weibo_verifier`的值，前者是您微博ID，后者是您微博秀的验证码，访问 http://app.weibo.com/tool/weiboshow 在如下图位置，可以获得您的 verifier，如：我的是`b3593ceb`。
 ![](http://ww1.sinaimg.cn/large/81b78497jw1emegd6b0ytj209204pweu.jpg)
 
@@ -220,7 +221,7 @@ title: tags (或categories)
 - **Q：怎么提意见和建议？**
 
   > 主题还在不断完善中，欢迎 [open issue](https://github.com/Simpleyyt/jekyll-jacman/issues) 来提建议，参与讨论。
-  
+
 - **Q：为什么我修改了配置文件/发表了博文，解析出来的却是乱码呢？**
 
   > 请将你的配置文件/markdown文件保存成 `UTF-8` 格式。

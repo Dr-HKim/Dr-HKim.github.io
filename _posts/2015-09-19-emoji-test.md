@@ -1,6 +1,7 @@
 ---
 title: Emoji Test
 tags:
+published: false
 ---
 
 This is an emoji test. :smile:
