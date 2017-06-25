@@ -1,6 +1,6 @@
 ---
 layout: post  
-title: 윈도우에서 Jekyll 설치하는 방법  
+title: Jekyll 및 GitHub Pages 로 블로그하기
 date: 2017-06-25  
 tags: [jekyll]  
 published: true
@@ -9,10 +9,7 @@ published: true
 이번 포스트에서는 윈도우 환경에서 Jekyll을 설치하는 방법을 다룹니다. 지킬(Jekyll)은 마크다운 문서로 본문 작성이 가능한 설치형 블로그로, GitHub을 이용하면 별 다른 호스팅 없이 쉽게 블로그를 개설할 수 있는 장점이 있습니다.
 
 
-# Jekyll 설치 방법
-
-
-## Ruby 설치
+# Ruby 설치
 
 우선 Ruby 를 설치해야 합니다. 아래 링크에서 시스템에 맞는 파일을 다운받아 설치합니다.
 
@@ -38,7 +35,7 @@ C:\Users\Username\gem -v
 ```
 
 
-## Jekyll 설치
+# Jekyll 설치
 
 이제 지킬을 설치합니다. Ruby의 gem 패키지 인스톨러를 이용해서 다음과 같이 CMD에서 설치합시다.
 
@@ -47,7 +44,7 @@ gem install jekyll
 ```
 
 
-## GitHub Pages 로 Jekyll 블로그 설치 및 실행
+# GitHub Pages 로 Jekyll 블로그 설치 및 실행
 
 Github 에서 새로운 repository 를 만듭니다.
 이때 repository name 은 USERNAME.github.io로 합니다.
@@ -58,7 +55,7 @@ CMD 상에서 설치를 원하는 폴더를 가서 다음을 입력하면 설치
 jekyll new USERNAME.github.io
 ```
 
-...작성자의 경우 bundler 가 없다는 에러가 났습니다. 다음을 실행합니다.
+...작성자의 경우 bundler 가 없다는 에러가 났습니다. CMD에서 다음을 실행합니다.
 
 ```
 gem install bundler

@@ -6,11 +6,10 @@ tags: [python]
 published: true  
 ---
 
-이번 포스트는 **윈도우** 환경에서 **데이터 분석** 을 목적으로 파이썬(Python)을 설치하고 환경설정을 하는 방법을 다룹니다.
+이번 포스트에서는 **윈도우** 환경에서 **데이터 분석** 을 목적으로 파이썬(Python)을 설치하고 환경설정을 하는 방법을 다룹니다.
 
-# Python 설치 방법
 
-## Anaconda 설치
+# Anaconda 설치
 
 파이썬은 단독으로 설치하면 함께 설치해야할 패키지가 많아 번거롭습니다.
 
@@ -23,7 +22,7 @@ Anaconda 다운로드 링크: https://www.continuum.io/downloads#windows
 운영체제가 64bit 라면 작성 시점 현재 최신버전은 다음과 같습니다: Python 3.6 version 64bit installer
 
 
-## 가상환경 구성
+# 가상환경 구성
 
 Anaconda 의 장점 가운데 하나는 가상환경을 구성해서 사용하기 쉽다는 것입니다.
 
@@ -79,7 +78,7 @@ C:\> activate MYENV
 
 
 
-## 패키지 설치
+# 패키지 설치
 
 파이썬을 데이터 분석에 사용하기 위해서는 몇가지 패키지가 추가 설치되어야 합니다.
 
@@ -158,7 +157,7 @@ direc = direc.split('\0', 1)[0] # 이 부분만 수정하면 됩니다.
 ---
 
 
-## Pycharm (IDE) 설치
+# Pycharm (IDE) 설치
 
 IDE란 Integrated Development Enviornment (통합개발환경) 를 말합니다.
 
@@ -177,7 +176,7 @@ Pycharm에서 가상환경(Virtual Enviorment) 선택 방법:
 - C:\ProgramData\Anaconda3\envs\MYENV\python.exe
 
 
-## Jupyter 실행
+# Jupyter 실행
 
 Jupyter Notebook 은 파이썬 코드를 한줄 한줄 실행하며 바로 결과를 볼 수 있어 교육 목적으로 적당합니다. 마크다운 형식으로 노트를 작성하는 것도 가능합니다. 브라우저에서 실행되므로 설정에 따라 외부접속도 가능해서 실제 개발환경으로도 좋습니다.
 
