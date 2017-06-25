@@ -17,7 +17,7 @@ James, et. al. "An Introduction to Statistical Learning with Application in R" (
 
 LDA 란 Lable(Target 값)을 가지고 있는 데이터에 대하여 클래스들 사이의 차별적인 정보를 최대한 보존하면서 차원을 축소하는 기법을 말합니다.
 
-*Bayes' theorem* 을 이용하여 $Pr \left( X = x | Y = k \right)$ 를 계산하는 것이 목적입니다.
+*Bayes' theorem* 을 이용하여 $Pr \left( X = x | Y = k \right)$ 를 \\( Pr \left( X = x | Y = k \right) \\) 를 계산하는 것이 목적입니다.
 
 $\pi_k$ : *prior* probability
 
