@@ -47,7 +47,7 @@ gem install jekyll
 # GitHub Pages 로 Jekyll 블로그 설치 및 실행
 
 GitHub 에서 새로운 repository 를 만듭니다.
-이때 repository name 은 USERNAME.github.io로 합니다.
+이때 repository name 은 `USERNAME.github.io`로 합니다.
 
 CMD 상에서 설치를 원하는 폴더를 가서 다음을 입력하면 설치가 진행됩니다.
 
