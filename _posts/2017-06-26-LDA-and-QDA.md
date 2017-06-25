@@ -37,12 +37,12 @@ $p_{k} \left( x \right) = \Pr \left( Y = k | X = x \right)$ 를 찾는 것을 �
 
 ### p = 1 인 경우
 
-$f_{k} \left( X \right)$ 가 *normal* 분포라고 가정한다면, $p=1$ 일 때 확률밀도함수는 다음과 같습니다.
+$f_{k} \left( X \right)$ 가 *normal* 분포라고 가정한다면, 설명변수가 하나일 때($p=1$) 확률밀도함수는 다음과 같습니다.
 
 (ISLR eq 4.11):
 
 $$
-f_{k} \left( x \right) = \frac{1}{ \sqrt{2\pi} \sigma_{k} } exp \left( - \frac{1}{2\sigma_{k}^{2}} \left( x - \mu_{k} \right)^{2} \right)
+f_{k} \left( x \right) = \frac{1}{ \sqrt{2\pi} \sigma_{k} } \exp \left( - \frac{1}{2\sigma_{k}^{2}} \left( x - \mu_{k} \right)^{2} \right)
 $$
 
 여기에 추가로 모든 클래스의 분산이 동일하다고 가정합시다. ($\sigma_1^2 = \ ... \ = \sigma_k^2$)
@@ -71,6 +71,8 @@ $$
 x = \frac{\mu_1^2 - \mu_2^2}{2\left( \mu_1 - \mu_2 \right)} = \frac{\mu_1+\mu_2}{2}
 $$
 
+하지만 실제로는 $\pi_k$ , $\mu_k$ , $\sigma^2$ 를 모르므로 다음과 같이 계산합니다.
+
 (ISLR eq 4.15):
 
 $$
@@ -90,10 +92,12 @@ $$
 (ISLR eq 4.17):
 
 $$
-\hat{\delta}_k \left( x \right) = x \cdot \frac{\hat{\mu}_k}{\hat{\sigma}^2} + \log \left( \hat{\pi}_k \right)
+\hat{\delta}_k \left( x \right) = x \cdot \frac{\hat{\mu}_k}{\hat{\sigma}^2} - \frac{\hat{\mu}_k^2}{2 \hat{\sigma}^2} + \log \left( \hat{\pi}_k \right)
 $$
 
 ### p > 1 인 경우
+
+설명변수가 $p$ 개 인 경우입니다. 즉, $X = \left( X_1, X_2, ... , X_p \right)$ 가 multivariate normal distribution 을 따르는 경우를 말합니다.
 
 (ISLR eq 4.18):
 
@@ -107,6 +111,8 @@ $$
 \delta_k \left( x \right) = x^T \Sigma^{-1} \mu_k - \frac{1}{2} \mu_k^T \Sigma^{-1} \mu_k + \log \pi_k
 $$
 
+Bayes decision boundaries 는 다음과 같이 $\delta_k \left( x \right) = \delta_l \left( x \right)$ 을 만족하는 지점입니다.
+
 (ISLR eq 4.20):
 
 $$
@@ -118,15 +124,14 @@ $$
 
 (ISLR eq 4.23):
 
-$$
+$$\begin{eqnarray*}
 \delta_k \left( x \right)
-= - \frac{1}{2} \left( x - \mu_k \right) ^T \Sigma^{-1} \left( x - \mu_k \right) + \log \pi_k
-= - \frac{1}{2} x^T \Sigma_k^{-1} x + x^T \Sigma_k^{-1} \mu_k - \frac{1}{2} \mu_k^T \Sigma_k^{-1} \mu_k + \log \pi_k
-$$
+& = & - \frac{1}{2} \left( x - \mu_k \right) ^T \Sigma^{-1} \left( x - \mu_k \right) + \log \pi_k \\
+& = & - \frac{1}{2} x^T \Sigma_k^{-1} x + x^T \Sigma_k^{-1} \mu_k - \frac{1}{2} \mu_k^T \Sigma_k^{-1} \mu_k + \log \pi_k
+\end{eqnarray*}$$
 
 
-
-
+---
 $$
 S_{W}=\sum_{Class \ C} \sum P_{c}\left( x_{i}-\mu _{c}\right) \left( x_{i}-\mu _{c}\right) ^{T}
 $$
@@ -149,3 +154,4 @@ W: Transition Matrix
 
 import sklearn 을 쓰지 않고 굳이
 from sklearn import datasets 라고 쓰는 이유가 있나?
+---
