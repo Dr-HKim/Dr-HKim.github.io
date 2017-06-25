@@ -1,7 +1,7 @@
 ---
 layout: post  
 title: Jekyll 및 GitHub Pages 로 블로그하기
-date: 2017-06-25  
+date: 2017-06-21  
 tags: [jekyll]  
 published: true
 ---
