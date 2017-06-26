@@ -57,27 +57,16 @@ C:\> gem install github-pages x64-mingw32 # 추가 설치
 C:\BLOGNAME\> bundle exec jekyll server # 서버 실행
 ```
 
-# GitHub Pages 로 Jekyll 블로그 설치 및 실행
+# GitHub Pages 로 Jekyll 블로그 실행
+
+GitHub Pages 로 블로그를 발행하면 다른 호스팅 서비스 없이도 블로그 개설이 가능합니다. 
 
 GitHub 에서 새로운 repository 를 만듭니다.
 이때 repository name 은 `USERNAME.github.io`로 합니다.
 
-CMD 상에서 설치를 원하는 폴더를 가서 다음을 입력하면 설치가 진행됩니다.
+GitHub Desktop 을 이용하여 새로운 repository 를 동기화하고 설치된 블로그 폴더 내용을 이곳으로 옮깁니다. 
 
-```
-jekyll new USERNAME.github.io
-```
+GitHub 와 연동한 후 웹브라우저에서 `USERNAME.github.io` 로 들어가면 블로그가 뜨는 것을 확인할 수 있습니다.
 
-...작성자의 경우 bundler 가 없다는 에러가 났습니다. CMD에서 다음을 실행합니다.
+GitHub 과 연동하는 보다 친절하고 다양한 방법들에 대해서는, 다른 블로그(...)를 참고합시다.
 
-```
-gem install bundler
-```
-
-다시 실행하니 설치가 되었습니다.
-
-GitHub 와 연동한 후 `USERNAME.github.io` 로 들어가면 블로그가 뜨는 것을 확인할 수 있습니다.
-
-GitHub 과 연동하는 방법에 대해서는, 다른 블로그(...)를 참고합시다.
-
-GitHub Desktop 을 사용하면 이를 보다 쉽게 실행할 수 있습니다.
