@@ -131,29 +131,3 @@ $$\begin{eqnarray*}
 & = & - \frac{1}{2} \left( x - \mu_k \right) ^T \Sigma^{-1} \left( x - \mu_k \right) + \log \pi_k \\
 & = & - \frac{1}{2} x^T \Sigma_k^{-1} x + x^T \Sigma_k^{-1} \mu_k - \frac{1}{2} \mu_k^T \Sigma_k^{-1} \mu_k + \log \pi_k
 \end{eqnarray*}$$
-
-
----
-$$
-S_{W}=\sum_{Class \ C} \sum P_{c}\left( x_{i}-\mu _{c}\right) \left( x_{i}-\mu _{c}\right) ^{T}
-$$
-
-$$
-S_{B}=\sum_{Class \ C} \left( \mu_{c} - \mu \right) \left( \mu_{c} - \mu \right)^{T}
-$$
-
-$$
-max \frac{S_{B}}{S_{W}}
-$$
-
-S_B: cluster 간의 거리는 최대로
-S_W: 그룹 내에서의 거리는 최소로
-
-u: 전체 평균
-u_c: 그룹(class)의 평균
-P_c: Class 가 나타날 최대 확률
-W: Transition Matrix
-
-import sklearn 을 쓰지 않고 굳이
-from sklearn import datasets 라고 쓰는 이유가 있나?
----
