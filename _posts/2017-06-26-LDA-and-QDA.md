@@ -137,7 +137,7 @@ $$\begin{eqnarray*}
 # LDA in Python by using scikit-learn
 
 다음 자료를 참고하였습니다:  
-- [http://scikit-learn.org/stable/modules/generated/sklearn.discriminant_analysis.LinearDiscriminantAnalysis.html]()
+- [http://scikit-learn.org/stable/modules/generated/sklearn.discriminant_analysis.LinearDiscriminantAnalysis.html](http://scikit-learn.org/stable/modules/generated/sklearn.discriminant_analysis.LinearDiscriminantAnalysis.html)
 
 
 Iris 데이터를 사용합니다. train set 과 test set 으로 나누었습니다.
