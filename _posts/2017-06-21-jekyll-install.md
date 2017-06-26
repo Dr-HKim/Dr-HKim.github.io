@@ -13,7 +13,7 @@ published: true
 
 우선 Ruby 를 설치해야 합니다. 아래 링크에서 시스템에 맞는 파일을 다운받아 설치합니다.
 
-[http://rubyinstaller.org/downloads/]()
+[http://rubyinstaller.org/downloads/](http://rubyinstaller.org/downloads/)
 
 
 Ruby 를 설치하고 나면 CMD 창에 Ruby Installer 2 for Windows 가 뜨면서 다음을 설치하라고 합니다. 순차적으로 설치합니다.
@@ -59,14 +59,13 @@ C:\BLOGNAME\> bundle exec jekyll server # 서버 실행
 
 # GitHub Pages 로 Jekyll 블로그 실행
 
-GitHub Pages 로 블로그를 발행하면 다른 호스팅 서비스 없이도 블로그 개설이 가능합니다. 
+GitHub Pages 로 블로그를 발행하면 다른 호스팅 서비스 없이도 블로그 개설이 가능합니다.
 
 GitHub 에서 새로운 repository 를 만듭니다.
 이때 repository name 은 `USERNAME.github.io`로 합니다.
 
-GitHub Desktop 을 이용하여 새로운 repository 를 동기화하고 설치된 블로그 폴더 내용을 이곳으로 옮깁니다. 
+GitHub Desktop 을 이용하여 새로운 repository 를 동기화하고 설치된 블로그 폴더 내용을 이곳으로 옮깁니다.
 
 GitHub 와 연동한 후 웹브라우저에서 `USERNAME.github.io` 로 들어가면 블로그가 뜨는 것을 확인할 수 있습니다.
 
 GitHub 과 연동하는 보다 친절하고 다양한 방법들에 대해서는, 다른 블로그(...)를 참고합시다.
-

@@ -1,6 +1,6 @@
 ---
 layout: post  
-title: 파이썬(Python) 설치 및 환경설정  
+title: 파이썬 기초 - 설치 및 환경설정  
 date: 2017-06-22  
 tags: [python]  
 published: true  
@@ -15,7 +15,7 @@ published: true
 
 Anaconda 라는 배포판에 기본적인 패키지와 유용한 프로그램들이 함께 들어있으므로 이를 설치하는 것을 추천합니다.
 
-Anaconda 다운로드 링크: [https://www.continuum.io/downloads#windows]()
+Anaconda 다운로드 링크: [https://www.continuum.io/downloads#windows](https://www.continuum.io/downloads#windows)
 
 본인의 시스템(32bit/64bit)을 확인한 후 이에 맞는 최신버전을 설치합니다.
 
