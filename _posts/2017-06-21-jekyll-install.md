@@ -13,7 +13,7 @@ published: true
 
 우선 Ruby 를 설치해야 합니다. 아래 링크에서 시스템에 맞는 파일을 다운받아 설치합니다.
 
-http://rubyinstaller.org/downloads/
+[http://rubyinstaller.org/downloads/]()
 
 
 Ruby 를 설치하고 나면 CMD 창에 Ruby Installer 2 for Windows 가 뜨면서 다음을 설치하라고 합니다. 순차적으로 설치합니다.
