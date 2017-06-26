@@ -17,13 +17,13 @@ James, et. al. "An Introduction to Statistical Learning with Application in R" (
 
 LDA 란 Lable(Target 값)을 가지고 있는 데이터에 대하여 클래스들 사이의 차별적인 정보를 최대한 보존하면서 차원을 축소하는 기법을 말합니다.
 
-*Bayes' theorem* 을 이용하여 $Pr \left( X = x | Y = k \right)$ 를 \\( Pr \left( X = x | Y = k \right) \\) 를 계산하는 것이 목적입니다.
+*Bayes' theorem* 을 이용하여 $Pr \left( X = x \| Y = k \right)$ 를 계산하는 것이 목적입니다.
 
 $\pi_k$ : *prior* probability
 
 $f_{k} \left( X \right)$ : the *density function* of $X$ given that $Y = k$
 
-$f_{k} \left( X \right) \equiv \Pr \left( X = x | Y = k \right)$
+$f_{k} \left( X \right) \equiv \Pr \left( X = x \| Y = k \right)$
 
 *Bayes' theorem* 에 따라 사후확률(*posterior* probability)은 다음과 같이 정의됩니다.
 
@@ -33,11 +33,11 @@ $$
 \Pr \left( Y = k | X = x \right) = \frac{\pi_{k} f_{k} \left( x \right) }{ \Sigma _{l=1} ^{K} \pi_{l} f_{l} \left( x \right)}
 $$
 
-$p_{k} \left( x \right) = \Pr \left( Y = k | X = x \right)$ 를 찾는 것을 목적으로 합니다.
+$p_{k} \left( x \right) = \Pr \left( Y = k \| X = x \right)$ 를 찾는 것을 목적으로 합니다.
 
 ### p = 1 인 경우
 
-$f_{k} \left( X \right)$ 가 *normal* 분포라고 가정한다면, 설명변수가 하나일 때($p=1$) 확률밀도함수는 다음과 같습니다.
+설명변수가 하나($p=1$)일 때, $x$ 의 분포가 *normal distribution* 라고 가정하면 확률밀도함수 $f_{k} \left( X \right)$ 는 다음과 같습니다.
 
 (ISLR eq 4.11):
 
