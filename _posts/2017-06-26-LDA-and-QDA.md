@@ -11,7 +11,8 @@ published: true
 # 알고리즘
 
 다음 자료를 참고하였습니다:  
-James, et. al. "An Introduction to Statistical Learning with Application in R" (이하 ISLR)
+- James, et. al. "An Introduction to Statistical Learning with Application in R" (이하 ISLR)
+- http://scikit-learn.org/stable/modules/lda_qda.html
 
 ## LDA (Linear Discriminant Analysis)
 
@@ -131,3 +132,60 @@ $$\begin{eqnarray*}
 & = & - \frac{1}{2} \left( x - \mu_k \right) ^T \Sigma^{-1} \left( x - \mu_k \right) + \log \pi_k \\
 & = & - \frac{1}{2} x^T \Sigma_k^{-1} x + x^T \Sigma_k^{-1} \mu_k - \frac{1}{2} \mu_k^T \Sigma_k^{-1} \mu_k + \log \pi_k
 \end{eqnarray*}$$
+
+
+# LDA in Python by using scikit-learn
+
+다음 자료를 참고하였습니다:  
+- http://scikit-learn.org/stable/modules/generated/sklearn.discriminant_analysis.LinearDiscriminantAnalysis.html
+
+
+Iris 데이터를 사용합니다. train set 과 test set 으로 나누었습니다.
+
+```python
+import pandas as pd
+import numpy as np
+from sklearn.model_selection import train_test_split
+
+names = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'class']
+df = pd.read_csv('https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data', header=None, names=names)
+
+X = np.array(df.iloc[:, 0:4])
+y = np.array(df['class'])
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=42)
+```
+
+scikit-learn package 를 이용하여 LDA 를 실시합니다.
+
+```python
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+
+lda = LinearDiscriminantAnalysis()
+
+X_transform = lda.fit(X_train, y_train).transform(X_train)
+y_predict = lda.fit(X_train, y_train).predict(X_test)
+
+from sklearn import metrics
+metrics.accuracy_score(y_test, y_predict)
+```
+
+정확도는 0.9799 가 나옵니다.
+
+아래와 같이 LDA 함수에서 n_components 옵션을 조절해줄 수 있습니다.
+
+```python
+lda1 = LinearDiscriminantAnalysis(n_components=1)
+X_transform1 = lda1.fit(X_train, y_train).transform(X_train)
+
+setosa = X_transform1[y_train == "Iris-setosa"]
+versicolor = X_transform1[y_train == "Iris-versicolor"]
+virginica = X_transform1[y_train == "Iris-virginica"]
+
+print("setosa range is %f ~ %f" % (np.min(setosa), np.max(setosa)))
+print("versicolor range is %f ~ %f" % (np.min(versicolor), np.max(versicolor)))
+print("virginica range is %f ~ %f" % (np.min(virginica), np.max(virginica)))
+
+y_predict1 = lda1.fit(X_train, y_train).predict(X_test)
+metrics.accuracy_score(y_test, y_predict1)
+```

@@ -138,8 +138,8 @@ C:\> activate MYENV
 ---
 **Error: import matplotlib 에서 에러가 나는 경우**
 
-다음 링크를 참고하였습니다:
-https://stackoverflow.com/questions/34004063/error-on-import-matplotlib-pyplot-on-anaconda3-for-windows-10-home-64-bit-pc
+다음 자료를 참고하였습니다:
+- https://stackoverflow.com/questions/34004063/error-on-import-matplotlib-pyplot-on-anaconda3-for-windows-10-home-64-bit-pc
 
 파이썬 오류로 나타나는 현상입니다.  
 `C:\ProgramData\Anaconda3\envs\MYENV\Lib\site-packages\matplotlib\font_manager.py` 혹은
@@ -213,7 +213,8 @@ jupyter notebook 을 종료해도 cmd 창에는 여전히 실행 중인 것을 �
 
 # Appendix: Anaconda Python 삭제
 
-다음 링크를 참고하였습니다: https://docs.continuum.io/anaconda/install
+다음 자료를 참고하였습니다:
+- https://docs.continuum.io/anaconda/install
 
 윈도우에서 Anaconda 를 삭제하는 방법입니다.
 
@@ -231,7 +232,8 @@ C:\> anaconda-clean --yes
 
 # Appendix: Jupyter notebook 외부접속 설정
 
-다음 링크를 참고하였습니다: http://goodtogreate.tistory.com/entry/IPython-Notebook-%EC%84%A4%EC%B9%98%EB%B0%A9%EB%B2%95
+다음 자료를 참고하였습니다:
+- http://goodtogreate.tistory.com/entry/IPython-Notebook-%EC%84%A4%EC%B9%98%EB%B0%A9%EB%B2%95
 
 포트포워딩이 익숙한 경우 보안을 위해 바꿔줍시다.
 
@@ -285,7 +287,8 @@ c.NotebookApp.port_retries = 8888
 
 # Appendix: Jupyter Notebook 에서 R kernel 설정
 
-다음 링크를 참고하였습니다: https://www.continuum.io/blog/developer/jupyter-and-conda-r
+다음 자료를 참고하였습니다:
+- https://www.continuum.io/blog/developer/jupyter-and-conda-r
 
 현재 환경(current environment)에 R Essentials를 설치할 때
 
