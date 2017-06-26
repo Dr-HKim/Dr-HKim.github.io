@@ -35,14 +35,27 @@ C:\Users\Username\gem -v
 ```
 
 
-# Jekyll 설치
+# Jekyll 설치 및 실행
 
-이제 지킬을 설치합니다. Ruby의 gem 패키지 인스톨러를 이용해서 다음과 같이 CMD에서 설치합시다.
+이제 지킬을 설치하고 시험적으로 실행해보겠습니다. Ruby의 gem 패키지 인스톨러를 이용해서 다음과 같이 CMD에서 jekyll 과 bundle 을 설치합니다. 설치가 모두 끝나면 jekyll 을 실시합니다.
 
 ```
-gem install jekyll
+C:\> gem install jekyll # jekyll 설치
+C:\> gem install bundle # bundle 설치
+
+C:\> jekyll new BLOGNAME # BLOGNAME 에 새로운 블로그 설치
+C:\> cd BLOGNAME
+C:\BLOGNAME\> jekyll server # jekyll 실행
 ```
 
+이제 웹브라우저에서 [http://127.0.0.1:4000](http://127.0.0.1:4000) 를 입력하면 블로그가 설치된 것을 확인할 수 있습니다. 블로그 서버 종료는 `ctrl-c` 입니다.
+
+이 블로그에서는 Jacman 테마를 사용하였습니다. 따라서 추가적인 설치 작업이 필요합니다.
+
+```
+C:\> gem install github-pages x64-mingw32 # 추가 설치
+C:\BLOGNAME\> bundle exec jekyll server # 서버 실행
+```
 
 # GitHub Pages 로 Jekyll 블로그 설치 및 실행
 
