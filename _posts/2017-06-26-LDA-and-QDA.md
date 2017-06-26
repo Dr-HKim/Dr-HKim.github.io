@@ -122,6 +122,8 @@ $$
 
 ## QDA (Quadratic Discriminant Analysis)
 
+QDA 는 LDA 에서 사용했던 모든 클래스의 분산이 동일하다($\sigma_1^2 = \ ... \ = \sigma_k^2$)는 가정이 지켜지지 않는 경우입니다. 즉, $k$ th class 에 속한 관측치의 분포가 $X \sim N \left( \mu_k, \Sigma_k \right)$ 와 같은 경우를 말합니다.
+
 (ISLR eq 4.23):
 
 $$\begin{eqnarray*}
