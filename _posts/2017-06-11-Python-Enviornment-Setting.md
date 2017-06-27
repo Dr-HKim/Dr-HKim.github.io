@@ -1,7 +1,7 @@
 ---
 layout: post  
 title: 파이썬 기초 - 설치 및 환경설정  
-date: 2017-06-22  
+date: 2017-06-11  
 tags: [python]  
 published: true  
 ---

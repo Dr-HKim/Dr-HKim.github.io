@@ -1,7 +1,7 @@
 ---
 layout: post  
 title: Jekyll 및 GitHub Pages 로 블로그하기
-date: 2017-06-21  
+date: 2017-06-02  
 tags: [jekyll]  
 published: true
 ---
@@ -59,12 +59,12 @@ C:\BLOGNAME\> bundle exec jekyll server # 서버 실행
 
 # GitHub Pages 로 Jekyll 블로그 실행
 
-GitHub Pages 로 블로그를 발행하면 다른 호스팅 서비스 없이도 블로그 개설이 가능합니다.
+[GitHub Pages](https://pages.github.com/) 로 블로그를 발행하면 다른 호스팅 서비스 없이도 블로그 개설이 가능합니다.
 
 GitHub 에서 새로운 repository 를 만듭니다.
 이때 repository name 은 `USERNAME.github.io`로 합니다.
 
-GitHub Desktop 을 이용하여 새로운 repository 를 동기화하고 설치된 블로그 폴더 내용을 이곳으로 옮깁니다.
+[GitHub Desktop](https://desktop.github.com/) 을 이용하여 새로운 repository 를 동기화하고 설치된 블로그 폴더 내용을 이곳으로 옮깁니다.
 
 GitHub 와 연동한 후 웹브라우저에서 `USERNAME.github.io` 로 들어가면 블로그가 뜨는 것을 확인할 수 있습니다.
 

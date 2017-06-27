@@ -1,7 +1,7 @@
 ---
 layout: post  
 title: 파이썬 기초 - 변수의 종류  
-date: 2017-06-23  
+date: 2017-06-12  
 tags: [python]  
 published: true  
 ---

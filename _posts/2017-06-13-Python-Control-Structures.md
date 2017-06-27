@@ -1,23 +1,28 @@
 ---
 layout: post  
-title: 파이썬 기초 - 제어문(Control Structures) if, while, for  
-date: 2017-06-24  
+title: 파이썬 기초 - 제어문 if, while, for  
+date: 2017-06-13  
 tags: [python]  
 published: true  
 ---
 
-이번 포스트에서는 파이썬에서 사용되는 제어문에 대해 알아보겠습니다.
+이번 포스트에서는 파이썬에서 사용되는 제어문(Control Structures)에 대해 알아보겠습니다. 코딩에 익숙한 분들이라면 아래 예제들로 충분할 것으로 생각됩니다. 친절한 설명은 생략합니다.
+
+**참고: 들여쓰기와 공백을 혼용하지 않는 것이 중요합니다.**  
+
+파이썬 문법에서는 **들여쓰기(indentation)** 가 중요합니다. 문법에서 들여쓰기를 강요함으로써 코드의 가독성을 높이는 장점이 있습니다. 다만, 사람마다 들여쓰기를 `tab` 으로 하기도 하고 띄어쓰기 2칸 혹은 4칸으로 들여쓰기를 하는 경우도 있습니다. 최소한 한 단락 안에서는 들여쓰기 방식을 통일해야 합니다.
+
+PC, 태블릿 등에서 여러 에디터를 사용하여 코드를 편집하게 되는데, 이때 편집기마다 들여쓰기 정의가 다른 경우가 있습니다. 이로 인해 에러가 뜨기도 합니다. 겉보기에 아무 문제도 없는 코드가 에러가 난다면 이 경우를 의심해볼 수 있습니다.
 
 
-**메모**
 
-유투브 무료 파이썬 강좌:
+
+**참고: 유투브 무료 파이썬 강좌**  
 - K-MOOC: 데이터 과학을 위한 파이썬 입문 (가천대학교 최성철 교수)
 - www.flearning.net: Python으로 Big Data 분석하기 (10시간, 무료)
 
-**들여쓰기와 공백을 혼용하지 않는 것이 중요합니다.**
 
-**논리(boolean)가 아닌 자료형의 참과 거짓**
+**참고: 논리(boolean)가 아닌 자료형의 참과 거짓**
 
 자료형    | 참(True)      | 거짓(False)
 ---------|---------------|-------------
@@ -47,7 +52,7 @@ else:
 pocket = ['paper', 'money', 'cellphone']
 card = 1
 if 'money' in pocket:
-  pass #pass 를 쓰면 아무 것도 하지 않는다
+  pass #pass 를 쓰면 아무 것도 하지 않습니다
 elif card:
   print("택시를 타고가라")
 else:
@@ -69,7 +74,7 @@ number = 0
 for mark in marks:
   number = number +1
   if mark < 60:
-    continue # continue를 만나면 for문의 처음으로 돌아간다
+    continue # continue를 만나면 for문의 처음으로 돌아갑니다
   print("%d번 학생 축하합니다. 합격입니다. " % number)
 
 # 예제: 구구단
@@ -98,7 +103,7 @@ a = 0
 while a < 10:
   a = a+1
   if a % 2 == 0:
-    continue # continue를 쓰면 처음으로 돌아간다
+    continue # continue를 쓰면 처음으로 돌아갑니다
   print(a)
 
 
@@ -117,7 +122,7 @@ while True:
     print("남은 커피의 양은 %d개 입니다." % coffee)
   if not coffee:
     print("커피가 다 떨어졌습니다. 판매를 중지 합니다.")
-    break # break를 쓰면 while 문을 빠져나온다
+    break # break를 쓰면 while 문을 빠져나옵니다
 ```
 
 
@@ -125,7 +130,7 @@ while True:
 
 ```python
 # ZeroDivisionError
-4/0 # 이대로는 ZeroDivisionError: division by zero 라는 에러 메세지가 뜬다
+4/0 # 이대로는 ZeroDivisionError: division by zero 라는 에러 메세지가 뜹니다
 
 try:
   4/0
