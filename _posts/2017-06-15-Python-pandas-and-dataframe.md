@@ -2,7 +2,9 @@
 layout: post  
 title: 파이썬 기초 - Pandas and DataFrame  
 date: 2017-06-15  
-categories: Python for Beginners  
+categories:
+- Python_for_Beginners  
+
 tags: [python]  
 published: true  
 ---

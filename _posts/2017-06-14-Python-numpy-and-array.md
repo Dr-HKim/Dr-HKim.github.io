@@ -2,7 +2,9 @@
 layout: post  
 title: 파이썬 기초 - numpy and array  
 date: 2017-06-13  
-categories: Python for Beginners  
+categories:
+- Python_for_Beginners  
+
 tags: [python]  
 published: true  
 ---
