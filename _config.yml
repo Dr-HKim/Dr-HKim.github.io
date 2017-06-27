@@ -150,7 +150,7 @@ totop: true           ## if you want to scroll to top in every post set the valu
 #### Custom Search
 google_cse:
   enable: true
-  cx: 001917551734242709439:swlm90cw6ew ## e.g. 018294693190868310296:abnhpuysycw your Custom Search ID.
+  cx: 001917551734242709439:gcbxeulfmoa ## e.g. 018294693190868310296:abnhpuysycw your Custom Search ID.
 ## https://www.google.com/cse/
 ## To enable the custom search You must create a "search" folder in '/source' and a "index.md" file
 ## set the 'front-matter' as
