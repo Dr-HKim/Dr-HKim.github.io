@@ -101,14 +101,14 @@ pip install 대신 conda install 명령어를 사용하기도 하지만 Anaconda
 - matblotlib: 그래프를 그립니다.
 - sklearn: 각종 통계 분석을 사용할 수 있습니다.
 
-참고로, numpy의 경우 윈도우에서는 Windows prebuilt binary (www.lfd.uci.edu/~gohlke/pythonlibs/) 사이트 들어가서 numpy+mkl 버전을 다운받아 설치해야 합니다. 현재 가상환경으 python 3.5버전이므로 cp35 라고 적힌 파일을 다운받읍시다. 시스템(32bit/64bit)에 주의합니다.
+참고로, numpy의 경우 윈도우에서는 [www.lfd.uci.edu/~gohlke/pythonlibs/](www.lfd.uci.edu/~gohlke/pythonlibs/) 사이트에서 numpy+mkl 버전을 다운받아 설치해야 합니다. 현재 가상환경은 python 3.5버전이므로 cp35 라고 적힌 파일을 다운받읍시다. 시스템(32bit/64bit)에 주의합니다.
 
 CMD 상에서 아래와 같이 패키지를 설치합니다:
 
 ```
 (MYENV) C:\> pip install c:\Users\User\Downloads\numpy-1.12.1+mkl-cp35-cp35m-win_amd64.whl1
 (MYENV) C:\> pip install pandas
-(MYENV) C:\> pip install scipy (에러시 직접 다운로드)
+(MYENV) C:\> pip install scipy # 에러시 직접 다운로드
 (MYENV) C:\> pip install matplotlib
 (MYENV) C:\> pip install sklearn
 ```
