@@ -2,6 +2,7 @@
 layout: post  
 title: 파이썬 기초 - Pandas and DataFrame  
 date: 2017-06-15  
+categories: Python for Beginners  
 tags: [python]  
 published: true  
 ---
@@ -299,7 +300,9 @@ df2.sort_values(["E", "F"])
 ```
 
 
-# Pandas 데이터 분석 예제 - lendig club loan data
+# 데이터 분석 예제 - lendig club loan data
+
+[Lending Club 홈페이지](https://www.lendingclub.com/info/download-data.action)에서 받을 수 있는 데이터로 작성된 예제입니다.
 
 ```python
 import numpy as np
