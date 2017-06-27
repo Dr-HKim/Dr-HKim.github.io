@@ -25,6 +25,8 @@ install.packages('sqldf', repos='http://cran.us.r-project.org')
 
 # 샘플 데이터 생성
 
+대부분의 경우 IRIS 데이터를 샘플로 사용합니다. `sqldf` 를 사용하면 db를 따로 만드는 번거로움을 생략할 수 있지만, 어쩐일인지 요즘 제 컴퓨터에서 `sqldf` 가 에러가 나는 관계로 `RSQLite` 를 사용하겠습니다.
+
 ```R
 # These examples show how to run a variety of data frame manipulations
 # in R without SQL and then again with SQL
@@ -104,6 +106,7 @@ a3s <- dbGetQuery(conn, "select * from dfIRIS where Species in ('setosa', 'versi
 row.names(a3r) <- NULL
 identical(a3r, a3s)
 ```
+
 TRUE
 
 ```R
@@ -209,8 +212,6 @@ a7s <- dbGetQuery(conn, "select * from a5s union all select * from a6s")
 identical(a7r, a7s)
 ```
 
-TRUE
-TRUE
 TRUE
 
 
@@ -359,8 +360,6 @@ row.names(a12r) <- NULL
 identical(a12r, a12s)
 ```
 TRUE
-TRUE
-TRUE
 
 ```R
 DF
@@ -414,7 +413,6 @@ a14s <- dbGetQuery(conn, "select g, t, v
 identical(a12r, a14s)
 ```
 
-
 TRUE
 
 # Frequency Table by Group
@@ -430,7 +428,7 @@ a15s <- dbGetQuery(conn, "select sum(wool = 'A'), sum(wool = 'B')
 all.equal(as.data.frame.matrix(a15r), a15s, check.attributes = FALSE)
 ```
 TRUE
-TRUE
+
 ```R
 a15r
 ```
@@ -512,7 +510,6 @@ row.names(a18r) <- NULL
 
 all.equal(a18r, a18s)
 ```
-TRUE
 TRUE
 
 ```R
@@ -641,13 +638,7 @@ a20s
 
 ```
 
-
 TRUE
-
-
-
-TRUE
-
 
 |Id|Date|Time|Quality|Lat|Long|
 |--- |--- |--- |--- |--- |--- |
