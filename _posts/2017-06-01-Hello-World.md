@@ -2,7 +2,7 @@
 layout: post  
 title: Hello World!  
 date: 2017-06-01  
-categories:  
+category:  
 tags:  
 published: true  
 ---

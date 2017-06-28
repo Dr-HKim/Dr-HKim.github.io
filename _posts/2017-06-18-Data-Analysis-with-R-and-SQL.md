@@ -1,8 +1,8 @@
 ---
 layout: post  
-title: Data Analysis with R and SQL  
+title: Data Handling with R and SQL  
 date: 2017-06-18  
-categories:
+category:
 - Data_Analysis  
 
 tags: [R, SQL]  
