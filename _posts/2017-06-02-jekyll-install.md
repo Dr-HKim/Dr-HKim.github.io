@@ -69,3 +69,65 @@ GitHub 에서 새로운 repository 를 만듭니다.
 GitHub 와 연동한 후 웹브라우저에서 `USERNAME.github.io` 로 들어가면 블로그가 뜨는 것을 확인할 수 있습니다.
 
 GitHub 과 연동하는 보다 친절하고 다양한 방법들에 대해서는, 다른 블로그(...)를 참고합시다.
+
+
+# 정리 필요
+
+`relative_permalinks: true` 를 코멘트 처리
+
+```
+gems:
+
+- jekyll-paginate
+```
+
+추가
+
+
+index.html 에서
+`<a href="{{ site.baseurl }}/{{ post.url }}">` 를
+`<a href="{{ site.baseurl }}{{ post.url }}">` 로 변경 ( `/` 제거)
+
+
+
+2. 검색 기능 추가
+
+https://github.com/jekylltools/jekyll-tipue-search
+
+search.html 을 root 폴더에 넣어두면 sidebar 에 알아서 뜬다.
+
+
+3. 포스트를 자르고 Read more... 추가
+
+`index.html`
+
+```
+{{ post.content }} # 를
+{{ post.excerpt }} <a href="{{ post.url }}">Read more...</a> # 로 변경
+```
+
+
+
+4. MathJax 가능하게
+
+post.html
+
+  <!--Enable MathJax-->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true
+      }
+    });
+  </script>
+
+  <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <!--Enable MathJax-->
+
+
+5. 카테고리와 테그
+
+https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/
