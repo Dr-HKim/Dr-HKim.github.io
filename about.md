@@ -4,27 +4,11 @@ title: About
 ---
 
 <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+  Hey there! This is a blog about data analysis and financial engineering. Thanks for reading!
 </p>
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+이 블로그는 [파인만의 공부방법](https://curiosity.com/topics/learn-anything-in-four-steps-with-the-feynman-technique-curiosity/)을 따라, 관심있는 독자에게 설명하는 방식으로 공부를 해나가기 위해 개설되었습니다. 따라서 설명이 미진하거나 잘못된 정보를 전달할 수도 있습니다.
 
-There are currently two themes built on Poole:
+각 포스트는 개인 위키의 성격을 갖고 있으며, 지속적으로 수정됩니다. 포스트 등록 날짜는 순서 변경을 위해 임의로 수정합니다. 따라서 실제 등록 날짜와 다를 수 있습니다. 링크 역시 변하기 일쑤이므로 개별 포스트의 링크 저장은 권장하지 않습니다.
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+영문 대문자로 표기된 변수의 경우, 대부분 사용자 지정 변수를 의미합니다.
