@@ -25,16 +25,19 @@
       {% endif %}
     {% endfor %}
 
+    <!-- Tag Cloud -->
     <span class="sidebar-nav-item">Tag Cloud</span>
     <ul class="tag-cloud">
     {% for tag in site.tags %}
       <span style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 70  }}%">
-        <a href="#{{ tag | first | slugize }}">
+        <a href="/blog/tag/#{{ tag | first | slugize }}">
           {{ tag | first }}
         </a> &nbsp;&nbsp;
       </span>
     {% endfor %}
     </ul>
+
+    <!-- Current Blog Version -->
     <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
   </nav>
 

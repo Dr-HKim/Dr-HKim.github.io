@@ -37,9 +37,12 @@ Here we generate all the tags.
 
 <div class="posts">
 <p>
+
+<span class="post-tag-box" style="display:inline-block;">
 {% for tag in tags %}
-<a href="#{{ tag | slugify }}" class="codinfox-tag-mark"> {{ tag }} </a> &nbsp;&nbsp;
+<a href="#{{ tag | slugify }}"> {{ tag }} </a> &nbsp;&nbsp;
 {% endfor %}
+</span>
 
 {% for tag in tags %}
 <h2 id="{{ tag | slugify }}">{{ tag }}</h2>
