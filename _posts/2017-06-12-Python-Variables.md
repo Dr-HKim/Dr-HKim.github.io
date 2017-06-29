@@ -3,7 +3,7 @@ layout: post
 title: 파이썬 기초 - 변수의 종류  
 date: 2017-06-12  
 category:
-- Python_for_Beginners  
+- Python for Beginners  
 
 tags: [python]  
 published: true  

@@ -3,7 +3,7 @@ layout: post
 title: Data Handling with R and SQL  
 date: 2017-06-18  
 category:
-- Data_Analysis  
+- Data Analysis  
 
 tags: [R, SQL]  
 published: true  
