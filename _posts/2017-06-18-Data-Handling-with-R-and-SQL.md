@@ -9,7 +9,7 @@ tags: [R, SQL]
 published: true  
 ---
 
-이번 포스트는 R 과 SQL 을 이용하여 데이터프레임을 조작하는 방법을 다룹니다. 많이 쓰이는 대표적인 경우를 R 과 SQL 각각 어떻게 코딩하는지 살펴봅니다.
+***preface*** 이번 포스트에서는 R 과 SQL 을 이용하여 데이터프레임을 조작하는 방법을 다룹니다. 많이 쓰이는 대표적인 경우를 R 과 SQL 각각 어떻게 코딩하는지 살펴봅니다.
 
 다음 자료를 참고하였습니다:
 - [https://cran.r-project.org/web/packages/sqldf/index.html](https://cran.r-project.org/web/packages/sqldf/index.html)
