@@ -6,7 +6,7 @@ tags: [jekyll]
 published: true
 ---
 
-***preface*** 이번 포스트에서는 윈도우 환경에서 Jekyll을 설치하는 방법을 다룹니다. 지킬(Jekyll)은 마크다운 문서로 본문 작성이 가능한 설치형 블로그로, GitHub을 이용하면 별 다른 호스팅 없이 쉽게 블로그를 개설할 수 있는 장점이 있습니다.
+이번 포스트에서는 윈도우 환경에서 Jekyll을 설치하는 방법을 다룹니다. 지킬(Jekyll)은 마크다운 문서로 본문 작성이 가능한 설치형 블로그로, GitHub을 이용하면 별 다른 호스팅 없이 쉽게 블로그를 개설할 수 있는 장점이 있습니다.
 
 
 # Ruby 설치
@@ -71,16 +71,9 @@ GitHub 와 연동한 후 웹브라우저에서 `USERNAME.github.io` 로 들어�
 GitHub 과 연동하는 보다 친절하고 다양한 방법들에 대해서는, 다른 블로그(...)를 참고합시다.
 
 
-# Jekyll Customization
-
-이 블로그에서는 Lanyon theme 를 사용했습니다.
-
-## jekyll 버전 에러 해결
+# 정리 필요
 
 `relative_permalinks: true` 를 코멘트 처리
-
-
-## 필요한 gem plugin 로딩
 
 ```
 gems:
@@ -88,7 +81,8 @@ gems:
 - jekyll-paginate
 ```
 
-## 포스트 링크 수정
+추가
+
 
 index.html 에서
 `<a href="{{ site.baseurl }}/{{ post.url }}">` 를
@@ -96,14 +90,14 @@ index.html 에서
 
 
 
-## 검색 기능 추가
+2. 검색 기능 추가
 
 https://github.com/jekylltools/jekyll-tipue-search
 
 search.html 을 root 폴더에 넣어두면 sidebar 에 알아서 뜬다.
 
 
-## 포스트를 자르고 Read more... 추가
+3. 포스트를 자르고 Read more... 추가
 
 `index.html`
 
@@ -114,7 +108,7 @@ search.html 을 root 폴더에 넣어두면 sidebar 에 알아서 뜬다.
 
 
 
-## MathJax 가능하게
+4. MathJax 가능하게
 
 post.html
 
@@ -134,6 +128,6 @@ post.html
   <!--Enable MathJax-->
 
 
-## 카테고리와 테그
+5. 카테고리와 테그
 
 https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/
