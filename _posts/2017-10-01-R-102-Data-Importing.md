@@ -9,6 +9,8 @@ tags: [R]
 published: true  
 ---
 
+***preface*** 이번 포스트에서는 R에서 데이터를 불러오는 방법들에 대하여 설명합니다.
+
 # R Cheatsheet Data Importing
 
 다음 자료를 참고하였습니다:  
