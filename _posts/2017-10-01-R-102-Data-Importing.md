@@ -1,12 +1,12 @@
 ---
 layout: post  
-title: R Basic 102 Data Importing  
+title: R 기초 102 데이터 불러오기 (Data Importing)  
 date: 2017-10-01  
 category:
 - Data Analysis  
 
 tags: [R]  
-published: false  
+published: true  
 ---
 
 # R Cheatsheet Data Importing
