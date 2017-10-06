@@ -18,7 +18,7 @@ published: true
 
 # Importing Data
 
-Importing data into R is fairly simple. For Stata and Systat, use the foreign package. For SPSS and SAS I would recommend the Hmisc package for ease and functionality. See the Quick-R section on packages, for information on obtaining and installing the these packages. Example of importing data are provided below.
+데이터를 R로 가져 오는 것은 매우 간단합니다. Stata 및 Systat의 경우, foreign 패키지를 사용하십시오. SPSS 및 SAS의 경우 Hmisc 패키지를 권장합니다. 이러한 패키지를 구해서 설치하는 방법에 대한 정보는 Quick-R 의 [Packages](http://www.statmethods.net/interface/packages.html) 섹션을 참조하십시오.
 
 ## From A Comma Delimited Text File (CSV)
 
@@ -37,7 +37,7 @@ mydata <- read.table("c:/mydata.csv", header=TRUE, sep=";", row.names=NULL, quot
 
 ## From Excel
 
-One of the best ways to read an Excel file is to export it to a comma delimited file and import it using the method above. Alternatively you can use the xlsx package to access Excel files. The first row should contain variable/column names.
+Excel 파일을 읽는 가장 좋은 방법 중 하나는 CSV 파일로 내보내고 위의 방법을 사용하여 가져 오는 것입니다. 또는 xlsx 패키지를 사용하여 Excel 파일에 액세스 할 수 있습니다. 첫 번째 행에는 변수 / 열 이름이 포함되어야합니다.
 
 ```r
 # read in the first worksheet from the workbook myexcel.xlsx
