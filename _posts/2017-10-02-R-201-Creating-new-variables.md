@@ -1,9 +1,9 @@
 ---
 layout: post  
-title: R Basic 201 Creating New Variables  
+title: R 기초 201 새로운 변수 만들기 (Creating New Variables)  
 date: 2017-10-02  
 category:
-- Data Analysis  
+- R for Beginners  
 
 tags: [R]  
 published: false  
@@ -13,8 +13,6 @@ published: false
 
 다음 자료를 참고하였습니다:  
 - http://www.statmethods.net/management/variables.html
-
-# Creating new variables
 
 Use the assignment operator <- to create new variables. A wide array of operators and functions are available here.
 

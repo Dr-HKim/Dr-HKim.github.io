@@ -3,7 +3,7 @@ layout: post
 title: R 기초 102 데이터 불러오기 (Importing Data)  
 date: 2017-10-01  
 category:
-- Data Analysis  
+- R for Beginners  
 
 tags: [R]  
 published: true  
@@ -14,7 +14,7 @@ published: true
 # R Cheatsheet Data Importing
 
 다음 자료를 참고하였습니다:  
-- http://www.statmethods.net/input/importingdata.html
+- [http://www.statmethods.net/input/importingdata.html](http://www.statmethods.net/input/importingdata.html)
 
 # Importing Data
 

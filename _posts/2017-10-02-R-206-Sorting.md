@@ -1,9 +1,9 @@
 ---
 layout: post  
-title: R Basic 201 Creating New Variables  
+title: R 기초 201 Creating New Variables  
 date: 2017-10-02  
 category:
-- Data Analysis  
+- R for Beginners  
 
 tags: [R]  
 published: false  

@@ -3,7 +3,7 @@ layout: post
 title: R 기초 108 값 레이블 (Value Labels)  
 date: 2017-10-01  
 category:
-- Data Analysis  
+- R for Beginners  
 
 tags: [R]  
 published: true  

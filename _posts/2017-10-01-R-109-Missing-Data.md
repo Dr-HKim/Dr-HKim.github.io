@@ -3,7 +3,7 @@ layout: post
 title: R 기초 109 결측치 처리 (Missing Data)  
 date: 2017-10-01  
 category:
-- Data Analysis  
+- R for Beginners  
 
 tags: [R]  
 published: true  
