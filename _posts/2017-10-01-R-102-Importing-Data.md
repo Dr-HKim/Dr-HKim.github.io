@@ -1,6 +1,6 @@
 ---
 layout: post  
-title: R 기초 102 데이터 불러오기 (Data Importing)  
+title: R 기초 102 데이터 불러오기 (Importing Data)  
 date: 2017-10-01  
 category:
 - Data Analysis  
