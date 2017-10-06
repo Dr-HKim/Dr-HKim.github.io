@@ -1,20 +1,21 @@
 ---
 layout: post  
-title: R 기초 201 Creating New Variables  
+title: R 기초 202 내장 연산자들 (Built-in Operators)  
 date: 2017-10-02  
 category:
 - R for Beginners  
 
 tags: [R]  
-published: false  
+published: true  
 ---
 
-# R Cheatsheet Built-in Operators
-
-다음 자료를 참고하였습니다:  
-- http://www.statmethods.net/management/operators.html
+***preface*** 이번 포스트에서는 R에 내장된 연산자를 사용하는 방법에 대하여 설명합니다.
 
 # Built-in Operators
+
+다음 자료를 참고하였습니다:  
+- [http://www.statmethods.net/management/operators.html](http://www.statmethods.net/management/operators.html)
+
 R's binary and logical operators will look very familiar to programmers. Note that binary operators work on vectors and matrices as well as scalars.
 
 ## Arithmetic Operators

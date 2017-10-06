@@ -1,20 +1,21 @@
 ---
 layout: post  
-title: R 기초 201 Creating New Variables  
+title: R 기초 203 내장 함수들 (Built-in Functions)  
 date: 2017-10-02  
 category:
 - R for Beginners  
 
 tags: [R]  
-published: false  
+published: true  
 ---
 
-# R Cheatsheet Built-in Functions
-
-다음 자료를 참고하였습니다:  
-- http://www.statmethods.net/management/functions.html
+***preface*** 이번 포스트에서는 R에 내장된 함수를 사용하는 방법에 대하여 설명합니다.
 
 # Built-in Functions
+
+다음 자료를 참고하였습니다:  
+- [http://www.statmethods.net/management/functions.html](http://www.statmethods.net/management/functions.html)
+
 Almost everything in R is done through functions. Here I'm only refering to numeric and character functions that are commonly used in creating or recoding variables.
 
 (To practice working with functions, try the functions sections of this this interactive course.)

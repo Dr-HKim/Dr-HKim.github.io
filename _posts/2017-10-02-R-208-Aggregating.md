@@ -1,6 +1,6 @@
 ---
 layout: post  
-title: R 기초 201 Creating New Variables  
+title: R 기초 208 데이터 합치기 (Aggregating Data)  
 date: 2017-10-02  
 category:
 - R for Beginners  
@@ -9,12 +9,13 @@ tags: [R]
 published: false  
 ---
 
+***preface*** 이번 포스트에서는 데이터를 합치는 방법에 대하여 설명합니다.
+
 # Aggregating Data
 
 다음 자료를 참고하였습니다:  
-- http://www.statmethods.net/management/aggregate.html
+- [http://www.statmethods.net/management/aggregate.html](http://www.statmethods.net/management/aggregate.html)
 
-# Aggregating Data
 It is relatively easy to collapse data in R using one or more BY variables and a defined function.
 
 ```r

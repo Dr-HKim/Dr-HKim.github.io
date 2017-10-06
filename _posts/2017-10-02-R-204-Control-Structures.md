@@ -1,6 +1,6 @@
 ---
 layout: post  
-title: R 기초 201 Creating New Variables  
+title: R 기초 204 제어문 (Control Structures)  
 date: 2017-10-02  
 category:
 - R for Beginners  
@@ -9,12 +9,12 @@ tags: [R]
 published: false  
 ---
 
-# R Cheatsheet Control Structures: if, while, for, switch, ifelse
-
-다음 자료를 참고하였습니다:  
-- http://www.statmethods.net/management/controlstructures.html
+***preface*** 이번 포스트에서는 제어문(if, while, for, switch, ifelse)을 사용하는 방법에 대하여 설명합니다.
 
 # Control Structures: if, while, for, switch, ifelse
+
+다음 자료를 참고하였습니다:  
+- [http://www.statmethods.net/management/controlstructures.html](http://www.statmethods.net/management/controlstructures.html)
 
 R has the standard control structures you would expect. expr can be multiple (compound) statements by enclosing them in braces { }. It is more efficient to use built-in functions rather than control structures whenever possible.
 

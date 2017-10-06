@@ -1,6 +1,6 @@
 ---
 layout: post  
-title: R 기초 201 Creating New Variables  
+title: R 기초 205 사용자 정의 함수 (User-written Functions)  
 date: 2017-10-02  
 category:
 - R for Beginners  
@@ -9,12 +9,12 @@ tags: [R]
 published: false  
 ---
 
+***preface*** 이번 포스트에서는 사용자 정의 함수를 사용하는 방법에 대하여 설명합니다.
+
 # User-written Functions
 
 다음 자료를 참고하였습니다:  
-- http://www.statmethods.net/management/userfunctions.html
-
-# User-written Functions
+- [http://www.statmethods.net/management/userfunctions.html](http://www.statmethods.net/management/userfunctions.html)
 
 One of the great strengths of R is the user's ability to add functions. In fact, many of the functions in R are actually functions of functions. The structure of a function is given below.
 

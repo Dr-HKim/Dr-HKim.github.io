@@ -1,6 +1,6 @@
 ---
 layout: post  
-title: R 기초 201 Creating New Variables  
+title: R 기초 211 데이터 형식 변환하기 (Data Type Conversion)  
 date: 2017-10-02  
 category:
 - R for Beginners  
@@ -9,12 +9,12 @@ tags: [R]
 published: false  
 ---
 
+***preface*** 이번 포스트에서는 데이터 형식(data type)을 변환하는 방법에 대하여 설명합니다.
+
 # Data Type Conversion
 
 다음 자료를 참고하였습니다:  
-- http://www.statmethods.net/management/typeconversion.html
-
-# Data Type Conversion
+- [http://www.statmethods.net/management/typeconversion.html](http://www.statmethods.net/management/typeconversion.html)
 
 Type conversions in R work as you would expect. For example, adding a character string to a numeric vector converts all the elements in the vector to character.
 
