@@ -6,7 +6,7 @@ category:
 - R for Beginners  
 
 tags: [R]  
-published: false  
+published: true  
 ---
 
 ***preface*** 이번 포스트에서는 데이터 형식(data type)을 변환하는 방법에 대하여 설명합니다.
