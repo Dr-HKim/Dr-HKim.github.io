@@ -16,6 +16,8 @@ published: true
 다음 자료를 참고하였습니다:  
 - [http://www.statmethods.net/management/functions.html](http://www.statmethods.net/management/functions.html)
 
+R의 거의 모든 부분은 기능을 통해 수행됩니다. 여기에서는 변수를 작성하거나 다시 코딩할 때 일반적으로 사용되는 숫자 및 문자 함수만 언급합니다.
+
 Almost everything in R is done through functions. Here I'm only refering to numeric and character functions that are commonly used in creating or recoding variables.
 
 (To practice working with functions, try the functions sections of this this interactive course.)
