@@ -38,6 +38,8 @@ dataframe | -                   | -                  | -
 
 ## Dates
 
+문자 혹은 숫자 데이터를 날짜 데이터로 변경할 수 있습니다.
+
 You can convert dates to and from character or numeric data. See date values for more information.
 
 ## To Practice
