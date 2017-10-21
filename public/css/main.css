@@ -81,10 +81,12 @@ h1, h2, h3, h4, h5, h6 {
 /* Source: Code below from comments by Jeremy Lawson (May 04, 2012) here:
 /*   https://css-tricks.com/viewport-sized-typography/
 /*****************************************************************************/
+
+/*
 body {
   font-size: 1.6vw;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 100px) {
   body {
     font-size:20px;
   }
@@ -93,11 +95,13 @@ body {
 pre {
   font-size: 1.2vw;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 100px) {
   pre {
     font-size:16px;
   }
 }
+*/
+
 /* end Viewport Sized Topography code */
 @media (min-width: 38em) {
   html {
@@ -111,19 +115,21 @@ pre {
  * Center the page content.
  */
 
-/*.container {
-  max-width: 28rem;
+
+.container {
+  max-width: 100rem;
 }
-@media (min-width: 38em) {
+@media (min-width: 100em) {
   .container {
-    max-width: 32rem;
+    max-width: 50rem;
   }
 }
-@media (min-width: 56em) {
+@media (min-width: 50em) {
   .container {
-    max-width: 38rem;
+    max-width: 40rem;
   }
-}*/
+}
+
 
 /*****************************************************************************/
 /*
@@ -133,6 +139,7 @@ pre {
 /*
 /*****************************************************************************/
 
+/*
 @media (min-width: 38em) {
   .container {
     max-width: 85%;
@@ -145,7 +152,7 @@ pre {
     margin-left: 7%;
   }
 }
-
+*/
 .center {
   text-align: center;
 }

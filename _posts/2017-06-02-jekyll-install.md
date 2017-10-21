@@ -90,14 +90,14 @@ index.html 에서
 
 
 
-2. 검색 기능 추가
+# 검색 기능을 추가는 방법
 
 https://github.com/jekylltools/jekyll-tipue-search
 
 search.html 을 root 폴더에 넣어두면 sidebar 에 알아서 뜬다.
 
 
-3. 포스트를 자르고 Read more... 추가
+# 포스트를 자르고 Read more... 를 추가하는 방법
 
 `index.html`
 
@@ -108,7 +108,7 @@ search.html 을 root 폴더에 넣어두면 sidebar 에 알아서 뜬다.
 
 
 
-4. MathJax 가능하게
+# MathJax 를 이용하여 수식 표현을 가능하게 하는 방법
 
 post.html
 
@@ -128,6 +128,6 @@ post.html
   <!--Enable MathJax-->
 
 
-5. 카테고리와 테그
+# 카테고리와 태그 기능을 사용하는 방법
 
 https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/
