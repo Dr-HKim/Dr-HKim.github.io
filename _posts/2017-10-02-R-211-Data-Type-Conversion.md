@@ -27,18 +27,15 @@ as.numeric(), as.character(), as.vector(), as.matrix(), as.data.frame()
 
 ## Examples
 
-from`\`to | to one long vector  | to matrix          | to data frame
-----------|---------------------|--------------------|-----------------------
-from      | c(x,y)              | cbind(x,y)         | data.frame(x,y)
-vector    | -                   | rbind(x,y)         | -
-from      | as.vector(mymatrix) | -                  | as.data.frame(mymatrix)
-matrix    | -                   | -                  | -                        
-from      | -                   | as.matrix(myframe) | -
-dataframe | -                   | -                  | -
+from`\`to      | to one long vector  | to matrix              | to data frame
+---------------|---------------------|------------------------|----------------------
+from vector    | c(x,y)              | cbind(x,y), rbind(x,y) | data.frame(x,y)
+from matrix    | as.vector(mymatrix) | -                      | as.data.frame(mymatrix)   
+from dataframe | -                   | as.matrix(myframe)     | -
 
 ## Dates
 
-문자 혹은 숫자 데이터를 날짜 데이터로 변경할 수 있습니다.
+문자 혹은 숫자 데이터를 날짜 데이터로 변경할 수 있습니다. 날짜 형식의 데이터를 다루는 방법은 [여기](https://yui7890.github.io/r%20for%20beginners/2017/10/01/R-110-Date-Values/)를 참고합시다.
 
 You can convert dates to and from character or numeric data. See date values for more information.
 
