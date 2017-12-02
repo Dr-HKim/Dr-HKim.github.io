@@ -12,10 +12,10 @@ description: Markdown summary with different options
 ---
 
 
-이번 포스트에서는 윈도우 환경에서 Jekyll을 설치하는 방법을 다룹니다. 지킬(Jekyll)은 마크다운 문서로 본문 작성이 가능한 설치형 블로그로, GitHub을 이용하면 별 다른 호스팅 없이 쉽게 블로그를 개설할 수 있는 장점이 있습니다.
+***preface***  이번 포스트에서는 윈도우 환경에서 Jekyll을 설치하는 방법을 다룹니다. 지킬(Jekyll)은 마크다운 문서로 본문 작성이 가능한 설치형 블로그로, GitHub을 이용하면 별 다른 호스팅 없이 쉽게 블로그를 개설할 수 있는 장점이 있습니다.
 
 
-# Ruby 설치
+## Ruby 설치
 
 우선 Ruby 를 설치해야 합니다. 아래 링크에서 시스템에 맞는 파일을 다운받아 설치합니다.
 
@@ -41,7 +41,7 @@ C:\Users\Username\gem -v
 ```
 
 
-# Jekyll 설치 및 실행
+## Jekyll 설치 및 실행
 
 이제 지킬을 설치하고 시험적으로 실행해보겠습니다. Ruby의 gem 패키지 인스톨러를 이용해서 다음과 같이 CMD에서 jekyll 과 bundle 을 설치합니다. 설치가 모두 끝나면 jekyll 을 실시합니다.
 
@@ -63,7 +63,7 @@ C:\> gem install github-pages x64-mingw32 # 추가 설치
 C:\BLOGNAME\> bundle exec jekyll server # 서버 실행
 ```
 
-# GitHub Pages 로 Jekyll 블로그 실행
+## GitHub Pages 로 Jekyll 블로그 실행
 
 [GitHub Pages](https://pages.github.com/) 로 블로그를 발행하면 다른 호스팅 서비스 없이도 블로그 개설이 가능합니다.
 
@@ -77,7 +77,7 @@ GitHub 와 연동한 후 웹브라우저에서 `USERNAME.github.io` 로 들어�
 GitHub 과 연동하는 보다 친절하고 다양한 방법들에 대해서는, 다른 블로그(...)를 참고합시다.
 
 
-# 정리 필요
+## 정리 필요
 
 `relative_permalinks: true` 를 코멘트 처리
 
@@ -96,14 +96,14 @@ index.html 에서
 
 
 
-# 검색 기능을 추가는 방법
+## 검색 기능을 추가는 방법
 
 https://github.com/jekylltools/jekyll-tipue-search
 
 search.html 을 root 폴더에 넣어두면 sidebar 에 알아서 뜬다.
 
 
-# 포스트를 자르고 Read more... 를 추가하는 방법
+## 포스트를 자르고 Read more... 를 추가하는 방법
 
 `index.html` 에 다음 코드를 추가한다:
 
@@ -114,7 +114,7 @@ search.html 을 root 폴더에 넣어두면 sidebar 에 알아서 뜬다.
 
 
 
-# MathJax 를 이용하여 수식 표현을 가능하게 하는 방법
+## MathJax 를 이용하여 수식 표현을 가능하게 하는 방법
 
 `post.html` 혹은 `default.html` 에 다음을 추가한다:
 
@@ -135,6 +135,6 @@ search.html 을 root 폴더에 넣어두면 sidebar 에 알아서 뜬다.
   <!--Enable MathJax-->
 ```
 
-# 카테고리와 태그 기능을 사용하는 방법
+## 카테고리와 태그 기능을 사용하는 방법
 
 https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/
