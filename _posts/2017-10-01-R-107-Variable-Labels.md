@@ -3,10 +3,9 @@ layout: post
 title: R 기초 107 변수 레이블 (Variable Labels)  
 date: 2017-10-01  
 category:
-- R for Beginners  
-
-tags: [R]  
-published: true  
+- R for Beginners
+tag: [R]  
+author: hkim  
 ---
 
 ***preface*** 이번 포스트에서는 R에서 변수 레이블을 설정하는 방법에 대하여 설명합니다.

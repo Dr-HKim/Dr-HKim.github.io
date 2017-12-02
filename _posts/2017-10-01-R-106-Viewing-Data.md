@@ -3,10 +3,9 @@ layout: post
 title: R 기초 106 데이터 살펴보기 (Viewing Data)  
 date: 2017-10-01  
 category:
-- R for Beginners  
-
-tags: [R]  
-published: true  
+- R for Beginners
+tag: [R]  
+author: hkim  
 ---
 
 ***preface*** 이번 포스트에서는 R에서 불러온 데이터를 살펴보는 방법에 대하여 설명합니다.

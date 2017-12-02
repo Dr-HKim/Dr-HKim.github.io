@@ -1,10 +1,16 @@
 ---
-layout: post  
-title: Jekyll 및 GitHub Pages 로 블로그하기
-date: 2017-06-02  
-tags: [jekyll]  
-published: true
+title: "Jekyll 및 GitHub Pages 로 블로그하기"
+layout: post
+date: 2017-06-02 22:44
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+- jekyll
+category: blog
+author: hkim
+description: Markdown summary with different options
 ---
+
 
 이번 포스트에서는 윈도우 환경에서 Jekyll을 설치하는 방법을 다룹니다. 지킬(Jekyll)은 마크다운 문서로 본문 작성이 가능한 설치형 블로그로, GitHub을 이용하면 별 다른 호스팅 없이 쉽게 블로그를 개설할 수 있는 장점이 있습니다.
 
@@ -99,7 +105,7 @@ search.html 을 root 폴더에 넣어두면 sidebar 에 알아서 뜬다.
 
 # 포스트를 자르고 Read more... 를 추가하는 방법
 
-`index.html`
+`index.html` 에 다음 코드를 추가한다:
 
 ```
 {{ post.content }} # 를
@@ -110,8 +116,9 @@ search.html 을 root 폴더에 넣어두면 sidebar 에 알아서 뜬다.
 
 # MathJax 를 이용하여 수식 표현을 가능하게 하는 방법
 
-post.html
+`post.html` 혹은 `default.html` 에 다음을 추가한다:
 
+```html
   <!--Enable MathJax-->
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -126,7 +133,7 @@ post.html
       src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
   </script>
   <!--Enable MathJax-->
-
+```
 
 # 카테고리와 태그 기능을 사용하는 방법
 

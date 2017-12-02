@@ -1,12 +1,11 @@
 ---
 layout: post  
-title: 파이썬 기초 - 제어문 if, while, for  
+title: 파이썬 기초 03 제어문 if, while, for  
 date: 2017-06-13  
 category:
-- Python for Beginners  
-
-tags: [python]  
-published: true  
+- Python for Beginners
+tag: [python]  
+author: hkim  
 ---
 
 ***preface*** 이번 포스트에서는 파이썬에서 사용되는 제어문(Control Structures)에 대해 알아보겠습니다. 코딩에 익숙한 분들이라면 아래 예제들로 충분할 것으로 생각됩니다. 친절한 설명은 생략합니다.

@@ -1,12 +1,11 @@
 ---
 layout: post  
-title: 파이썬 기초 - numpy and array  
+title: 파이썬 기초 04 numpy and array  
 date: 2017-06-13  
 category:
-- Python for Beginners  
-
-tags: [python]  
-published: true  
+- Python for Beginners
+tag: [python]  
+author: hkim  
 ---
 
 ***preface*** 이번 포스트에서는 파이썬을 이용하여 데이터분석을 할 수 있게 해주는 numpy 패키지에 대해 알아보겠습니다. numpy 패키지는 행렬 연산에 특화되어있어 matlab 과 유사하다는 인상을 받았습니다.

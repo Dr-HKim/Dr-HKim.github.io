@@ -1,14 +1,42 @@
 ---
-layout: page
 title: About
+layout: page
 ---
+![Profile Image]({{ site.url }}/{{ site.picture }})
 
-<p class="message">
-  Hey there! This is a blog about data analysis and financial engineering. Thanks for reading!
-</p>
+<br>
 
-이 블로그는 [파인만의 공부방법](https://curiosity.com/topics/learn-anything-in-four-steps-with-the-feynman-technique-curiosity/)을 따라, 관심있는 독자에게 설명하는 방식으로 공부를 해나가기 위해 개설되었습니다. 따라서 설명이 미진하거나 잘못된 정보를 전달할 수도 있습니다.
+# Hyeongjun Kim, Ph.D.
 
-각 포스트는 개인 위키의 성격을 갖고 있으며, 지속적으로 수정됩니다. 포스트 등록 날짜는 순서 변경을 위해 임의로 수정합니다. 따라서 실제 등록 날짜와 다를 수 있습니다. 링크 역시 변하기 일쑤이므로 개별 포스트의 링크 저장은 권장하지 않습니다.
+<center>Financial Economist, Data Scientist, and Hearthstone Player</center>
 
-영문 대문자로 표기된 변수의 경우, 대부분 사용자 지정 변수를 의미합니다.
+<br>
+
+## Research Interests
+
+Loan Credit Risk, Probability of Default, Loss-given-default, Empirical and Theoretical Asset Pricing,
+
+<br>
+
+## Publications
+
+Kim, H., Cho, H. & Ryu, D. (forthcoming). An Empirical Study on Credit Card Loan Delinquency. *Economic Systems*.
+
+Kim, H., Cho, H. & Ryu, D. (2017). Characteristics of Mortgage Terminations: an Analysis of a Loan-Level Dataset. *Journal of Real Estate Finance and Economics*, pp. 1-30. [link](https://link.springer.com/article/10.1007/s11146-017-9620-5)
+
+Kim, H., Kim, H. & Cho, H. (2016). An Empirical Study on Predictability of Return Dispersion. *한국증권학회지* 45(2), pp. 285-316. [link](http://www.iksa.or.kr/search/search01_view.php?num=1065&search=list&code=1100006&searchSub=&searchCon=&searchName=&searchYear1=&searchYear2=&searchCount1=&searchCount2=&searchCount3=&searchCount4=&page=1&PHPSESSID=a355d2f344ba17b3564c380eb5519740)
+
+<br>
+
+## Selected Academic Presentations
+
+2015 Seoul Conference for the Society of the Study of Emerging Markets in Seoul, Korea (January 2015)
+Paper presented: “Default Risk Characteristics of Advance Payment Guarantees in the Construction 	Industry”
+
+<br>
+
+## Skills
+
+Data Analysis w/ R, python, SAS, MATLAB, Excel VBA, and E-Views
+
+<br>

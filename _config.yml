@@ -1,26 +1,124 @@
-# Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           pretty
-#relative_permalinks: true
+# main text of home
+name: Hyeongjun Kim
+bio: The Hitchhiker's Guide to the Data Galaxy
 
-# Setup
-title:               The Hitchhiker's Guide to the Data Galaxy
-tagline:             데이터 은하수를 여행하는 히치하이커를 위한 안내서
-description:         'This is a blog about data analysis and financial engineering. Made by <a href="https://twitter.com/yui7890" target="_blank">@yui7890</a>.'
-url:                 ""
-baseurl:             ""
-paginate:            5
+# twitter summary info
+description: A blog about technology and stuff related
 
-# About/contact
-author:
-  name:              HKim
-  url:               https://twitter.com/yui7890
-  email:
+# if it's an external image, update below for true
+# better with square images
+external-image: false
+picture: assets/images/140816_imadeface.jpg
 
-# Custom vars
-version:             1.0.0
+# If you want to include your resume, set to true
+# and specify source (external or local).
+# resume: true
+# resume-external: true
+# resume-url: https://google.com/?q=my+resume
 
-markdown: kramdown
+url: http://Dr-HKim.github.io
+# your url: http://USERNAME.github.io
+
+permalink: /:title/
+
+# To enable google analytics, supply your token below
+analytics-google: 'UA-108453160-1'
+
+# To enable piwik tracking, supply your url & site ID below
+# analytics-piwik-url: 'piwik.my-host.com'
+# analytics-piwik-id: 1
+
+# if you don't want comments in your posts, leave categories empty
+disqus:
+  shortname: mydisqus # enter this from your disqus account
+  categories: [] # only show disqus for posts that have these categories
+
+# if you don't have any of social below, comment the line
+# facebook: myfacebook
+twitter: yui7890
+# google: mygoogle
+# instagram: myinstagram
+# pinterest: mypinterest
+# linkedin: mylinkedin
+# youtube: myyoutube
+# spotify: myspotify
+github: dr-hkim
+# lastfm: mylastfm
+# stackoverflow: 7044681/mystackoverflow
+# quora: userquora
+# reddit: username
+#medium: medium
+# vimeo: myvimeo
+# lanyrd: mylanyrd
+#email: myemail@gmail.com
+
+authors:
+    hkim:
+        name: Hyeongjun Kim
+        bio: Financial Economist, Data Scientist, and Hearthstone Player
+        external-image: false
+        picture: assets/images/140816_imadeface.jpg
+        twitter: yui7890
+#    jamesfoster:
+#        name: James Foster
+#        bio: A Man who develops software with coffee
+#        external-image: false
+#        picture: assets/images/james.jpg
+#        twitter: jamesfoster
+
+# do you want a larger site? change the option below
+# options: [normal, large] | default: normal
+# normal = 560px / large = 810px
+width: large
+
+# if you don't need pagination, comment the *paginate* configs below
+# paginate: 10
+# paginate_path: "blog/:num/"
+
+# if you don't need projects, comment the *projects* configs below
+# projects: true
+
+# if you don't need "about" or "blog", comment them out below
+about: true
+blog: true
+
+# do you want to show the "read time" of the posts?
+read-time: false
+
+# do you want to show the "tags" inside the posts?
+show-tags: true
+
+# related posts inside a post?
+related: true
+
+# Display links for next and previous posts for the specified categories
+# post-advance-links: [blog]
+# post-advance-links:
+#  - blog
+#  - Python for Beginners
+
+# show author block at the end of a post ?
+show-author: true
+
+# do you want some animations?
+animation: false
+
+
+
+plugins_dir:
+  - jekyll-seo-tag
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-admin
+
+jekyll-mentions:
+    base_url: https://github.com
+
 gems:
+  - jekyll-seo-tag
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-admin
   - jekyll-paginate

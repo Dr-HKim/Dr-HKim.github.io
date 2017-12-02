@@ -3,10 +3,9 @@ layout: post
 title: R 기초 105 데이터 출력하기 (Exporting Data)  
 date: 2017-10-01  
 category:
-- R for Beginners  
-
-tags: [R]  
-published: true  
+- R for Beginners
+tag: [R]  
+author: hkim  
 ---
 
 ***preface*** 이번 포스트에서는 R에서 작성한 데이터를 출력하는 방법에 대하여 설명합니다.

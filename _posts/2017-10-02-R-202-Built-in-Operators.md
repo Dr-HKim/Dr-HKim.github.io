@@ -3,10 +3,9 @@ layout: post
 title: R 기초 202 내장 연산자들 (Built-in Operators)  
 date: 2017-10-02  
 category:
-- R for Beginners  
-
-tags: [R]  
-published: true  
+- R for Beginners
+tag: [R]  
+author: hkim  
 ---
 
 ***preface*** 이번 포스트에서는 R에 내장된 연산자를 사용하는 방법에 대하여 설명합니다.

@@ -1,12 +1,11 @@
 ---
 layout: post  
-title: 파이썬 기초 - Pandas and DataFrame  
+title: 파이썬 기초 05 Pandas and DataFrame  
 date: 2017-06-15  
 category:
-- Python for Beginners  
-
-tags: [python]  
-published: true  
+- Python for Beginners
+tag: [python]  
+author: hkim  
 ---
 
 ***preface*** 이번 포스트에서는 파이썬을 이용하여 데이터분석의 핵심이라 할 수 있는 pandas 패키지에 대해 알아보겠습니다. pandas 패키지는 숫자와 문자를 함께 표현한 테이블인 dataframe 을 사용할 수 있게 하여 R 혹은 SAS 와 유사하다는 인상을 받았습니다.
