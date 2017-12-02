@@ -14,7 +14,7 @@ layout: page
 
 ## Research Interests
 
-Loan Credit Risk, Probability of Default, Loss-given-default, Empirical and Theoretical Asset Pricing,
+Loan Credit Risk, Probability of Default, Loss-given-default, and Asset Pricing.
 
 <br>
 
