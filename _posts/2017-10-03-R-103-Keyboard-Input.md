@@ -25,7 +25,7 @@ weight <- c(160, 110, 220)
 mydata <- data.frame(age,gender,weight)
 ```
 
-R 내장 스프레드 시트(built in spreadsheet)를 사용하여 데이터를 입력 할 수도 있습니다.
+R 내장 스프레드 시트(built in spreadsheet)를 사용하여 데이터를 입력할 수도 있습니다.
 
 ```r
 # enter data using editor
