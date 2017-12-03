@@ -1,7 +1,7 @@
 ---
 layout: post  
 title: R 기초 202 내장 연산자들 (Built-in Operators)  
-date: 2017-10-02  
+date: 2017-10-12  
 category:
 - R for Beginners
 tag: [R]  

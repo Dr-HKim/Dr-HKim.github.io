@@ -1,7 +1,7 @@
 ---
 layout: post  
 title: R 기초 201 새로운 변수 만들기 (Creating New Variables)  
-date: 2017-10-02  
+date: 2017-10-11  
 category:
 - R for Beginners
 tag: [R]  

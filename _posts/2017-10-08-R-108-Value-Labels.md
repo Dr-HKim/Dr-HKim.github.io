@@ -1,7 +1,7 @@
 ---
 layout: post  
 title: R 기초 108 값 레이블 (Value Labels)  
-date: 2017-10-01  
+date: 2017-10-08  
 category:
 - R for Beginners
 tag: [R]  

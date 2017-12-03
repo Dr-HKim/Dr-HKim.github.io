@@ -1,7 +1,7 @@
 ---
 layout: post  
 title: R 기초 204 제어문 (Control Structures)  
-date: 2017-10-02  
+date: 2017-10-14  
 category:
 - R for Beginners
 tag: [R]  

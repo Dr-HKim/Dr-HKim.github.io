@@ -1,7 +1,7 @@
 ---
 layout: post  
 title: R 기초 205 사용자 정의 함수 (User-written Functions)  
-date: 2017-10-02  
+date: 2017-10-15  
 category:
 - R for Beginners
 tag: [R]  

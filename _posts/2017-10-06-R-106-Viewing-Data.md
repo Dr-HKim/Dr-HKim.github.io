@@ -1,7 +1,7 @@
 ---
 layout: post  
 title: R 기초 106 데이터 살펴보기 (Viewing Data)  
-date: 2017-10-01  
+date: 2017-10-06  
 category:
 - R for Beginners
 tag: [R]  

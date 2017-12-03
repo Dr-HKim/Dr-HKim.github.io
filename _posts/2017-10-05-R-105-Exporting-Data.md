@@ -1,7 +1,7 @@
 ---
 layout: post  
 title: R 기초 105 데이터 출력하기 (Exporting Data)  
-date: 2017-10-01  
+date: 2017-10-05  
 category:
 - R for Beginners
 tag: [R]  

@@ -1,7 +1,7 @@
 ---
 layout: post  
 title: R 기초 109 결측치 처리 (Missing Data)  
-date: 2017-10-01  
+date: 2017-10-09  
 category:
 - R for Beginners
 tag: [R]  
@@ -15,7 +15,7 @@ author: hkim
 다음 자료를 참고하였습니다:  
 - [http://www.statmethods.net/input/missingdata.html](http://www.statmethods.net/input/missingdata.html)
 
-R에서 결측값은 기호 NA (Not Available) 로 표시됩니다. 불가능한 값(예: 0으로 나누기)은 기호 NaN (Not a Number) 로 표시됩니다. SAS와 달리 R은 문자 및 숫자 데이터에 대해 동일한 기호를 사용합니다. 결측치 처리에 대한 더 자새한 내용은 [데이터처리 과정](https://www.datacamp.com/courses/cleaning-data-in-r)을 참고하세요.
+R에서 결측값은 기호 NA (Not Available) 로 표시됩니다. 불가능한 값(예: 0으로 나누기)은 기호 NaN (Not a Number) 로 표시됩니다. SAS와 달리 R은 문자 및 숫자 데이터에 대해 동일한 기호를 사용합니다. 결측치 처리에 대한 더 자세한 내용은 [데이터처리 과정](https://www.datacamp.com/courses/cleaning-data-in-r)을 참고하세요.
 
 
 
