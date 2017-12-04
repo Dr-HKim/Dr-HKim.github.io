@@ -4,6 +4,36 @@
 layout: page
 title: Blog
 ---
+<section>
+	{% if site.posts.size == 0 %}
+		<p class="text-center">Nothing published yet!</p>
+	{% elsif site.paginate %}
+		{% for post in paginator.posts %}
+			{% if post.category != 'projects' %}
+				{% if post.hidden != true %}
+					<aside class="date" style="float: right; color: $gama; font-size: smaller; font-weight: 300;"><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %d %Y" }}</time></aside>
+
+					<h4><a href="{{ site.baseurl }}{{ post.url }}" style="text-decoration:none;">{{post.title}}</a></h4>
+				{% endif %}
+			{% endif %}
+		{% endfor %}
+
+		{% include pagination.html%}
+	{% else %}
+		{% for post in site.posts %}
+			{% if post.category != 'projects' %}
+				{% if post.hidden != true %}
+					<aside class="date" style="float: right; color: $gama; font-size: smaller; font-weight: 300;"><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %d %Y" }}</time></aside>
+
+					<h4><a href="{{ site.baseurl }}{{ post.url }}" style="text-decoration:none;">{{post.title}}</a></h4>
+				{% endif %}
+			{% endif %}
+		{% endfor %}
+	{% endif %}
+</section>
+
+
+<!--
 <section class="list">
 	{% if site.posts.size == 0 %}
 		<p class="text-center">Nothing published yet!</p>
@@ -27,3 +57,4 @@ title: Blog
 		{% endfor %}
 	{% endif %}
 </section>
+-->

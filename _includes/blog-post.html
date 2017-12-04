@@ -1,6 +1,6 @@
 <div class="item {% if post.star %}star{% endif %}">
     <a class="url" href="{{ site.url }}{{ post.url }}">
         <aside class="date"><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %d %Y" }}</time></aside>
-        <h4 class="title">{{ post.title }}</h4>
+        <h4 class="title" style="text-decoration:none;">{{ post.title }}</h4>
     </a>
 </div>
