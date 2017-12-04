@@ -33,4 +33,4 @@ from dataframe | -                   | as.matrix(myframe)     | -
 
 ## Dates
 
-문자 혹은 숫자 데이터를 날짜 데이터로 변경할 수 있습니다. 날짜 형식의 데이터를 다루는 방법은 [여기](https://dr-hkim.github.io/r%20for%20beginners/2017/10/10/R-110-Date-Values/)를 참고합시다.
+문자 혹은 숫자 데이터를 날짜 데이터로 변경할 수 있습니다. 날짜 형식의 데이터를 다루는 방법은 [여기](https://dr-hkim.github.io/R-110-Date-Values/)를 참고합시다.
