@@ -16,13 +16,12 @@ author: hkim
 다음 자료를 참고하였습니다:  
 - [http://www.statmethods.net/management/typeconversion.html](http://www.statmethods.net/management/typeconversion.html)
 
-Type conversions in R work as you would expect. For example, adding a character string to a numeric vector converts all the elements in the vector to character.
+R 에서는 데이터 형식을 사용합니다. 데이터프레임에서 하나의 column 은 하나의 데이터 형식을 가집니다. 예를 들어, 숫자 벡터가 들어간 column 에 문자를 입력하면 해당 colum 은 문자로 변환됩니다. is.foo() 함수는 데이터 형식이 foo 인지를 TRUE/FALSE 로 반환합니다. as.foo() 함수는 해당 데이터를 foo 형식으로 변환합니다.
 
-Use is.foo to test for data type foo. Returns TRUE or FALSE
-Use as.foo to explicitly convert it.
-
+```
 is.numeric(), is.character(), is.vector(), is.matrix(), is.data.frame()
 as.numeric(), as.character(), as.vector(), as.matrix(), as.data.frame()
+```
 
 ## Examples
 
@@ -34,10 +33,4 @@ from dataframe | -                   | as.matrix(myframe)     | -
 
 ## Dates
 
-문자 혹은 숫자 데이터를 날짜 데이터로 변경할 수 있습니다. 날짜 형식의 데이터를 다루는 방법은 [여기](https://yui7890.github.io/r%20for%20beginners/2017/10/01/R-110-Date-Values/)를 참고합시다.
-
-You can convert dates to and from character or numeric data. See date values for more information.
-
-## To Practice
-
-To explore data types in R, try this free interactive introduction to R course.
+문자 혹은 숫자 데이터를 날짜 데이터로 변경할 수 있습니다. 날짜 형식의 데이터를 다루는 방법은 [여기](https://dr-hkim.github.io/r%20for%20beginners/2017/10/10/R-110-Date-Values/)를 참고합시다.
