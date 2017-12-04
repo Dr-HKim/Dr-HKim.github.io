@@ -8,7 +8,7 @@ description: A blog about technology and stuff related
 # if it's an external image, update below for true
 # better with square images
 external-image: false
-picture: assets/images/140816_imadeface2.jpg
+picture: assets/images/profiles/140816_imadeface.jpg
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
@@ -58,7 +58,7 @@ authors:
         name: Hyeongjun Kim
         bio: Financial Economist, Data Scientist, and Hearthstone Player
         external-image: false
-        picture: assets/images/140816_imadeface2.jpg
+        picture: assets/images/profiles/140816_imadeface.jpg
         twitter: yui7890
 #    jamesfoster:
 #        name: James Foster
