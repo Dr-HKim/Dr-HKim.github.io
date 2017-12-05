@@ -1,66 +1,41 @@
-<p align="center">
-    <h2 align="center">Indigo Minimalist Jekyll Template - <a href="http://sergiokopplin.github.io/indigo/">Demo</a> · <a href="https://travis-ci.org/sergiokopplin/indigo"><img src="https://camo.githubusercontent.com/5393485b732749b3499264168fa8af60166071e8/68747470733a2f2f7472617669732d63692e6f72672f73657267696f6b6f70706c696e2f696e6469676f2e7376673f6272616e63683d67682d7061676573" alt="Build Status" data-canonical-src="https://travis-ci.org/sergiokopplin/indigo.svg?branch=gh-pages" style="max-width:100%;"></a></h2>
-</p>
+![Profile Image]({{ site.url }}/{{ site.picture }})
 
-<p align="center">This is a simple and minimalist template for Jekyll for those who likes to eat noodles.</p>
+<br>
 
-***
+# Hyeongjun Kim, Ph.D.
 
-<p align="center">
-    <b><a href="README.md#what-has-inside">What has inside</a></b>
-    |
-    <b><a href="README.md#setup">Setup</a></b>
-    |
-    <b><a href="README.md#settings">Settings</a></b>
-    |
-    <b><a href="README.md#how-to">How to</a></b>
-</p>
+<center>Financial Economist, Data Scientist, and Hearthstone Player</center>
 
-<p align="center">
-    <img src="https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png" />
-</p>
+<br>
 
-## What has inside
+## Research Interests
 
-- [Jekyll](https://jekyllrb.com/), [Sass](http://sass-lang.com/) ~[RSCSS](http://rscss.io/)~ and [SVG](https://www.w3.org/Graphics/SVG/)
-- Tests with [Travis](https://travis-ci.org/)
-- Google Speed: [98/100](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsergiokopplin.github.io%2Findigo%2F);
-- No JS. :sunglasses:
+Loan Credit Risk, Probability of Default, Loss-given-default, and Asset Pricing.
 
-## Setup
+<br>
 
-0. :star: to the project. :metal:
-2. Fork the project [Indigo](https://github.com/sergiokopplin/indigo/fork)
-3. Edit `_config.yml` with your data (check <a href="README.md#settings">settings</a> section)
-4. Write some posts :bowtie:
+## Publications
 
-If you want to test locally on your machine, do the following steps also:
+Kim, H., Cho, H. & Ryu, D. (forthcoming). An Empirical Study on Credit Card Loan Delinquency. *Economic Systems*.
 
-1. Install [Jekyll](http://jekyllrb.com), [NodeJS](https://nodejs.org/) and [Bundler](http://bundler.io/).
-2. Clone the forked repo on your machine
-3. Enter the cloned folder via terminal and run `bundle install`
-4. Then run `bundle exec jekyll serve --config _config.yml,_config-dev.yml`
-5. Open it in your browser: `http://localhost:4000`
-6. Test your app with `bundle exec htmlproofer ./_site`
-7. Do you want to use the [jekyll-admin](https://jekyll.github.io/jekyll-admin/) plugin to edit your posts? Go to the admin panel: `http://localhost:4000/admin`. The admin panel will not work on GitHub Pages, [only locally](https://github.com/jekyll/jekyll-admin/issues/341#issuecomment-292739469).
+Kim, H., Cho, H. & Ryu, D. (2017). Characteristics of Mortgage Terminations: an Analysis of a Loan-Level Dataset. *Journal of Real Estate Finance and Economics*, pp. 1-30. [link](https://link.springer.com/article/10.1007/s11146-017-9620-5)
 
-## Settings
+Kim, H., Kim, H. & Cho, H. (2016). 수익률 횡단면변동성(Return Dispersion)의 시장예측력에 관한 실증연구(An Empirical Study on Predictability of Return Dispersion). *한국증권학회지* 45(2), pp. 285-316. [link](http://www.iksa.or.kr/search/search01_view.php?num=1065&search=list&code=1100006&searchSub=&searchCon=&searchName=&searchYear1=&searchYear2=&searchCount1=&searchCount2=&searchCount3=&searchCount4=&page=1&PHPSESSID=a355d2f344ba17b3564c380eb5519740)
 
-You must fill some informations on `_config.yml` to customize your site.
+<br>
 
-```
-name: John Doe
-bio: 'A Man who travels the world eating noodles'
-picture: 'assets/images/profile.jpg'
-...
+## Selected Academic Presentations
 
-and lot of other options, like width, projects, pages, read-time, tags, related posts, animations, multiple-authors, etc.
-```
+2015 재무금융 관련 5개 학회 학술연구발표회 및 특별심포지엄 in Cheonan, Korea (May 2015)  
+Paper presented: “An Empirical Study on Credit Card LoanDelinquency in Korea ”
 
-## How To?
+2015 Seoul Conference for the Society of the Study of Emerging Markets in Seoul, Korea (January 2015)  
+Paper presented: “Default Risk Characteristics of Advance Payment Guarantees in the Construction 	Industry”
 
-Check the [FAQ](./FAQ.md) if you have any doubt or problem.
+<br>
 
----
+## Skills
 
-[MIT](http://kopplin.mit-license.org/) License © Sérgio Kopplin
+Data Analysis w/ R, python, SAS, MATLAB, Excel VBA, and E-Views
+
+<br>
