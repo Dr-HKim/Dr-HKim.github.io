@@ -31,7 +31,7 @@ Kim, H., Kim, H. & Cho, H. (2016). 수익률 횡단면변동성(Return Dispersio
 ## Selected Academic Presentations
 
 2015 재무금융 관련 5개 학회 학술연구발표회 및 특별심포지엄 in Cheonan, Korea (May 2015)  
-Paper presented: “An Empirical Study on Credit Card LoanDelinquency in Korea ”
+Paper presented: “An Empirical Study on Credit Card Loan Delinquency in Korea ”
 
 2015 Seoul Conference for the Society of the Study of Emerging Markets in Seoul, Korea (January 2015)  
 Paper presented: “Default Risk Characteristics of Advance Payment Guarantees in the Construction 	Industry”

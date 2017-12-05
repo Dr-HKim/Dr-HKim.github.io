@@ -98,7 +98,8 @@ index.html 에서
 
 ## 검색 기능을 추가는 방법
 
-https://github.com/jekylltools/jekyll-tipue-search
+참고:  
+- https://github.com/jekylltools/jekyll-tipue-search
 
 search.html 을 root 폴더에 넣어두면 sidebar 에 알아서 뜬다.
 
