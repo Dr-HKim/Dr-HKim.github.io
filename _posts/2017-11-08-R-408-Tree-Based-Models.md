@@ -26,9 +26,9 @@ To grow a tree, use
 rpart(formula, data=, method=,control=) where
 
 function | description
----------|------------------------------
+---------|----------------------------
 formula  | is in the format
--        | outcome ~ predictor1+predictor2+predictor3+ect.
+.        | outcome ~ predictor1+predictor2+predictor3+ect.
 data=    | specifies the data frame
 method=  | "class" for a classification tree
 -        | "anova" for a regression tree
