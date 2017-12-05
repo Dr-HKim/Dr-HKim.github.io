@@ -1,6 +1,6 @@
 ---
 title: "Jekyll 및 GitHub Pages 로 블로그하기"
-layout: post
+layout: post   post
 date: 2017-06-02 22:44
 image: /assets/images/markdown.jpg
 headerImage: false

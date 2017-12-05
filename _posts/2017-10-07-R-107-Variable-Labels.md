@@ -3,7 +3,7 @@ layout: post
 title: R 기초 107 변수 레이블 (Variable Labels)  
 date: 2017-10-07  
 category:
-- R for Beginners
+- R for Beginners  
 tag: [R]  
 author: hkim  
 ---

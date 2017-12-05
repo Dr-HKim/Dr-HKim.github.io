@@ -3,7 +3,7 @@ layout: post
 title: R 기초 104 DB에서 데이터 불러오기 (Database Input)  
 date: 2017-10-04  
 category:
-- R for Beginners
+- R for Beginners  
 tag: [R]  
 author: hkim  
 ---

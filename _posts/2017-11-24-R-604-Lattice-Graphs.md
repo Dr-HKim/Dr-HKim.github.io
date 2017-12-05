@@ -1,11 +1,12 @@
 ---
-layout:
+layout: post  
 title: Lattice Graphs
 date: 2017-11-24  
 category:
-- R for Beginners
+- R for Beginners  
 tag: [R]    
 author: hkim  
+hidden: true # don't count this post in blog pagination
 ---
 
 다음 자료를 참고하였습니다:  

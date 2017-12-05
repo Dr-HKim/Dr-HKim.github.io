@@ -3,7 +3,7 @@ layout: post
 title: R 기초 208 데이터 합치기 (Aggregating Data)  
 date: 2017-10-18  
 category:
-- R for Beginners
+- R for Beginners  
 tag: [R]  
 author: hkim  
 ---

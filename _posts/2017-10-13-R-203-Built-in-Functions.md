@@ -3,7 +3,7 @@ layout: post
 title: R 기초 203 내장 함수들 (Built-in Functions)  
 date: 2017-10-13  
 category:
-- R for Beginners
+- R for Beginners  
 tag: [R]  
 author: hkim  
 ---

@@ -1,11 +1,12 @@
 ---
-layout:
+layout: post  
 title: Axes and Text
 date: 2017-11-22  
 category:
-- R for Beginners
+- R for Beginners  
 tag: [R]    
 author: hkim  
+hidden: true # don't count this post in blog pagination
 ---
 
 다음 자료를 참고하였습니다:  

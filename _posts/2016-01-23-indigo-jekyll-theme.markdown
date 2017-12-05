@@ -1,6 +1,6 @@
 ---
 title: ":ramen: Indigo, minimalist jekyll theme"
-layout:
+layout: post  
 date: 2016-01-23 22:10
 tag: 
 image: https://koppl.in/indigo/assets/images/jekyll-logo-light-solid.png
