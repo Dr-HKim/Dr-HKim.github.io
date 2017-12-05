@@ -10,8 +10,6 @@ author: hkim
 
 ***preface*** 이번 포스트에서는 R에서 작성한 데이터를 출력하는 방법에 대하여 설명합니다.
 
-# Keyboard Input
-
 다음 자료를 참고하였습니다:  
 - [http://www.statmethods.net/input/exportingdata.html](http://www.statmethods.net/input/exportingdata.html)
 
