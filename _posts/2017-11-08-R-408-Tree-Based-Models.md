@@ -5,14 +5,13 @@ title: Tree-Based Models
 
 date: 2017-11-08  
 
-category:
-- R for Beginners  
+category: [R for Beginners]  
 
 tag: [R]    
 
 author: hkim  
 
-hidden: true # don't count this post in blog pagination  
+hidden: true  
 ---
 
 다음 자료를 참고하였습니다:  
