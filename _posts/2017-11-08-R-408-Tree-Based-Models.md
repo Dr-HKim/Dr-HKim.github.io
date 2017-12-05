@@ -14,6 +14,11 @@ hidden: true # don't count this post in blog pagination
 
 # Tree-Based Models
 
+
+Recursive partitioning 은 데이터 마이닝의 기본 도구입니다. 분류 된 (분류 트리) 또는 연속 (회귀 트리) 결과를 예측하기위한 의사 결정 규칙을 쉽게 시각화하면서 데이터 세트의 구조를 탐색하는 데 도움이됩니다. 
+
+이 섹션에서는 CART modeling, Conditional Inference Trees, Random Forests 에 대해 간략하게 설명합니다.
+
 Recursive partitioning is a fundamental tool in data mining. It helps us explore the stucture of a set of data, while developing easy to visualize decision rules for predicting a categorical (classification tree) or continuous (regression tree) outcome. This section briefly describes CART modeling, conditional inference trees, and random forests.
 
 ## CART Modeling via rpart
