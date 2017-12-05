@@ -11,7 +11,7 @@ permalink: /search/
   </ul>
 </div>
 
-<!— Html Elements for Search -->
+<!-- Html Elements for Search -->
 <div id="search-container">
 <input type="text" id="search-input" placeholder="search...">
 <ul id="results-container"></ul>
@@ -33,3 +33,17 @@ permalink: /search/
         exclude: ['Welcome']
       })
 </script>
+
+<!-- Script for Google Custom Search -->
+<script>
+  (function() {
+    var cx = '001917551734242709439:ztrysjfbirs';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
