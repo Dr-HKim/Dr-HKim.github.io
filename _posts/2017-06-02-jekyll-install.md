@@ -1,14 +1,13 @@
 ---
-title: "Jekyll 및 GitHub Pages 로 블로그하기"
 layout: post  
-date: 2017-06-02 22:44
-image: /assets/images/markdown.jpg
-headerImage: false
-tag:
-- jekyll
-category: blog
-author: hkim
-description: Markdown summary with different options
+title: "Jekyll 및 GitHub Pages 로 블로그하기"  
+date: 2017-06-02  
+category: [blog]  
+tag: [jekyll]  
+author: hkim   
+image: https://jekyllrb-ko.github.io/img/logo-2x.png  
+headerImage: true
+
 ---
 
 

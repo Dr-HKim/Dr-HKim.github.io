@@ -2,11 +2,11 @@
 layout: post  
 title: Regression Diagnostics
 date: 2017-10-27  
-category:
-- R for Beginners  
-tag: [R]   
+category: [R for Beginners]  
+tag: [R]  
 author: hkim  
 hidden: true # don't count this post in blog pagination  
+
 ---
 
 다음 자료를 참고하였습니다:  

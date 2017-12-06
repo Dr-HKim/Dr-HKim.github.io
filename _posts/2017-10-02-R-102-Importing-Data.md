@@ -2,10 +2,10 @@
 layout: post  
 title: R 기초 102 데이터 불러오기 (Importing Data)  
 date: 2017-10-02  
-category:
-- R for Beginners  
+category: [R for Beginners]  
 tag: [R]  
 author: hkim  
+
 ---
 
 ***preface*** 이번 포스트에서는 R에서 데이터를 불러오는 방법들에 대하여 설명합니다.

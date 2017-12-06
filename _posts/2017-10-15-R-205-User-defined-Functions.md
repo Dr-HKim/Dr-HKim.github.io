@@ -2,10 +2,10 @@
 layout: post  
 title: R 기초 205 사용자 정의 함수 (User-written Functions)  
 date: 2017-10-15  
-category:
-- R for Beginners  
+category: [R for Beginners]  
 tag: [R]  
 author: hkim  
+
 ---
 
 ***preface*** 이번 포스트에서는 사용자 정의 함수를 사용하는 방법에 대하여 설명합니다.

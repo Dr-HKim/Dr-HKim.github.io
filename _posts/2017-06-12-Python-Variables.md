@@ -2,10 +2,10 @@
 layout: post  
 title: 파이썬 기초 02 변수의 종류  
 date: 2017-06-12  
-category:
-- Python for Beginners
+category: [Python for Beginners]  
 tag: [python]  
 author: hkim  
+
 ---
 
 ***preface*** 이번 포스트에서는 파이썬에서 사용되는 기본적인 변수들에 대해 알아보겠습니다.

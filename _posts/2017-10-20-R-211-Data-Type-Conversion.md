@@ -3,10 +3,10 @@ layout: post
 comments: false  
 title: R 기초 211 데이터 형식 변환하기 (Data Type Conversion)  
 date: 2017-10-20  
-category:
-- R for Beginners  
+category: [R for Beginners]  
 tag: [R]  
 author: hkim  
+
 ---
 
 ***preface*** 이번 포스트에서는 데이터 형식(data type)을 변환하는 방법에 대하여 설명합니다.

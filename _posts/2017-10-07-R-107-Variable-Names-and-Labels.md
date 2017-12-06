@@ -2,10 +2,10 @@
 layout: post  
 title: R 기초 107 변수 이름 및 레이블 (Variable Names and Labels)  
 date: 2017-10-07  
-category:
-- R for Beginners  
+category: [R for Beginners]  
 tag: [R]  
 author: hkim  
+
 ---
 
 ***preface*** 이번 포스트에서는 R에서 변수의 이름과 레이블을 설정하는 방법에 대하여 설명합니다.

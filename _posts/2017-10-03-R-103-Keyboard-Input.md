@@ -2,10 +2,10 @@
 layout: post  
 title: R 기초 103 직접 데이터 입력하기 (Keyboard Input)  
 date: 2017-10-03  
-category:
-- R for Beginners  
+category: [R for Beginners]  
 tag: [R]  
 author: hkim  
+
 ---
 
 ***preface*** 이번 포스트에서는 R에서 직접 데이터를 입력하는 방법에 대하여 설명합니다.

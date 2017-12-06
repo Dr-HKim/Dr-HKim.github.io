@@ -2,10 +2,10 @@
 layout: post  
 title: R 기초 109 결측치 처리 (Missing Data)  
 date: 2017-10-09  
-category:
-- R for Beginners  
+category: [R for Beginners]  
 tag: [R]  
 author: hkim  
+
 ---
 
 ***preface*** 이번 포스트에서는 R에서 결측치를 처리하는 방법에 대하여 설명합니다.

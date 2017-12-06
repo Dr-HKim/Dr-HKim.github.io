@@ -2,11 +2,10 @@
 layout: post  
 title: 파이썬 기초 01 설치 및 환경설정  
 date: 2017-06-11  
-category:
-- Python for Beginners
-tag:
-- python
+category: [Python for Beginners]  
+tag: [python]  
 author: hkim  
+
 ---
 
 ***preface*** 이번 포스트에서는 윈도우 환경에서 데이터 분석을 목적으로 파이썬(Python)을 설치하고 환경설정을 하는 방법을 다룹니다.

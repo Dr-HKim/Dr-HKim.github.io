@@ -2,10 +2,10 @@
 layout: post  
 title: R 기초 104 DB에서 데이터 불러오기 (Database Input)  
 date: 2017-10-04  
-category:
-- R for Beginners  
+category: [R for Beginners]  
 tag: [R]  
 author: hkim  
+
 ---
 
 ***preface*** 이번 포스트에서는 DB 에서 데이터를 읽어오는 방법에 대하여 설명합니다.
