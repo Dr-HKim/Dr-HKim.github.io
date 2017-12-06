@@ -48,7 +48,7 @@ layout: page
 
     {% for tag in tags_list %}
       <span style="font-size: {{ tag | last | size | times: 40 | divided_by: site.tags.size | plus: 80  }}%">
-        <a href="#{{ tag | first | slugify }}" style="text-decoration:none;">
+        <a href="/tags/#{{ tag | first | slugify }}" style="text-decoration:none;">
           {{ tag | first }}
         </a> &nbsp;&nbsp;
       </span>
