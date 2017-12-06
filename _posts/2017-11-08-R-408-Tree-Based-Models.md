@@ -70,7 +70,7 @@ Specifically, use printcp( ) to examine the cross-validated error results, selec
 to automatically select the complexity parameter associated with the smallest cross-validated error. Thanks to HSAUR for this idea.
 
 
-## Classification Tree example
+### Example: Classification Tree
 
 Let's use the data frame kyphosis to predict a type of deformation (kyphosis) after surgery, from age in months (Age), number of vertebrae involved (Number), and the highest vertebrae operated on (Start).
 
@@ -113,7 +113,7 @@ post(pfit, file = "c:/ptree.ps",
 Pruned Classificaiton Tree Pruned Classification Tree in Postscript click to view
 
 
-## Regression Tree example
+### Example: Regression Tree
 
 In this example we will predict car mileage from price, country, reliability, and car type. The data frame is cu.summary.
 
@@ -122,7 +122,7 @@ In this example we will predict car mileage from price, country, reliability, an
 library(rpart)
 
 # grow tree
-fit <- rpart(Mileage~Price + Country + Reliability + Type,
+fit <- rpart(Mileage ~ Price + Country + Reliability + Type,
    method="anova", data=cu.summary)
 
 printcp(fit) # display the results
