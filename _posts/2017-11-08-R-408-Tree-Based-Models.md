@@ -14,7 +14,12 @@ hidden: false
 
 ![Example_CART](https://upload.wikimedia.org/wikipedia/commons/f/fe/CART_tree_titanic_survivors_KOR.png)
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/CART_tree_titanic_survivors_KOR.png" width="200" />
+**[그림: 타이타닉호 탑승객 생존여부 결정 트리]** (자료: 위키피디아)
+{: .text-center }
+
+**[그림: 타이타닉호 탑승객 생존여부 결정 트리]** (자료: 위키피디아) {: .text-center }
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/CART_tree_titanic_survivors_KOR.png" width="400" />
 
 다음 자료를 참고하였습니다:  
 - [https://www.statmethods.net/advstats/cart.html](https://www.statmethods.net/advstats/cart.html)
