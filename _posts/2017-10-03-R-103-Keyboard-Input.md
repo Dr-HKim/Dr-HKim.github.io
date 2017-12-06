@@ -13,7 +13,7 @@ author: hkim
 # Keyboard Input
 
 다음 자료를 참고하였습니다:  
-- http://www.statmethods.net/input/importingdata.html
+- [http://www.statmethods.net/input/importingdata.html](http://www.statmethods.net/input/importingdata.html)
 
 일반적으로는 SAS, SPSS, Excel, Stata, 데이터베이스 또는 ASCII 파일에서 데이터 프레임을 가져옵니다. 하지만 직접 자료를 입력하고자 한다면 다음과 같이 합니다.
 
