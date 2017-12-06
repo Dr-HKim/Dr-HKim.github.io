@@ -8,6 +8,7 @@ category: [R for Beginners]
 tag: [R]    
 author: hkim  
 hidden: false  
+
 ---
 
 ***preface*** Tree-Based Models(Decision Tree, Random Forest 등)는 직관적이면서도 강력한 분석 방법입니다. 범주형 변수(categorical variable)를 대상으로 하는 classification 과 연속형 변수(continuous variable)를 대상으로 하는 regression 모두에 적용할 수 있습니다. 의사 결정 규칙을 쉽게 시각화하면서 데이터 구조를 탐색하는 데 도움이됩니다. 이번 포스트에서는 CART(Classificaiton and Regression Trees), Conditional Inference Trees, Random Forests 에 대해 간략하게 설명합니다.
