@@ -2,11 +2,11 @@
 layout: post  
 title: Correlations
 date: 2017-10-23  
-category:
-- R for Beginners  
+category: [R for Beginners]  
 tag: [R]   
 author: hkim  
 hidden: true # don't count this post in blog pagination  
+
 ---
 
 다음 자료를 참고하였습니다:  
