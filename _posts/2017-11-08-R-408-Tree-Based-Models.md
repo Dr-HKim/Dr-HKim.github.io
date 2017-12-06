@@ -10,7 +10,7 @@ hidden: false
 
 ***preface*** Tree-Based Models(Decision Tree, Random Forest 등)는 직관적이면서도 강력한 분석 방법입니다. 범주형 변수(categorical variable)를 대상으로 하는 classification 과 연속형 변수(continuous variable)를 대상으로 하는 regression 모두에 적용할 수 있습니다. 의사 결정 규칙을 쉽게 시각화하면서 데이터 구조를 탐색하는 데 도움이됩니다. 이번 포스트에서는 CART(Classificaiton and Regression Trees), Conditional Inference Trees, Random Forests 에 대해 간략하게 설명합니다.
 
-![Example_CART](https://commons.wikimedia.org/wiki/File:CART_tree_titanic_survivors_KOR.png)
+![Example_CART](https://upload.wikimedia.org/wikipedia/commons/f/fe/CART_tree_titanic_survivors_KOR.png)
 
 다음 자료를 참고하였습니다:  
 - [https://www.statmethods.net/advstats/cart.html](https://www.statmethods.net/advstats/cart.html)
@@ -24,8 +24,9 @@ rpart 패키지를 이용하면 CART(Classificaiton and Regression Trees) 분석
 
 ### 1. Tree 생성하기 (Grow the Tree)
 
-To grow a tree, use
-`rpart(formula, data=, method=,control=)` where
+Tree 를 생성하기 위해서는 rpart 패키지의 rpart() 함수를 사용합니다.
+
+`rpart(formula, data=, method=,control=)`
 
 function | description
 ---------|----------------------------
@@ -38,9 +39,9 @@ control= | optional parameters for controlling tree growth.
 .        | For example, control=rpart.control(minsplit=30, cp=0.001) requires that the minimum number of observations in a node be 30 before attempting a split and that a split must decrease the overall lack of fit by a factor of 0.001 (cost complexity factor) before being attempted.
 
 
-### 2. Examine the results
+### 2. 결과 해석(Examine the results)
 
-The following functions help us to examine the results.
+다음 함수를 이용하여 분석 결과를 해석할 수 있습니다.
 
 function         | description
 -----------------|------------------------------
