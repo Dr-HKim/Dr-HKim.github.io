@@ -1,39 +1,31 @@
 ---
 layout: post  
-
-title: Tree-Based Models
-
+title: Tree-Based Models  
 date: 2017-11-08  
-
 category: [R for Beginners]  
-
 tag: [R]    
-
 author: hkim  
-
-hidden: true  
+hidden: false  
 ---
+
+***preface*** Tree-Based Models(Decision Tree, Random Forest 등)는 직관적이면서도 강력한 분석 방법입니다. 범주형 변수(categorical variable)를 대상으로 하는 classification 과 연속형 변수(continuous variable)를 대상으로 하는 regression 모두에 적용할 수 있습니다. 의사 결정 규칙을 쉽게 시각화하면서 데이터 구조를 탐색하는 데 도움이됩니다. 이번 포스트에서는 CART(Classificaiton and Regression Trees), Conditional Inference Trees, Random Forests 에 대해 간략하게 설명합니다.
+
+![Example_CART](https://commons.wikimedia.org/wiki/File:CART_tree_titanic_survivors_KOR.png)
 
 다음 자료를 참고하였습니다:  
 - [https://www.statmethods.net/advstats/cart.html](https://www.statmethods.net/advstats/cart.html)
+- [http://www.dodomira.com/2016/05/29/564/](http://www.dodomira.com/2016/05/29/564/)
 
-# Tree-Based Models
 
 
-Recursive partitioning 은 데이터 마이닝의 기본 도구입니다. 분류 된 (분류 트리) 또는 연속 (회귀 트리) 결과를 예측하기위한 의사 결정 규칙을 쉽게 시각화하면서 데이터 세트의 구조를 탐색하는 데 도움이됩니다. 
+## rpart 패키지를 이용한 CART Modeling
 
-이 섹션에서는 CART modeling, Conditional Inference Trees, Random Forests 에 대해 간략하게 설명합니다.
-
-Recursive partitioning is a fundamental tool in data mining. It helps us explore the stucture of a set of data, while developing easy to visualize decision rules for predicting a categorical (classification tree) or continuous (regression tree) outcome. This section briefly describes CART modeling, conditional inference trees, and random forests.
-
-## CART Modeling via rpart
-
-Classification and regression trees (as described by Brieman, Freidman, Olshen, and Stone) can be generated through the rpart package. Detailed information on rpart is available in An Introduction to Recursive Partitioning Using the RPART Routines. The general steps are provided below followed by two examples.
+rpart 패키지를 이용하면 CART(Classificaiton and Regression Trees) 분석을 실시할 수 있습니다. 일반적인 분석 과정은 다음과 같습니다.
 
 ### 1. Grow the Tree
 
 To grow a tree, use
-rpart(formula, data=, method=,control=) where
+`rpart(formula, data=, method=,control=)` where
 
 function | description
 ---------|----------------------------
@@ -43,11 +35,7 @@ data=    | specifies the data frame
 method=  | "class" for a classification tree
 .        | "anova" for a regression tree
 control= | optional parameters for controlling tree growth.
-.        | For example, control=rpart.control(minsplit=30, cp=0.001)
-.        | requires that the minimum number of observations in a node
-.        | be 30 before attempting a split and that a split must
-.        | decrease the overall lack of fit by a factor of 0.001
-.        | (cost complexity factor) before being attempted.
+.        | For example, control=rpart.control(minsplit=30, cp=0.001) requires that the minimum number of observations in a node be 30 before attempting a split and that a split must decrease the overall lack of fit by a factor of 0.001 (cost complexity factor) before being attempted.
 
 
 ### 2. Examine the results
@@ -65,12 +53,12 @@ plot(fit)        | plot decision tree
 text(fit)        | label the decision tree plot
 post(fit, file=) | create postscript plot of decision tree
 
-In trees created by rpart( ), move to the LEFT branch when the stated condition is true (see the graphs below).
+In trees created by `rpart( )`, move to the LEFT branch when the stated condition is true (see the graphs below).
 
 
-### 3. prune tree
+### 3. 가지치기(prune tree)
 
-Prune back the tree to avoid overfitting the data. Typically, you will want to select a tree size that minimizes the cross-validated error, the xerror column printed by printcp( ).
+Prune back the tree to avoid overfitting the data. Typically, you will want to select a tree size that minimizes the cross-validated error, the xerror column printed by `printcp( )`.
 
 Prune the tree to the desired size using
 `prune(fit, cp= )`
