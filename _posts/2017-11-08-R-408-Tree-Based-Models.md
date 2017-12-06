@@ -1,11 +1,11 @@
 ---
 layout: post  
-title: Tree-Based Models  
+title: R 기초 408 Tree-Based Models  
 date: 2017-11-08  
 image: https://upload.wikimedia.org/wikipedia/commons/f/fe/CART_tree_titanic_survivors_KOR.png  
 headerImage: true  
 category: [R for Beginners]  
-tag: [R]    
+tag: [R, classification]    
 author: hkim  
 hidden: false  
 
