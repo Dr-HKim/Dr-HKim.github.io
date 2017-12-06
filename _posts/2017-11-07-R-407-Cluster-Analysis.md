@@ -3,9 +3,10 @@ layout: post
 title: Cluster Analysis
 date: 2017-11-07  
 category: [R for Beginners]  
-tag: [R]    
+tag: [R]  
 author: hkim  
 hidden: true # don't count this post in blog pagination  
+
 ---
 
 다음 자료를 참고하였습니다:  
