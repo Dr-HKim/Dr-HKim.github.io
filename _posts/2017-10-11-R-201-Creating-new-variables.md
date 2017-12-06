@@ -2,10 +2,10 @@
 layout: post  
 title: R 기초 201 새로운 변수 만들기 (Creating New Variables)  
 date: 2017-10-11  
-category:
-- R for Beginners  
+category: [R for Beginners]  
 tag: [R]  
 author: hkim  
+
 ---
 
 ***preface*** 이번 포스트에서는 기존 자료를 활용하여 새로운 변수를 만들어내는 방법에 대하여 설명합니다.
