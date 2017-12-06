@@ -22,7 +22,7 @@ hidden: false
 
 rpart 패키지를 이용하면 CART(Classificaiton and Regression Trees) 분석을 실시할 수 있습니다. 일반적인 분석 과정은 다음과 같습니다.
 
-### 1. Grow the Tree
+### 1. Tree 생성하기 (Grow the Tree)
 
 To grow a tree, use
 `rpart(formula, data=, method=,control=)` where
