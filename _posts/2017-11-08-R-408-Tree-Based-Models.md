@@ -26,7 +26,7 @@ hidden: false
 
 ## rpart 패키지를 이용한 CART Modeling
 
-rpart 패키지를 이용하면 CART(Classificaiton and Regression Trees) 분석을 실시할 수 있습니다. 일반적인 분석 과정은 다음과 같습니다.
+rpart 패키지를 이용하면 CART 분석을 실시할 수 있습니다. 일반적인 분석 과정은 다음과 같습니다.
 
 ### 1. Tree 생성하기 (Grow the Tree)
 
@@ -70,7 +70,7 @@ Prune back the tree to avoid overfitting the data. Typically, you will want to s
 Prune the tree to the desired size using
 `prune(fit, cp= )`
 
-Specifically, use printcp( ) to examine the cross-validated error results, select the complexity parameter associated with minimum error, and place it into the prune( ) function. Alternatively, you can use the code fragment
+Specifically, use `printcp( )` to examine the cross-validated error results, select the complexity parameter associated with minimum error, and place it into the prune( ) function. Alternatively, you can use the code fragment
 
 `fit$cptable[which.min(fit$cptable[,"xerror"]),"CP"]`
 
@@ -216,11 +216,3 @@ importance(fit) # importance of each predictor
 For more details see the comprehensive Random Forest website.
 
 
-## Going Further
-
-This section has only touched on the options available. To learn more, see the CRAN Task View on Machine & Statistical Learning.
-
-
-## To Practice
-
-Try the Kaggle R Tutorial on Machine Learning which includes an exercise with Random Forests.
