@@ -12,12 +12,12 @@ headerImage: true
 
 ***preface*** 이번 포스트에서는 R에 내장된 연산자를 사용하는 방법에 대하여 설명합니다.
 
-# Built-in Operators
 
 다음 자료를 참고하였습니다:  
 - [http://www.statmethods.net/management/operators.html](http://www.statmethods.net/management/operators.html)
 
-R's binary and logical operators will look very familiar to programmers. Note that binary operators work on vectors and matrices as well as scalars.
+R 에 내장된 연사자는 다른 프로그래밍 언어와 유사합니다. 연산자는 scalar 뿐만 아니라 vector, matrix 에도 모두 적용됩니다.
+
 
 ## 산술연산자(Arithmetic Operators)
 

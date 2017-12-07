@@ -1,11 +1,13 @@
 ---
 layout: post  
-title: Matrix Algebra
+title: R 기초 410 행렬 연산 (Matrix Algebra)
 date: 2017-11-10  
 category: [R for Beginners]  
 tag: [R]  
 author: hkim  
 hidden: true # don't count this post in blog pagination  
+image: /assets/images/icon/iconmonstr-monitoring-6-240.png
+headerImage: true
 
 ---
 

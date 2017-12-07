@@ -12,17 +12,17 @@ headerImage: true
 
 ***preface*** 이번 포스트에서는 기존 자료를 활용하여 새로운 변수를 만들어내는 방법에 대하여 설명합니다.
 
-# Creating new variables
-
 다음 자료를 참고하였습니다:  
 - [http://www.statmethods.net/management/variables.html](http://www.statmethods.net/management/variables.html)
 
-Use the assignment operator <- to create new variables. A wide array of operators and functions are available here.
+## 연산을 통한 입력
+
+새로운 변수를 만들 때에는 `<-` 라는 연산자를 사용합니다. 새로운 변수 생성을 위해 다양한 연산자와 함수를 사용할 수 있습니다.
 
 ```r
 # Three examples for doing the same computations
 
-mydata$sum <- mydata$x1 + mydata$x2
+mydata$sum  <-  mydata$x1 + mydata$x2
 mydata$mean <- (mydata$x1 + mydata$x2)/2
 
 attach(mydata)
@@ -36,14 +36,13 @@ mean = (x1 + x2)/2
 )
 ```
 
-## Recoding variables
+## 조건에 따른 입력 (Recoding variables)
 
-In order to recode data, you will probably use one or more of R's control structures.
+R 의 제어문을 이용하여, 조건에 따른 변수를 입력할 수 있습니다.
 
 ```r
 # create 2 age categories
-mydata$agecat <- ifelse(mydata$age > 70,
-c("older"), c("younger"))
+mydata$agecat <- ifelse(mydata$age > 70, c("older"), c("younger"))
 
 # another example: create 3 age categories
 attach(mydata)
@@ -53,9 +52,9 @@ mydata$agecat[age <= 45] <- "Young"
 detach(mydata)
 ```
 
-## Renaming variables
+## 변수 이름 바꾸기 (Renaming variables)
 
-You can rename variables programmatically or interactively.
+다음 방법으로 변수 이름을 바꿀 수 있습니다.
 
 ```r
 # rename interactively

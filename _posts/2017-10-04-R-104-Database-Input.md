@@ -24,14 +24,14 @@ RODBC 패키지는 ODBC 인터페이스를 통해 데이터베이스 (Microsoft 
 주요 기능은 다음과 같습니다.
 
 
-Function | Description
----------|------------------
+Function                         | Description
+---------------------------------|------------------
 odbcConnect(dsn, uid="", pwd="") | Open a connection to an ODBC database
-sqlFetch(channel, sqtable) | Read a table from an ODBC database into a data frame
-sqlQuery(channel, query) | Submit a query to an ODBC database and return the results
+sqlFetch(channel, sqtable)       | Read a table from an ODBC database into a data frame
+sqlQuery(channel, query)         | Submit a query to an ODBC database and return the results
 sqlSave(channel, mydf, tablename = sqtable, append = FALSE) | Write or update (append=True) a data frame to a table in the ODBC database
-sqlDrop(channel, sqtable) | Remove a table from the ODBC database
-close(channel) | Close the connection
+sqlDrop(channel, sqtable)        | Remove a table from the ODBC database
+close(channel)                   | Close the connection
 
 ```r
 # RODBC Example

@@ -12,14 +12,14 @@ headerImage: true
 
 ***preface*** 이번 포스트에서는 제어문(if, while, for, switch, ifelse)을 사용하는 방법에 대하여 설명합니다.
 
-# Control Structures: if, while, for, switch, ifelse
 
 다음 자료를 참고하였습니다:  
 - [http://www.statmethods.net/management/controlstructures.html](http://www.statmethods.net/management/controlstructures.html)
 
-R 에서도 일반적인 제어문을 사용할 수 있습니다.
+## Control Structures: if, while, for, switch, ifelse
 
-R has the standard control structures you would expect. expr can be multiple (compound) statements by enclosing them in braces { }. It is more efficient to use built-in functions rather than control structures whenever possible.
+R 에서도 일반적인 제어문을 사용할 수 있습니다. 제어문(if, for)을 사용하는 것보다 가능하면 내장 함수를 사용하는 것이 더 효율적입니다.
+
 
 ## if-else
 ```r

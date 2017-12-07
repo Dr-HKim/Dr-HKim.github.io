@@ -3,7 +3,7 @@ layout: post
 title: Multiple (Linear) Regression
 date: 2017-10-26  
 category: [R for Beginners]  
-tag: [R]  
+tag: [R, regression]  
 author: hkim  
 hidden: true # don't count this post in blog pagination  
 image: /assets/images/icon/iconmonstr-monitoring-6-240.png
@@ -25,13 +25,13 @@ fit <- lm(y ~ x1 + x2 + x3, data=mydata)
 summary(fit) # show results
 
 # Other useful functions
-coefficients(fit) # model coefficients
+coefficients(fit)        # model coefficients
 confint(fit, level=0.95) # CIs for model parameters
-fitted(fit) # predicted values
-residuals(fit) # residuals
-anova(fit) # anova table
-vcov(fit) # covariance matrix for model parameters
-influence(fit) # regression diagnostics
+fitted(fit)              # predicted values
+residuals(fit)           # residuals
+anova(fit)               # anova table
+vcov(fit)                # covariance matrix for model parameters
+influence(fit)           # regression diagnostics
 ```
 
 ## Diagnostic Plots
