@@ -5,6 +5,8 @@ date: 2017-10-15
 category: [R for Beginners]  
 tag: [R]  
 author: hkim  
+image: /assets/images/icon/iconmonstr-monitoring-6-240.png
+headerImage: true
 
 ---
 

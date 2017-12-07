@@ -41,12 +41,12 @@ Tree 를 생성하기 위해서는 rpart 패키지의 rpart() 함수를 사용�
 
 function | description
 :--------|:---------------------------
-formula  | is in the format
+formula  | 다음 형식을 따라야 합니다
 .        | outcome ~ predictor1+predictor2+predictor3+ect.
 data=    | specifies the data frame
 method=  | "class" 범주형 변수 (classification tree)
 .        | "anova" 연속형 변수 (regression tree)
-control= | optional parameters for controlling tree growth.
+control= | Tree 크기를 제한하는 옵션입니다
 .        | For example, control=rpart.control(minsplit=30, cp=0.001) requires that the minimum number of observations in a node be 30 before attempting a split and that a split must decrease the overall lack of fit by a factor of 0.001 (cost complexity factor) before being attempted.
 
 
@@ -65,15 +65,15 @@ plot(fit)        | plot decision tree
 text(fit)        | label the decision tree plot
 post(fit, file=) | create postscript plot of decision tree
 
-In trees created by `rpart( )`, move to the LEFT branch when the stated condition is true (see the graphs below).
+`rpart( )` 로 생성되는 트리에서는 주어진 조건이 참일 때 왼쪽으로 이동합니다.
+
 
 
 ### 3. 가지치기(prune tree)
 
-Prune back the tree to avoid overfitting the data. Typically, you will want to select a tree size that minimizes the cross-validated error, the xerror column printed by `printcp( )`.
+Tree-based model 에서는 과적합(overfitting) 문제 해결을 위해 가지치기를 할 필요가 있습니다. 일반적으로 cross-validated error 를 최소화하는 사이즈를 고릅니다. cross-validated error 는 `printcp( )` 함수를 통해 알 수 있습니다.
 
-Prune the tree to the desired size using
-`prune(fit, cp= )`
+적절한 사이즈를 고르고 난 후, `prune(fit, cp= )` 함수를 사용하면 원하는 사이즈로 가지치기를 할 수 있습니다.
 
 Specifically, use `printcp( )` to examine the cross-validated error results, select the complexity parameter associated with minimum error, and place it into the prune( ) function. Alternatively, you can use the code fragment
 
