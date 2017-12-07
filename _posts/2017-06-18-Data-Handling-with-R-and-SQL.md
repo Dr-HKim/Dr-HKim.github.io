@@ -5,6 +5,8 @@ date: 2017-06-18
 category: [Data Analysis]  
 tag: [R, SQL]  
 author: hkim  
+image: /assets/images/icon/iconmonstr-monitoring-6-240.png
+headerImage: true
 
 ---
 

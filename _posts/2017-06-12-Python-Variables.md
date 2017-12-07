@@ -5,6 +5,8 @@ date: 2017-06-12
 category: [Python for Beginners]  
 tag: [python]  
 author: hkim  
+image: /assets/images/icon/iconmonstr-monitoring-6-240.png
+headerImage: true
 
 ---
 
