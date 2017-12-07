@@ -20,12 +20,10 @@ headerImage: true
 One of the great strengths of R is the user's ability to add functions. In fact, many of the functions in R are actually functions of functions. The structure of a function is given below.
 
 ```r
-
 myfunction <- function(arg1, arg2, ... ){
 statements
  return(object)
  }
-
 ```
 
 Objects in the function are local to the function. The object returned can be any data type. Here is an example.
