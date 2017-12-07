@@ -19,6 +19,24 @@ headerImage: true
 names(mydata)
 ```
 
+```r
+# 특정 변수 이름을 변경할 때 (변수 이름 기준)
+names(mydata)[names(mydata) == "old.var.name"] <- "new.var.name"
+
+# 특정 변수 이름을 변경할 때 (위치 기준)
+colnames(mydata)[2] <- "new.var.name" # 2번째 column 변수명 변경
+
+
+# 전체 변수 이름을 지정하여 변경할 때
+# 변수의 갯수와 이름의 갯수가 같아야 합니다 
+names(mydata) <- c("apple","banana","cherry")
+
+# 전체 변수 이름을 VAR1, VAR2, VAR3, ... 으로 변경할 때
+# 변수 이름이 한글로 되어있고, 이를 모두 영어로 바꿀 필요가 있을 때 유용합니다
+names(mydata)[1:dim(mydata)[2]] <- paste("VAR", 1:dim(mydata)[2], sep="") # 연속하는 이름 붙이기
+
+```
+
 ## Variable Labels
 
 다음 자료를 참고하였습니다:  
