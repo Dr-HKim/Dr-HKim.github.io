@@ -14,9 +14,9 @@ hidden: true # don't count this post in blog pagination
 
 # Correlations
 
-You can use the cor( ) function to produce correlations and the cov( ) function to produces covariances.
+You can use the `cor( )` function to produce correlations and the `cov( )` function to produces covariances.
 
-A simplified format is cor(x, use=, method= ) where
+A simplified format is `cor(x, use=, method= )` where
 
 Option   | Description
 :--------|:---------------

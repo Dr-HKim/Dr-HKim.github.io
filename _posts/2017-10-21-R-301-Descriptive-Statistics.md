@@ -1,19 +1,24 @@
 ---
 layout: post  
-title: Descriptive Statistics  
+title: R 기초 301 기술통계량 (Descriptive Statistics)  
 date: 2017-10-21  
 category: [R for Beginners]  
 tag: [R]  
 author: hkim  
-hidden: true # don't count this post in blog pagination  
+hidden: false # don't count this post in blog pagination  
+image: /assets/images/icon/iconmonstr-monitoring-6-240.png
+headerImage: true
 
 ---
+
+***preface*** 이번 포스트에서는 데이터에 대한 개략적 정보를 알아보는 기술통계량에 대하여 설명합니다. R 은 기술통계량을 제공하는 다양한 함수를 가지고 있습니다.
 
 다음 자료를 참고하였습니다:  
 - [https://www.statmethods.net/stats/descriptives.html](https://www.statmethods.net/stats/descriptives.html)
 
-# Descriptive Statistics
-R provides a wide range of functions for obtaining summary statistics. One method of obtaining descriptive statistics is to use the sapply( ) function with a specified summary statistic.
+## 기술통계량
+
+평균, 분산, 중위값 등 특정 기술통계량을 얻기 위해서는 `sapply( )` 함수를 사용합니다. 다음 기술통계량을 얻을 수 있습니다: mean, sd, var, min, max, median, range, and quantile.
 
 ```r
 # get means for variables in data frame mydata
@@ -21,9 +26,15 @@ R provides a wide range of functions for obtaining summary statistics. One metho
 sapply(mydata, mean, na.rm=TRUE)
 ```
 
-Possible functions used in sapply include mean, sd, var, min, max, median, range, and quantile.
+4분위수, 10분위수, 100분위수(quantile, decile, percentile)는 `quantile( )` 함수를 사용하여 구할 수 있습니다.
 
-There are also numerous R functions designed to provide a range of descriptive statistics at once. For example
+```r
+quantile(mydata) # quantile
+quantile(mydata, prob = seq(0, 1, length = 11), type = 5) # decile
+quantile(mydata, prob = seq(0, 1, length = 101), type = 5) # percentile
+```
+
+다양한 기술 통계량을 한번에 보여주는 함수들은 아래와 같습니다.
 
 ```r
 # mean,median,25th and 75th quartiles,min,max
@@ -33,7 +44,7 @@ summary(mydata)
 fivenum(x)
 ```
 
-Using the Hmisc package
+Hmisc 패키지를 사용할 수도 있습니다.
 
 ```r
 library(Hmisc)
@@ -42,7 +53,7 @@ describe(mydata)
 # 5 lowest and 5 highest scores
 ```
 
-Using the pastecs package
+pastecs 패키지를 사용할 수도 있습니다.
 
 ```r
 library(pastecs)
@@ -51,7 +62,7 @@ stat.desc(mydata)
 # median, mean, SE.mean, CI.mean, var, std.dev, coef.var
 ```
 
-Using the psych package
+psych 패키지를 사용할 수도 있습니다.
 
 ```r
 library(psych)
@@ -60,15 +71,16 @@ describe(mydata)
 # median, mad, min, max, skew, kurtosis, se
 ```
 
-## Summary Statistics by Group
-A simple way of generating summary statistics by grouping variable is available in the psych package.
+## 그룹별 요약통계량 (Summary Statistics by Group)
+
+psych 패키지를 이용하면 그룹별 요약통계량을 간단하게 구할 수 있습니다.
 
 ```r
 library(psych)
 describe.by(mydata, group,...)
 ```
 
-The doBy package provides much of the functionality of SAS PROC SUMMARY. It defines the desired table using a model formula and a function. Here is a simple example.
+doBy 패키지를 이용하면 SAS PROC SUMMARY 의 기능을 대부분 사용할 수 있습니다. model 옵션을 조정하여 원하는 형태로 얻을 수 있습니다.
 
 ```r
 library(doBy)
@@ -77,8 +89,3 @@ summaryBy(mpg + wt ~ cyl + vs, data = mtcars,
 # produces mpg.m wt.m mpg.s wt.s for each
 # combination of the levels of cyl and vs
 ```
-
-See also: aggregating data.
-
-## To Practice
-Want to practice interactively? Try this free course on statistics and R
