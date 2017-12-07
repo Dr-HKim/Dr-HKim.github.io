@@ -9,14 +9,15 @@ hidden: true # don't count this post in blog pagination
 
 ---
 
+
+***preface*** `with( )` 와 `by( )` 함수를 활용하면 매우 심플하고 효율적인 코딩이 가능합니다.
+
 다음 자료를 참고하였습니다:  
 - [https://www.statmethods.net/stats/withby.html](https://www.statmethods.net/stats/withby.html)
 
-# Using with( ) and by( )
-There are two functions that can help write simpler and more efficient code.
+## with 함수
 
-## With
-The with( ) function applys an expression to a dataset. It is similar to DATA= in SAS.
+`with( )` 함수는 특정 dataset 에 다른 계산을 적용할 때 사용합니다. SAS 에서의 `DATA =` 와 유사합니다.
 
 ```r
 # with(data, expression)
@@ -24,8 +25,9 @@ The with( ) function applys an expression to a dataset. It is similar to DATA= i
 with(mydata, t.test(y ~ group))
 ```
 
-## By
-The by( ) function applys a function to each level of a factor or factors. It is similar to BY processing in SAS.
+## by 함수
+
+`by( )` 함수는 특정 계산을 각 factor 에 대하여 반복 적용할 때 사용합니다. SAS 에서의 `BY` 와 비슷합니다.
 
 ```r
 # by(data, factorlist, function)
@@ -33,6 +35,3 @@ The by( ) function applys a function to each level of a factor or factors. It is
 # each level of byvar in data frame mydata
 by(mydata, mydata$byvar, function(x) mean(x))
 ```
-
-## To Practice
-This data manipulation tutorial in R includes excercises on using the by() function.
