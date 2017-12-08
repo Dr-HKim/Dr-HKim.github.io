@@ -10,14 +10,14 @@ headerImage: true
 
 ---
 
-***preface*** 이번 포스트에서는 데이터를 합치는 방법에 대하여 설명합니다.
+***preface*** 이번 포스트에서는 데이터를 합쳐 평균이나 합계 등을 계산하는 방법에 대하여 설명합니다.
 
 # Aggregating Data
 
 다음 자료를 참고하였습니다:  
 - [http://www.statmethods.net/management/aggregate.html](http://www.statmethods.net/management/aggregate.html)
 
-It is relatively easy to collapse data in R using one or more BY variables and a defined function.
+`BY ` 변수를 이용하여 구간 별 계산을 할 수 있습니다. 사용하는 함수에 따라 평균이나 합계 등을 계산할 수 있습니다.
 
 ```r
 # aggregate data frame mtcars by cyl and vs, returning means
@@ -28,12 +28,8 @@ print(aggdata)
 detach(mtcars)
 ```
 
-When using the aggregate() function, the by variables must be in a list (even if there is only one). The function can be built-in or user provided.
+`aggregate( )` 함수를 사용할 때, `BY ` 변수가 리스트 안에 있어야 합니다. 계산에 사용되는 함수는 내장 함수와 사용자 정의 함수 모두 사용 가능합니다.
 
 See also:
 - summarize() in the Hmisc package
 - summaryBy() in the doBy package
-
-## Going Further
-
-To practice aggregate() and other functions, try the exercises  in this manipulating data tutorial.

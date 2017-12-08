@@ -18,7 +18,7 @@ headerImage: true
 
 ## Control Structures: if, while, for, switch, ifelse
 
-R 에서도 일반적인 제어문을 사용할 수 있습니다. 제어문(if, for)을 사용하는 것보다 가능하면 내장 함수를 사용하는 것이 더 효율적입니다.
+R 에서도 일반적인 제어문을 사용할 수 있습니다. 하지만 제어문(if, for)을 사용하는 것보다 가능하면 내장 함수를 사용하는 것이 더 효율적입니다. 꼭 필요한 경우에만 사용합시다.
 
 
 ## if-else

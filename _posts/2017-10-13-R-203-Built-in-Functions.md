@@ -17,13 +17,10 @@ headerImage: true
 다음 자료를 참고하였습니다:  
 - [http://www.statmethods.net/management/functions.html](http://www.statmethods.net/management/functions.html)
 
-R의 거의 모든 부분은 기능을 통해 수행됩니다. 여기에서는 변수를 작성하거나 다시 코딩할 때 일반적으로 사용되는 숫자 및 문자 함수만 언급합니다.
+R의 거의 모든 부분은 기능을 통해 수행됩니다. 여기에서는 변수를 작성하거나 다시 코딩할 때 일반적으로 사용되는 숫자 및 문자 함수만 언급합니다. 아래 함수들은 개별 변수 뿐만 아니라 vector, matrix 에도 적용됩니다.
 
-Almost everything in R is done through functions. Here I'm only refering to numeric and character functions that are commonly used in creating or recoding variables.
 
-(To practice working with functions, try the functions sections of this this interactive course.)
-
-## Numeric Functions
+## 숫자 함수 (Numeric Functions)
 
 Function	             |Description
 -----------------------|-------------
@@ -40,7 +37,7 @@ log10(x)               |common logarithm
 exp(x)                 |e^x
 
 
-## Character Functions
+## 문자 함수 (Character Functions)
 
 Function	                   |Description
 -----------------------------|-------------------------------------------------------
@@ -62,8 +59,10 @@ paste(..., sep="")           |Concatenate strings after using sep string to sepe
 toupper(x)                   |Uppercase
 tolower(x)                   |Lowercase
 
-## Statistical Probability Functions
-The following table describes functions related to probaility distributions. For random number generators below, you can use set.seed(1234) or some other integer to create reproducible pseudo-random numbers.
+## 통계적 확률 함수 (Statistical Probability Functions)
+
+아래 표에서는 확률 분포와 관련된 함수들을 소개합니다. 난수 생성(random number generator)을 할 때, `set.seed(1234)` (혹은 다른 숫자) 를 이용해서 코드 재현성을 높일 수 있습니다.
+
 
 Function               |Description
 -----------------------|------------------
@@ -95,9 +94,9 @@ qunif(p, min=0, max=1) |
 runif(n, min=0, max=1) |
 
 
-## Other Statistical Functions
+## 기타 통계 함수 (Other Statistical Functions)
 
-Other useful statistical functions are provided in the following table. Each has the option na.rm to strip missing values before calculations. Otherwise the presence of missing values will lead to a missing result. Object can be a numeric vector or data frame.
+아래 표에서는 기타 유용한 통계 함수들을 소개합니다. `na.rm = TRUE` 옵션을 활성화하면 통계량 계산에서 결측값(NA)이 제외됩니다. 결측값을 제외하지 않으면 에러가 발생합니다. 이때 여러 변수를 한꺼번에 계산한다면 결측치가 없는 변수의 해당 관측치도 함께 제외되니 주의합시다.
 
 Function                     |Description
 -----------------------------|-------------
@@ -117,7 +116,7 @@ min(x)                       |minimum
 max(x)                       |maximum
 scale(x, center=TRUE, scale=TRUE) |column center or standardize a matrix.
 
-## Other Useful Functions
+## 기타 유용한 함수 (Other Useful Functions)
 
 Function           |Description
 -------------------|-----------------------------
@@ -129,6 +128,3 @@ rep(x, ntimes)     |repeat x n times
 -                  |# y is c(1, 2, 3, 1, 2, 3)
 cut(x, n)          |divide continuous variable in factor with n levels
 -                  |y <- cut(x, 5)
-
-
-Note that while the examples on this page apply functions to individual variables, many can be applied to vectors and matrices as well.
