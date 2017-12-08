@@ -5,7 +5,7 @@ date: 2017-11-12
 category: [R for Beginners]  
 tag: [R]  
 author: hkim  
-hidden: true # don't count this post in blog pagination  
+hidden: false # don't count this post in blog pagination  
 image: /assets/images/icon/iconmonstr-monitoring-6-240.png
 headerImage: true
 
@@ -14,25 +14,29 @@ headerImage: true
 다음 자료를 참고하였습니다:  
 - [https://www.statmethods.net/graphs/density.html](https://www.statmethods.net/graphs/density.html)
 
-# Histograms and Density Plots
-
 ## Histograms
 
-You can create histograms with the function hist(x) where x is a numeric vector of values to be plotted. The option freq=FALSE plots probability densities instead of frequencies. The option breaks= controls the number of bins.
+R 에서 숫자 벡터(numeric vector) x 에 대한 히스토그램을 그리려면 `hist(x)` 함수를 이용합니다. `freq=FALSE` 옵션을 사용하면 빈도수 대신 비율을 사용합니다. `breaks=` 옵션을 사용하여 구간을 몇개로 나눌 것인지 결정할 수 있습니다.
+
+### Simple Histogram
 
 ```r
 # Simple Histogram
 hist(mtcars$mpg)
 ```
 
-simple histogram click to view
+![simple histogram](https://www.statmethods.net/graphs/images/histogram1.jpg){: .image-center width="400"}
+
+### Colored Histogram
 
 ```r
 # Colored Histogram with Different Number of Bins
 hist(mtcars$mpg, breaks=12, col="red")
 ```
 
-colored histogram click to view
+![colored histogram](https://www.statmethods.net/graphs/images/histogram2.jpg){: .image-center width="400"}
+
+### Histogram with Normal Curve
 
 ```r
 # Add a Normal Curve (Thanks to Peter Dalgaard)
@@ -45,24 +49,25 @@ yfit <- yfit*diff(h$mids[1:2])*length(x)
 lines(xfit, yfit, col="blue", lwd=2)
 ```
 
-histogram with normal curve click to view
+![histogram with normal curve](https://www.statmethods.net/graphs/images/histogram3.jpg){: .image-center width="400"}
 
-Histograms can be a poor method for determining the shape of a distribution because it is so strongly affected by the number of bins used.
 
-To practice making a density plot with the hist() function, try this exercise.
 
 
 ## Kernel Density Plots
 
-Kernal density plots are usually a much more effective way to view the distribution of a variable. Create the plot using plot(density(x)) where x is a numeric vector.
+히스토그램은 구간을 몇개로 나누느냐에 따라 그래프 모양이 결정되므로, 이것만으로 분포 형태를 결정하는 것은 좋은 방법이 아닙니다. Kernel Density Plots 를 사용하면 변수의 분포를 보다 효과적으로 살펴볼 수 있습니다. `plot(density(x))` 함수를 사용하면 그래프를 그릴 수 있습니다.
+
+### Simple Density Plot
 
 ```r
 # Kernel Density Plot
 d <- density(mtcars$mpg) # returns the density data
 plot(d) # plots the results
 ```
+![simple density plot](https://www.statmethods.net/graphs/images/density1.jpg){: .image-center width="400"}
 
-simple density plot click to view
+### Colored Density Plot
 
 ```r
 # Filled Density Plot
@@ -70,13 +75,12 @@ d <- density(mtcars$mpg)
 plot(d, main="Kernel Density of Miles Per Gallon")
 polygon(d, col="red", border="blue")
 ```
-
-colored density plot click to view
+![colored density plot](https://www.statmethods.net/graphs/images/density2.jpg){: .image-center width="400"}
 
 
 ## Comparing Groups VIA Kernal Density
 
-The sm.density.compare( ) function in the sm package allows you to superimpose the kernal density plots of two or more groups. The format is sm.density.compare(x, factor) where x is a numeric vector and factor is the grouping variable.
+sm 패키지의 `sm.density.compare( )` 함수를 이용하면 그룹 별 kernal density plot 을 그릴 수 있습니다. `sm.density.compare(x, factor)` 형식으로 사용하며 x 는 숫자형 벡터(numeric vector), factor 는 grouping variale 입니다.
 
 ```r
 # Compare MPG distributions for cars with
@@ -96,5 +100,4 @@ title(main="MPG Distribution by Car Cylinders")
 colfill<-c(2:(2+length(levels(cyl.f))))
 legend(locator(1), levels(cyl.f), fill=colfill)
 ```
-
-comparing densities click to view
+![comparing densities](https://www.statmethods.net/graphs/images/density3.png){: .image-center width="400"}

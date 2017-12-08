@@ -11,16 +11,21 @@ headerImage: true
 
 ---
 
+***preface*** 이번 포스트에서는 categorical variables 분석을 위하여 frequency table 과 contingency table 을 만드는 방법을 알아봅니다. 또한 이들 간의 독립성을 테스트하고 결과를 그래프를 통해 나타내는 방법을 알아봅니다.
+
+This section describes the creation of frequency and contingency tables from categorical variables, along with tests of independence, measures of association, and methods for graphically displaying results.
+
+
 다음 자료를 참고하였습니다:  
 - [https://www.statmethods.net/stats/frequencies.html](https://www.statmethods.net/stats/frequencies.html)
 
-# Frequencies and Crosstabs
-This section describes the creation of frequency and contingency tables from categorical variables, along with tests of independence, measures of association, and methods for graphically displaying results.
 
-## Generating Frequency Tables
-R provides many methods for creating frequency and contingency tables. Three are described below. In the following examples, assume that A, B, and C represent categorical variables.
+## Frequency Table 만들기 (Generating Frequency Tables)
 
-## table
+R 에서는 frequency table 과 contingency table 을 만드는 다양한 방법을 제공합니다. 아래에 3가지 예시가 준비되어 있습니다. 예제에서 A, B, C 는 categorical variable 을 의미합니다.
+
+
+### Frequency Table: `table( )`
 You can generate frequency tables using the table( ) function, tables of proportions using the prop.table( ) function, and marginal frequencies using margin.table( ).
 
 ```r
@@ -45,9 +50,9 @@ mytable <- table(A, B, C)
 ftable(mytable)
 ```
 
-Table ignores missing values. To include NA as a category in counts, include the table option exclude=NULL if the variable is a vector. If the variable is a factor you have to create a new factor using `newfactor <- factor(oldfactor, exclude=NULL)`.
+Table ignores missing values. To include NA as a category in counts, include the table option `exclude=NULL` if the variable is a vector. If the variable is a factor you have to create a new factor using `newfactor <- factor(oldfactor, exclude=NULL)`.
 
-## xtabs
+### xtabs( )
 
 The `xtabs( )` function allows you to create crosstabulations using formula style input.
 
@@ -74,7 +79,7 @@ There are options to report percentages (row, column, cell), specify decimal pla
 See help(CrossTable) for details.
 
 
-# Tests of Independence
+# 독립성 테스트 (Tests of Independence)
 
 ## Chi-Square Test
 
