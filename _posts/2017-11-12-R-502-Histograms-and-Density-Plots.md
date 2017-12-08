@@ -19,7 +19,7 @@ headerImage: true
 R 에서 숫자 벡터(numeric vector) x 에 대한 히스토그램을 그리려면 `hist(x)` 함수를 이용합니다. `freq=FALSE` 옵션을 사용하면 빈도수 대신 비율을 사용합니다. `breaks=` 옵션을 사용하여 구간을 몇개로 나눌 것인지 결정할 수 있습니다.
 
 
-```r 
+```r
 # Histogram
 hist(iris$Petal.Length)
 hist(iris$Petal.Length, col="gray", xlab="Petal Length", main="Colored histogram")
@@ -103,7 +103,7 @@ polygon(d, col="red", border="blue")
 ![colored density plot](https://www.statmethods.net/graphs/images/density2.jpg){: .image-center width="400"}
 
 
-## Comparing Groups VIA Kernal Density
+## 그룹 간 Kernal Density 비교 (Comparing Groups VIA Kernal Density)
 
 sm 패키지의 `sm.density.compare( )` 함수를 이용하면 그룹 별 kernal density plot 을 그릴 수 있습니다. `sm.density.compare(x, factor)` 형식으로 사용하며 x 는 숫자형 벡터(numeric vector), factor 는 grouping variale 입니다.
 
