@@ -1,6 +1,6 @@
 ---
 layout: post  
-title: Discriminant Function Analysis
+title: 판별 분석 (Discriminant Function Analysis)
 date: 2017-11-02  
 category: [R for Beginners]  
 tag: [R]  
