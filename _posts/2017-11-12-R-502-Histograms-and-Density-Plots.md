@@ -18,6 +18,31 @@ headerImage: true
 
 R 에서 숫자 벡터(numeric vector) x 에 대한 히스토그램을 그리려면 `hist(x)` 함수를 이용합니다. `freq=FALSE` 옵션을 사용하면 빈도수 대신 비율을 사용합니다. `breaks=` 옵션을 사용하여 구간을 몇개로 나눌 것인지 결정할 수 있습니다.
 
+
+```r 
+# Histogram
+hist(iris$Petal.Length)
+hist(iris$Petal.Length, col="gray", xlab="Petal Length", main="Colored histogram")
+hist(iris$Petal.Length, breaks=30, col="gray", xlab="Petal Length", main="Colored histogram")
+
+# Histogram with Normal Curve
+hist(iris$Petal.Length, freq=FALSE, col="gray", xlab="Petal Length", main="Colored histogram") # density
+curve(dnorm(x, mean=mean(iris$Petal.Length), sd=sd(iris$Petal.Length)), add=TRUE, col="red") # add a normal distribution line in histogram
+
+# Histogram with Percentage
+hist(iris$Petal.Length, col="gray", labels=TRUE, ylim=c(0,45))
+
+histPercent <- function(x, ...){
+  H <- hist(x, plot=FALSE)
+  H$density <- with(H, 100*density*diff(breaks)[1])
+  labs <- paste(round(H$density),"%",sep="")
+  plot(H,freq=FALSE,labels = labs, ylim=c(0,1.08*max(H$density)),...)
+}
+
+histPercent(iris$Petal.Length,col="gray")
+```
+
+
 ### Simple Histogram
 
 ```r

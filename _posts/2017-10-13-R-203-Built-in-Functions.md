@@ -22,19 +22,22 @@ R의 거의 모든 부분은 기능을 통해 수행됩니다. 여기에서는 �
 
 ## 숫자 함수 (Numeric Functions)
 
-Function	             |Description
------------------------|-------------
-abs(x)	               |absolute value
-sqrt(x)	               |square root
-ceiling(x)             |ceiling(3.475) is 4
-floor(x)	             |floor(3.475) is 3
-trunc(x)	             |trunc(5.99) is 5
-round(x, digits=n)     |round(3.475, digits=2) is 3.48
-signif(x, digits=n)	   |signif(3.475, digits=2) is 3.5
-cos(x), sin(x), tan(x) |also acos(x), cosh(x), acosh(x), etc.
-log(x)                 |natural logarithm
-log10(x)               |common logarithm
-exp(x)                 |e^x
+Function	             | Description
+-----------------------|--------------
+abs(x)	               | absolute value
+sqrt(x)	               | square root
+ceiling(x)             | ceiling(3.475) is 4
+floor(x)	             | floor(3.475) is 3
+trunc(x)	             | trunc(5.99) is 5
+round(x, digits=n)     | round(3.475, digits=2) is 3.48
+.                      | 0.5에서 반올림하면 0이 되는 IEEE rounding 을 사용하므로 주의
+signif(x, digits=n)	   | signif(3.475, digits=2) is 3.5
+cos(x), sin(x), tan(x) | also acos(x), cosh(x), acosh(x), etc.
+log(x)                 | natural logarithm
+log10(x)               | common logarithm
+exp(x)                 | e^x
+
+
 
 
 ## 문자 함수 (Character Functions)
