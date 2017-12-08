@@ -1,6 +1,6 @@
 ---
 layout: post  
-title: Repeating things: looping and the apply family
+title: Repeating things - looping and the apply family
 date: 2017-11-29  
 category: [Data Analysis]  
 tag: [R]  
