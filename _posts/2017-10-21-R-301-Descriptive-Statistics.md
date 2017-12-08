@@ -80,7 +80,7 @@ library(psych)
 describe.by(mydata, group,...)
 ```
 
-doBy 패키지를 이용하면 SAS PROC SUMMARY 의 기능을 대부분 사용할 수 있습니다. model 옵션을 조정하여 원하는 형태로 얻을 수 있습니다.
+doBy 패키지를 이용하면 SAS 에서의 PROC SUMMARY 기능을 대부분 사용할 수 있습니다. model 옵션을 조정하여 원하는 형태로 얻을 수 있습니다.
 
 ```r
 library(doBy)

@@ -26,7 +26,8 @@ R 에서는 frequency table 과 contingency table 을 만드는 다양한 방법
 
 
 ### Frequency Table: `table( )`
-You can generate frequency tables using the table( ) function, tables of proportions using the prop.table( ) function, and marginal frequencies using margin.table( ).
+
+`table( )` 함수를 이용하여 frequency table 을 만들 수 있습니다. 빈도수 대신 비율 테이블을 만들려면 `prop.table( )` 함수를 사용합니다. marginal frequencies 는 `margin.table( )` 함수를 사용합니다.
 
 ```r
 # 2-Way Frequency Table

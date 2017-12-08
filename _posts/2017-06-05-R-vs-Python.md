@@ -6,6 +6,9 @@ category: [Data Analysis]
 tag: [R, python]  
 author: hkim  
 hidden: false # don't count this post in blog pagination
+image: /assets/images/icon/iconmonstr-monitoring-6-240.png
+headerImage: true
+
 ---
 
 ***preface***

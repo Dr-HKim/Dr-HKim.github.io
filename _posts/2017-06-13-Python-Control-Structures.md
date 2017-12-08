@@ -23,7 +23,7 @@ PC, 태블릿 등에서 여러 에디터를 사용하여 코드를 편집하게 
 
 **참고: 유투브 무료 파이썬 강좌**  
 - K-MOOC: 데이터 과학을 위한 파이썬 입문 (가천대학교 최성철 교수)
-- www.flearning.net: Python으로 Big Data 분석하기 (10시간, 무료)
+- [www.flearning.net](www.flearning.net): Python으로 Big Data 분석하기 (10시간, 무료)
 
 
 **참고: 논리(boolean)가 아닌 자료형의 참과 거짓**
@@ -42,14 +42,14 @@ PC, 태블릿 등에서 여러 에디터를 사용하여 코드를 편집하게 
 
 ```python
 # 조건문: if, if~else, if~elif~else
-income = 50000
+score = 85
 
-if income > 20000:
-  print("연봉이 고액이십니다.")
-elif income >10000:
-  print("연봉이 적당하십니다.")
+if score > 90:
+  print("A 입니다.")
+elif score > 80:
+  print("B 입니다.")
 else:
-  print("살기가 힘들겠습니다.")
+  print("재시험을 쳐야합니다.")
 
 
 # 선택 예제
