@@ -293,11 +293,11 @@ TRUE
 ```R
 a10s
 ```
-|Sepal_Length|Sepal_Width|Petal_Length|Petal_Width|Species|
-|--- |--- |--- |--- |--- |
-|7.9|3.8|6.4|2.0|virginica|
-|7.7|3.8|6.7|2.2|virginica|
-|7.7|2.6|6.9|2.3|virginica|
+Sepal_Length|Sepal_Width|Petal_Length|Petal_Width|Species
+------------|-----------|------------|-----------|--------
+7.9         | 3.8       | 6.4        | 2.0       | virginica
+7.7         | 3.8       | 6.7        | 2.2       | virginica
+7.7         | 2.6       | 6.9        | 2.3       | virginica
 
 
 
