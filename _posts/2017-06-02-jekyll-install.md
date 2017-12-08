@@ -76,36 +76,25 @@ GitHub 와 연동한 후 웹브라우저에서 `USERNAME.github.io` 로 들어�
 GitHub 과 연동하는 보다 친절하고 다양한 방법들에 대해서는, 다른 블로그(...)를 참고합시다.
 
 
-## 정리 필요
-
-`relative_permalinks: true` 를 코멘트 처리
-
-```
-gems:
-
-- jekyll-paginate
-```
-
-추가
-
-
-index.html 에서
-`<a href="{{ site.baseurl }}/{{ post.url }}">` 를
-`<a href="{{ site.baseurl }}{{ post.url }}">` 로 변경 ( `/` 제거)
-
-
 
 ## 검색 기능을 추가는 방법
 
-참고:  
-- https://github.com/jekylltools/jekyll-tipue-search
+다음 링크를 참고합시다:  
+- [http://www.halryang.net/simple-jekyll-search/](http://www.halryang.net/simple-jekyll-search/)
+- [https://imyeonn.github.io/blog/blog/30/](https://imyeonn.github.io/blog/blog/30/)
+- [https://github.com/kakao/kakao.github.io](https://github.com/kakao/kakao.github.io)
 
-search.html 을 root 폴더에 넣어두면 sidebar 에 알아서 뜬다.
+1. 블로그의 `root` 폴더에 `search2.json` 과 `Simple-Jekyll-Search.sublime-project` 파일을 추가합니다.  
+2. 루트 폴더 아래에 `dest` 폴더를 만들고 `jekyll-search.js` 과 `jekyll-search.min.js` 파일을 추가합니다.  
+3. 루트 폴더 아래에 `_plugins` 폴더를 만들고 `simple_search_filter.rb` 파일을 추가합니다.  
+4. 루트 폴더에 `search.html` 만들고 `_layout` 폴더 `default.html` 에 관련 링크를 추가합니다.  
+
+
 
 
 ## 포스트를 자르고 Read more... 를 추가하는 방법
 
-`index.html` 에 다음 코드를 추가한다:
+`index.html` 에 다음 코드를 추가합니다:
 
 ```
 {{ post.content }} # 를
@@ -116,7 +105,7 @@ search.html 을 root 폴더에 넣어두면 sidebar 에 알아서 뜬다.
 
 ## MathJax 를 이용하여 수식 표현을 가능하게 하는 방법
 
-`post.html` 혹은 `default.html` 에 다음을 추가한다:
+`post.html` 혹은 `default.html` 에 다음을 추가합니다:
 
 ```html
   <!--Enable MathJax-->
@@ -137,4 +126,5 @@ search.html 을 root 폴더에 넣어두면 sidebar 에 알아서 뜬다.
 
 ## 카테고리와 태그 기능을 사용하는 방법
 
-https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/
+다음 링크를 참고합시다:
+- [https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/](https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/)
