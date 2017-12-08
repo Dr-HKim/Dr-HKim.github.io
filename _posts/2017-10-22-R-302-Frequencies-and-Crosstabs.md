@@ -11,10 +11,7 @@ headerImage: true
 
 ---
 
-***preface*** 이번 포스트에서는 categorical variables 분석을 위하여 frequency table 과 contingency table 을 만드는 방법을 알아봅니다. 또한 이들 간의 독립성을 테스트하고 결과를 그래프를 통해 나타내는 방법을 알아봅니다.
-
-This section describes the creation of frequency and contingency tables from categorical variables, along with tests of independence, measures of association, and methods for graphically displaying results.
-
+***preface*** 이번 포스트에서는 categorical variables 분석을 위하여 frequency table 과 contingency table 을 만드는 방법을 알아봅니다. 또한 이들 간의 독립성을 테스트하고, 연관성 척도를 계산하고, 결과를 그래프를 통해 나타내는 방법을 알아봅니다.
 
 다음 자료를 참고하였습니다:  
 - [https://www.statmethods.net/stats/frequencies.html](https://www.statmethods.net/stats/frequencies.html)
