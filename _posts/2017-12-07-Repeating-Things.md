@@ -5,7 +5,7 @@ date: 2017-11-29
 category: [Data Analysis]  
 tag: [R]  
 author: hkim  
-hidden: true # don't count this post in blog pagination  
+hidden: false # don't count this post in blog pagination  
 image: /assets/images/icon/iconmonstr-monitoring-6-240.png
 headerImage: true
 
