@@ -6,7 +6,7 @@ category: [R for Beginners]
 tag: [R]  
 author: hkim  
 hidden: true # don't count this post in blog pagination  
-image: /assets/images/icon/iconmonstr-monitoring-6-240.png
+image: /assets/images/icon/iconmonstr-monitoring-6-240.png  
 headerImage: true
 
 ---
