@@ -1,6 +1,6 @@
 ---
 layout: post  
-title: Frequencies and Crosstabs
+title: 빈도 분석 (Frequencies and Crosstabs)
 date: 2017-10-22  
 category: [R for Beginners]  
 tag: [R]  

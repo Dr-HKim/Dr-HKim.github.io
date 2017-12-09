@@ -1,6 +1,6 @@
 ---
 layout: post  
-title: 금융 데이터 불러오기 (Fiancial Data)  
+title: 금융 데이터 불러오기 (Using Fiancial Data)  
 date: 2017-12-08  
 category: [Data Analysis]  
 tag: [R]  
