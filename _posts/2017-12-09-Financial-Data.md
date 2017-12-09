@@ -16,6 +16,8 @@ headerImage: true
 
 다음 자료를 참고하였습니다:  
 - [https://statkclee.github.io/statistics/stat-fe-import.html](https://statkclee.github.io/statistics/stat-fe-import.html)
+- [http://rstudio-pubs-static.s3.amazonaws.com/24858_1f006c3965614b0099c963913100e9f0.html](http://rstudio-pubs-static.s3.amazonaws.com/24858_1f006c3965614b0099c963913100e9f0.html)
+- [https://chrisconlan.com/download-historical-stock-data-google-r-python/](https://chrisconlan.com/download-historical-stock-data-google-r-python/)
 
 R 에서 quantmod 패키지와 Quandl 패키지를 이용하여 금융 데이터를 불러올 수 있습니다.
 
@@ -40,6 +42,51 @@ TNOTE <- getSymbols(Symbols = "WGS10YR", src = "FRED", from = "1990-01-01", to =
 
 # 경제: 실업률
 UNEMP <- getSymbols(Symbols = "LRHUTTTTKRA156N", src = "FRED", from = "1990-01-01", to = Sys.Date(), auto.assign = FALSE)
+```
+
+다음은 quantmod 의 함수를 reverse engineering 하여 만들어낸 함수입니다.
+
+```r
+# Function to fetch google stock data
+google_stocks <- function(sym, current = TRUE, sy = 2005, sm = 1, sd = 1, ey, em, ed)
+{
+  # sy, sm, sd, ey, em, ed correspond to
+  # start year, start month, start day, end year, end month, and end day
+
+  # If TRUE, use the date as the enddate
+  if(current){
+    system_time <- as.character(Sys.time())
+    ey <- as.numeric(substr(system_time, start = 1, stop = 4))
+    em <- as.numeric(substr(system_time, start = 6, stop = 7))
+    ed <- as.numeric(substr(system_time, start = 9, stop = 10))
+  }
+
+  require(data.table)
+
+  # Fetch data from google
+  google_out = tryCatch(
+    suppressWarnings(
+      fread(paste0("http://finance.google.com/finance/historical",
+                   "?q=", sym,
+                   "&startdate=", paste(sm, sd, sy, sep = "+"),
+                   "&enddate=", paste(em, ed, ey, sep = "+"),
+                   "&output=csv"), sep = ",")),
+    error = function(e) NULL
+  )
+
+  # If successful, rename first column
+  if(!is.null(google_out)){
+    names(google_out)[1] = "Date"
+  }
+
+  return(google_out)
+}
+
+# Test it out
+KOSPI = google_stocks('KOSPI')
+AAPL = google_stocks('AAPL')
+
+
 ```
 
 
