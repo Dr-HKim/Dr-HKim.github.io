@@ -1,8 +1,8 @@
 ---
 layout: post  
-title: R 기초 408 Tree-Based Models  
+title: Tree-Based Models  
 date: 2017-11-08  
-category: [R for Beginners]  
+category: [Data Analysis]  
 tag: [R, classification]    
 author: hkim  
 hidden: false  
