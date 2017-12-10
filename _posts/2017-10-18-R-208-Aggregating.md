@@ -17,9 +17,13 @@ headerImage: true
 다음 자료를 참고하였습니다:  
 - [http://www.statmethods.net/management/aggregate.html](http://www.statmethods.net/management/aggregate.html)
 
-`BY ` 변수를 이용하여 구간 별 계산을 할 수 있습니다. 사용하는 함수에 따라 평균이나 합계, min, max 등을 계산할 수 있습니다.
+`BY ` 변수를 이용하여 그룹별 통계량 계산을 할 수 있습니다. 사용하는 함수에 따라 평균이나 합계, min, max 등을 계산할 수 있습니다.
 
 ```r
+# Iris Data - Species 그룹별 Sepal.Length 평균 구하기
+aggregate(iris$Sepal.Length, by = list(iris$Species), min)
+
+
 # aggregate data frame mtcars by cyl and vs, returning means
 # for numeric variables
 attach(mtcars)
