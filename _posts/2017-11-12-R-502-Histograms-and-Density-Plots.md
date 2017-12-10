@@ -2,7 +2,7 @@
 layout: post  
 title: Histograms and Density Plots
 date: 2017-11-12  
-category: [R for Beginners]  
+category: [Data Analysis]  
 tag: [R]  
 author: hkim  
 hidden: false # don't count this post in blog pagination  

@@ -2,7 +2,7 @@
 layout: post  
 title: 빈도 분석 (Frequencies and Crosstabs)
 date: 2017-10-22  
-category: [R for Beginners]  
+category: [Data Analysis]  
 tag: [R]  
 author: hkim  
 hidden: false # don't count this post in blog pagination  
