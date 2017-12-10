@@ -1,12 +1,12 @@
 ---
 layout: post  
-title: R 기초 312 with( ) 와 by( ) 사용하기 (Using with( ) and by( ))
+title: R 기초 312 with( ) 와 by( ) 사용하기 (Using with( ) and by( ))  
 date: 2017-10-31  
 category: [R for Beginners]  
 tag: [R]  
 author: hkim  
 hidden: false # don't count this post in blog pagination  
-image: /assets/images/icon/iconmonstr-monitoring-6-240.png
+image: /assets/images/icon/iconmonstr-monitoring-6-240.png  
 headerImage: true
 
 ---
@@ -29,7 +29,7 @@ with(mydata, t.test(y ~ group))
 
 ## by 함수
 
-`by( )` 함수는 특정 계산을 각 factor 에 대하여 반복 적용할 때 사용합니다. SAS 에서의 `BY` 와 비슷합니다.
+`by( )` 함수는 특정 계산을 각 factor 에 대하여 반복 적용할 때 사용합니다. 그룹별 계산을 할 때 유용합니다. SAS 에서의 `BY` 와 비슷합니다.
 
 ```r
 # by(data, factorlist, function)
