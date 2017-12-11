@@ -1,7 +1,7 @@
 ---
 layout: post  
 title: Correlations  
-date: 2017-10-23  
+date: 2017-12-11  
 category: [R for Beginners]  
 tag: [R]  
 author: hkim  
@@ -16,9 +16,9 @@ headerImage: true
 
 # Correlations
 
-You can use the `cor( )` function to produce correlations and the `cov( )` function to produces covariances.
+`cor( )` 함수를 사용하면 correlation 을, `cov( )` 함수를 사용하면 covariance 을 계산할 수 있습니다.
 
-A simplified format is `cor(x, use=, method= )` where
+`cor(x, use=, method= )` 형태로 사용합니다.
 
 Option   | Description
 :--------|:---------------
@@ -33,9 +33,9 @@ cor(mtcars, use="complete.obs", method="kendall")
 cov(mtcars, use="complete.obs")
 ```
 
-Unfortunately, neither cor( ) or cov( ) produce tests of significance, although you can use the cor.test( ) function to test a single correlation coefficient.
+`cor( )` 함수와 `cov( )` 함수는 significance test 를 제공하지 않습니다. `cor.test( )` 함수를 사용하면 single correlation coefficient test 를 할 수 있습니다.
 
-The rcorr( ) function in the Hmisc package produces correlations/covariances and significance levels for pearson and spearman correlations. However, input must be a matrix and pairwise deletion is used.
+Hmisc 패키지의 `rcorr( )` 함수를 사용하면 correlations/covariance, significance levels for pearson and spearman correlations 를 계산할 수 있습니다. matrix 형태로 입력해야 합니다.
 
 ```r
 # Correlations with significance levels
@@ -46,7 +46,8 @@ rcorr(x, type="pearson") # type can be pearson or spearman
 rcorr(as.matrix(mtcars))
 ```
 
-You can use the format cor(X, Y) or rcorr(X, Y) to generate correlations between the columns of X and the columns of Y. This similar to the VAR and WITH commands in SAS PROC CORR.
+`cor(X, Y)` 및 `rcorr(X, Y)` 함수를 사용하여 X 와 Y 간의 correlation 을 계산할 수 있습니다. SAS `PROC CORR` 의 `VAR` 및 `WITH` 명령어와 유사합니다.
+
 
 ```r
 # Correlation matrix from mtcars
@@ -82,10 +83,8 @@ pcor(c("a", "b", "x", "y", "z"), var(mydata))
 # partial corr between a and b controlling for x, y, z
 ```
 
-## Visualizing Correlations
-Use corrgram( ) to plot correlograms .
+## 시각화 (Visualizing Correlations)
 
-Use the pairs() or splom( ) to create scatterplot matrices.
+`corrgram( )` 함수를 사용하면 correlogram 을 그릴 수 있습니다.
 
-## To Practice
-Try this interactive course on correlations and regressions in R.
+`pairs( )` 혹은 `splom( )` 함수를 사용하면 scatterplot matrices 를 그릴 수 있습니다.

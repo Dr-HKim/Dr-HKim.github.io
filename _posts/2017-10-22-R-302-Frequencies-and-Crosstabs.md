@@ -40,7 +40,7 @@ prop.table(mytable, 1) # row percentages
 prop.table(mytable, 2) # column percentages
 ```
 
-table( ) can also generate multidimensional tables based on 3 or more categorical variables. In this case, use the ftable( ) function to print the results more attractively.
+`table ( )` 함수를 이용하면 3개 이상의 categorical variable 에 대한 테이블도 만들 수 있습니다. 이 경우 `ftable( )` 함수를 이용하면 결과를 보다 깔끔하게 출력할 수 있습니다.
 
 ```r
 # 3-Way Frequency Table
@@ -48,11 +48,12 @@ mytable <- table(A, B, C)
 ftable(mytable)
 ```
 
-Table ignores missing values. To include NA as a category in counts, include the table option `exclude=NULL` if the variable is a vector. If the variable is a factor you have to create a new factor using `newfactor <- factor(oldfactor, exclude=NULL)`.
+`table ( )` 함수는 결측치를 무시합니다. 결측치(NA)도 포함하려면, 해당 변수가 vector 인 경우 옵션에 `exclude=NULL`를 추가합니다. 해당 변수가 factor 인 경우 `newfactor <- factor(oldfactor, exclude=NULL)` 로 새로운 factor 를 만들어줍니다.
+
 
 ### xtabs( )
 
-The `xtabs( )` function allows you to create crosstabulations using formula style input.
+`xtabs( )` 함수는 formula 형태의 입력을 지원합니다. 왼쪽에 위치한 변수는 vector of frequencies 로 간주됩니다.
 
 ```r
 # 3-Way Frequency Table
@@ -61,11 +62,9 @@ ftable(mytable) # print table
 summary(mytable) # chi-square test of indepedence
 ```
 
-If a variable is included on the left side of the formula, it is assumed to be a vector of frequencies (useful if the data have already been tabulated).
-
 ## Crosstable
 
-The `CrossTable( )` function in the gmodels package produces crosstabulations modeled after `PROC FREQ`in SAS or `CROSSTABS` in SPSS. It has a wealth of options.
+gmodels 패키지의 `CrossTable( )` 함수를 사용하면 SAS 의 `PROC FREQ` 나 SPSS 의 `CROSSTABS` 와 같은 crosstable 을 만들 수 있습니다. 해당 함수는 다양한 옵션을 가지고 있습니다. (There are options to report percentages (row, column, cell), specify decimal places, produce Chi-square, Fisher, and McNemar tests of independence, report expected and residual values (pearson, standardized, adjusted standardized), include missing values as valid, annotate with row and column titles, and format as SAS or SPSS style output.)
 
 ```r
 # 2-Way Cross Tabulation
@@ -73,31 +72,32 @@ library(gmodels)
 CrossTable(mydata$myrowvar, mydata$mycolvar)
 ```
 
-There are options to report percentages (row, column, cell), specify decimal places, produce Chi-square, Fisher, and McNemar tests of independence, report expected and residual values (pearson, standardized, adjusted standardized), include missing values as valid, annotate with row and column titles, and format as SAS or SPSS style output!
-See help(CrossTable) for details.
-
 
 # 독립성 테스트 (Tests of Independence)
 
 ## Chi-Square Test
 
-For 2-way tables you can use `chisq.test(mytable)` to test independence of the row and column variable. By default, the p-value is calculated from the asymptotic chi-squared distribution of the test statistic. Optionally, the p-value can be derived via Monte Carlo simultation.
+2차원 테이블에 대해서 `chisq.test(mytable)` 함수를 사용하면 row and column variable 간의 독립성을 테스트할 수 있습니다. p-value 는 asymptotic chi-squared distribution 으로 계산하는 것이 디폴트입니다. 옵션 설정을 통해 p-value 를 Monte Carlo simultation 으로 계산할 수 있습니다.
+
 
 ## Fisher Exact Test
-`fisher.test(x)` provides an exact test of independence. x is a two dimensional contingency table in matrix form.
+
+`fisher.test(x)` 는 표본 크기가 적을 때 사용할 수 있는 Fisher Exact Test 를 계산합니다. x 는 matrix 형태의 2차원 contingency table 형태여야 합니다.
+
 
 ## Mantel-Haenszel test
 Use the `mantelhaen.test(x)` function to perform a Cochran-Mantel-Haenszel chi-squared test of the null hypothesis that two nominal variables are conditionally independent in each stratum, assuming that there is no three-way interaction. x is a 3 dimensional contingency table, where the last dimension refers to the strata.
 
 # Loglinear Models
-You can use the `loglm( )` function in the MASS package to produce log-linear models. For example, let's assume we have a 3-way contingency table based on variables A, B, and C.
+
+MASS 패키지의 `loglm( )` 함수를 사용해서 log-linear model 을 만들 수 있습니다. 다음은 변수 A, B, C 에 대한 3차원 contingency table 을 만드는 방법을 소개합니다.
 
 ```r
 library(MASS)
 mytable <- xtabs(~A+B+C, data=mydata)
 ```
 
-We can perform the following tests:
+다음 테스트를 실시할 수 있습니다:
 
 Mutual Independence: A, B, and C are pairwise independent.
 
@@ -123,19 +123,25 @@ No Three-Way Interaction
 loglm(~A+B+C+A*B+A*C+B*C, mytable)
 ```
 
-Martin Theus and Stephan Lauer have written an excellent article on Visualizing Loglinear Models, using mosaic plots.
 
-# Measures of Association
-The `assocstats(mytable)` function in the vcd package calculates the phi coefficient, contingency coefficient, and Cramer's V for an rxc table. The `kappa(mytable)` function in the vcd package calculates Cohen's kappa and weighted kappa for a confusion matrix. See Richard Darlington's article on Measures of Association in Crosstab Tables for an excellent review of these statistics.
+# 연관성 척도 (Measures of Association)
 
-# Visualizing results
-Use bar and pie charts for visualizing frequencies in one dimension.
+vcd 패키지의 `assocstats(mytable)` 함수를 사용하면 phi coefficient, contingency coefficient, and Cramer's V for an rxc table 을 계산할 수 있습니다.
 
-Use the vcd package for visualizing relationships among categorical data (e.g. mosaic and association plots).
+vcd 패키지의 `kappa(mytable)` 함수를 사용하면 Cohen's kappa weighted kappa for a confusion matrix 를 계산할 수 있습니다.
 
-Use the ca package for correspondence analysis (visually exploring relationships between rows and columns in contingency tables).
+Richard Darlington 이 쓴 [Measures of Association in Crosstab Tables](http://node101.psych.cornell.edu/Darlington/crosstab/TABLE0.HTM) 에 보다 자세히 나와있습니다.
 
-To practice making these charts, try the data visualization course at DataCamp.
+
+# 결과 시각화 (Visualizing results)
+
+1차원 빈도를 나타낼 때에는 바차트와 파이차트를 사용합니다.
+
+categorical data 간의 관계를 나타낼 때에는 vcd 패키지의 mosaic plot 과 association plot 을 사용합니다.
+
+ca 패키지를 사용하면 correspondence analysis 를 실시할 수 있습니다. (contingency tables 의 행과 열의 관계를 시각화 할 수 있습니다.)
+
 
 # Converting Frequency Tables to an "Original" Flat file
-Finally, there may be times that you wil need the original "flat file" data frame rather than the frequency table. Marc Schwartz has provided code on the Rhelp mailing list for converting a table back into a data frame.
+
+frequency table 로부터 원자료를 복구해야할 필요가 있을지도 모릅니다. [Marc Schwartz](https://tolstoy.newcastle.edu.au/R/e2/help/06/10/3064.html)가 그 방법에 대해서 설명합니다.
