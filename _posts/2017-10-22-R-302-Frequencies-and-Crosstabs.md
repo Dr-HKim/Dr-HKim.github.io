@@ -22,7 +22,7 @@ headerImage: true
 R 에서는 frequency table 과 contingency table 을 만드는 다양한 방법을 제공합니다. 아래에 3가지 예시가 준비되어 있습니다. 예제에서 A, B, C 는 categorical variable 을 의미합니다.
 
 
-### Frequency Table: `table( )`
+### Frequency Table: table( )
 
 `table( )` 함수를 이용하여 frequency table 을 만들 수 있습니다. 빈도수 대신 비율 테이블을 만들려면 `prop.table( )` 함수를 사용합니다. marginal frequencies 는 `margin.table( )` 함수를 사용합니다.
 
