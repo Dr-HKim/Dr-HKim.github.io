@@ -79,6 +79,8 @@ CrossTable(mydata$myrowvar, mydata$mycolvar)
 
 2차원 테이블에 대해서 `chisq.test(mytable)` 함수를 사용하면 row and column variable 간의 독립성을 테스트할 수 있습니다. p-value 는 asymptotic chi-squared distribution 으로 계산하는 것이 디폴트입니다. 옵션 설정을 통해 p-value 를 Monte Carlo simultation 으로 계산할 수 있습니다.
 
+Null Hypothesis: 변수 간의 관련성이 없다
+
 
 ## Fisher Exact Test
 
