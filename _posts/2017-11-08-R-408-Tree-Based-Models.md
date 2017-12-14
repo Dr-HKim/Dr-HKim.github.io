@@ -17,6 +17,8 @@ headerImage: true
 - [https://www.statmethods.net/advstats/cart.html](https://www.statmethods.net/advstats/cart.html)
 - [http://www.dodomira.com/2016/05/29/564/](http://www.dodomira.com/2016/05/29/564/)
 
+- [http://r-bong.blogspot.kr/2016/11/classification-and-regression-by.html](http://r-bong.blogspot.kr/2016/11/classification-and-regression-by.html)
+
 ## 알고리즘
 
 Tree-Based Models(Decision Tree, Random Forest 등)는 직관적이면서도 강력한 분석 방법입니다. 범주형 변수(categorical variable)를 대상으로 하는 classification 과 연속형 변수(continuous variable)를 대상으로 하는 regression 모두에 적용할 수 있습니다. 의사 결정 규칙을 쉽게 시각화하면서 데이터 구조를 탐색하는 데 도움이됩니다.
