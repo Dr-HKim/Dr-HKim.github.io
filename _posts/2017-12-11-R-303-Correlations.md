@@ -88,3 +88,19 @@ pcor(c("a", "b", "x", "y", "z"), var(mydata))
 `corrgram( )` 함수를 사용하면 correlogram 을 그릴 수 있습니다.
 
 `pairs( )` 혹은 `splom( )` 함수를 사용하면 scatterplot matrices 를 그릴 수 있습니다.
+
+corrplot 패키지를 사용하면 heatmap 을 그릴 수 있습니다.
+
+```r
+# 변수들 간의 상관관계 계산(numeric only)
+MYDATA_corr <- cor(MYDATA)
+
+# 변수들 간의 상관관계 히트맵 그리기
+library(corrplot)
+corrplot(MYDATA_corr, type="lower", diag=F, tl.col="black", tl.srt = 90)
+corrplot(MYDATA_corr, type="lower", diag=F, tl.col="black", tl.srt = 90, method = "number")
+# corrplot(MYDATA_corr, type="lower", diag=F, tl.col="black", tl.srt = 90, order = "hclust") # 상관성 높은 항목끼리 묶고 싶을 때
+
+col <- colorRampPalette(c("#BB4444","#EE9988","#FFFFFF","#77AADD","#4477AA"))
+corrplot(MYDATA_corr, method = "color", col=col(200), type="lower", diag=F, tl.col="black", tl.srt = 90, addCoef.col="black")
+```
