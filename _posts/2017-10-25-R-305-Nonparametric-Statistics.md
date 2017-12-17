@@ -15,6 +15,9 @@ headerImage: true
 - [https://www.statmethods.net/stats/nonparametric.html](https://www.statmethods.net/stats/nonparametric.html)
 
 # Nonparametric Tests of Group Differences
+
+그룹 간 차이를 테스트하는 비모수 검정을 위해 Mann-Whitney U, Wilcoxon Signed Rank, Kruskal Wallis, Friedman 테스트를 실시할 수 있습니다.
+
 R provides functions for carrying out Mann-Whitney U, Wilcoxon Signed Rank, Kruskal Wallis, and Friedman tests.
 
 ```r
