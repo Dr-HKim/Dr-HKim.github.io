@@ -19,7 +19,7 @@ headerImage: true
 다음 자료를 참고하였습니다:
 - [https://www.TensorFlow.org/install/](https://www.TensorFlow.org/install/)
 
-TensorFlow 는 CPU 만을 사용하는 TensorFlow 와 GPU 를 사용하는 TensorFlow-GPU 로 나뉩니다.
+TensorFlow 는 CPU 만을 사용하는 TensorFlow 와 GPU 를 사용하는 TensorFlow-GPU 로 나뉩니다. 어차피 GPU를 써야할 때가 올테니 GPU 버전을 설치하는 것을 추천합니다.
 
 
 
