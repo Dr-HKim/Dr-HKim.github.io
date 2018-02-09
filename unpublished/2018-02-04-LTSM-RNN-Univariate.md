@@ -17,4 +17,7 @@ headerImage: true
 다음 자료를 참고하였습니다:
 - [Time Series Forecasting with the Long Short-Term Memory Network in Python](https://machinelearningmastery.com/time-series-forecasting-long-short-term-memory-network-python/) (17.04.07)
 
+
+
+
 lstm time series prediction 구글링 필요
