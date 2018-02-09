@@ -1,6 +1,6 @@
 ---
 layout: post  
-title: TensorFlow 와 KERAS 설치  
+title: TensorFlow 와 Keras 설치  
 date: 2018-02-02  
 category: [Data Analysis]  
 tag: [python]  
@@ -11,7 +11,7 @@ headerImage: true
 
 ---
 
-***preface*** 이번 포스트에서는 Python 에서 인공신경망(Artificial Neural Network, ANN) 실습을 하기 위하여 TensorFlow 및 KERAS 설치하는 방법을 알아봅니다.
+***preface*** 이번 포스트에서는 Python 에서 인공신경망(Artificial Neural Network, ANN) 실습을 하기 위하여 TensorFlow 및 Keras 설치하는 방법을 알아봅니다.
 
 
 ## TensorFlow 설치
@@ -96,9 +96,9 @@ Hello, TensorFlow!
 자신의 PC 환경에서 TensorFlow 설치 및 실행이 잘 되지 않는 원인을 알기 위해서는  [https://gist.github.com/mrry/ee5dbcfdd045fa48a27d56664411d41c](https://gist.github.com/mrry/ee5dbcfdd045fa48a27d56664411d41c) 에서 `tensorflow_self_check.py` 를 다운받아 실행합니다. 필요한 조치 사항을 알려줍니다.
 
 
-## KERAS 설치
+## Keras 설치
 
-이 블로그의 실습환경인 Anaconda 에서 KERAS를 설치하는 방법은 다음과 같습니다.
+이 블로그의 실습환경인 Anaconda 에서 Keras를 설치하는 방법은 다음과 같습니다.
 
 KERA (CPU only) 설치
 
@@ -107,7 +107,7 @@ C:\> activate MYENV
 (MYENV) C:\> conda install -c anaconda keras
 ```
 
-KERAS-GPU 설치
+Keras-GPU 설치
 
 ```
 C:\> activate MYENV
@@ -117,7 +117,7 @@ C:\> activate MYENV
 
 ### 설치 확인
 
-마찬가지로 KERAS 설치가 제대로 되었는지 확인하려면 다음을 실행해봅시다.
+마찬가지로 Keras 설치가 제대로 되었는지 확인하려면 다음을 실행해봅시다.
 
 python 실행
 ```
@@ -125,7 +125,7 @@ C:\> activate MYENV
 (MYENV) C:\> python
 ```
 
-KERAS 실행
+Keras 실행
 ```python
 import keras
 ```
