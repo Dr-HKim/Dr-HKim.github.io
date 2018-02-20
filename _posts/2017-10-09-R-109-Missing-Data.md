@@ -61,3 +61,7 @@ na.omit() 함수는 결측값을 listwise deletion 하여 반환합니다.
 # create new dataset without missing data
 newdata <- na.omit(mydata)
 ```
+
+
+
+데이터에 NA, NaN, Inf 값이 있는 경우 실행되지 않는 분석들이 있습니다. `colSums(is.na(mydata))`, `colSums(is.nan(mydata))`, `colSums(is.infinite(mydata))` 혹은 `sum(is.na(mydata$myvar))`, `sum(is.nan(mydata$myvar))`, `sum(is.infinite(mydata$myvar))` 를 이용하여 해당되는 부분이 있는지 먼저 살펴봅시다.

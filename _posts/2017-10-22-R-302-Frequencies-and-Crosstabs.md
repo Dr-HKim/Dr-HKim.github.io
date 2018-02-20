@@ -51,6 +51,13 @@ ftable(mytable)
 `table ( )` 함수는 결측치를 무시합니다. 결측치(NA)도 포함하려면, 해당 변수가 vector 인 경우 옵션에 `exclude=NULL`를 추가합니다. 해당 변수가 factor 인 경우 `newfactor <- factor(oldfactor, exclude=NULL)` 로 새로운 factor 를 만들어줍니다.
 
 
+다음 코드를 이용하면 간단한 frequency table 을 dataframe 에서 볼 수 있습니다.
+```r
+tmp <- as.data.frame(table(mytable$myvar))
+```
+
+
+
 ### xtabs( )
 
 `xtabs( )` 함수는 formula 형태의 입력을 지원합니다. 왼쪽에 위치한 변수는 vector of frequencies 로 간주됩니다.

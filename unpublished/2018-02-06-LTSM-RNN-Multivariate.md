@@ -143,15 +143,33 @@ The first step is to consolidate the date-time information into a single date-ti
 첫 번째 단계는 Pandas에서 인덱스로 사용할 수 있도록 개별적인 날짜-시간 정보를 하나의 날짜-시간으로 통합하는 것입니다.
 
 A quick check reveals NA values for pm2.5 for the first 24 hours. We will, therefore, need to remove the first row of data. There are also a few scattered “NA” values later in the dataset; we can mark them with 0 values for now.
-빠르게 살펴본 결과 첫 24시간 동안 
-
-
-
-
-빠른 확인은 처음 24 시간 동안 pm2.5의 NA 값을 보여줍니다. 따라서 우리는 첫 번째 데이터 행을 제거해야합니다. 나중에 데이터 세트에 흩어져있는 "NA"값도 있습니다. 우리는 지금 그것들을 0 값으로 표시 할 수 있습니다.
+첫 24시간 동안 pm2.5에 NA 값들이 들어가 있는 것을 확인할 수 있습니다. 따라서 이 부분을 제거할 필요가 있습니다. 이후에도 가끔 NA 값들이 들어있는 관측치가 보입니다. 우선은 이 값들을 0으로 표시합시다.
 
 The script below loads the raw dataset and parses the date-time information as the Pandas DataFrame index. The “No” column is dropped and then clearer names are specified for each column. Finally, the NA values are replaced with “0” values and the first 24 hours are removed.
-아래 스크립트는 원시 데이터 집합을로드하고 Pandas DataFrame 인덱스로 날짜 - 시간 정보를 구문 분석합니다. "아니오"열이 제거되고 각 열에 대해 더 명확한 이름이 지정됩니다. 마지막으로 NA 값이 "0"값으로 대체되고 처음 24 시간이 제거됩니다.
+아래 스크립트는 원자료를 로드하고 Pandas DataFrame 인덱스로 날짜-시간 정보를 구문 분석합니다. "아니오"열이 제거되고 각 열에 대해 더 명확한 이름이 지정됩니다. 마지막으로 NA 값이 "0"값으로 대체되고 처음 24 시간이 제거됩니다.
 
 The “No” column is dropped and then clearer names are specified for each column. Finally, the NA values are replaced with “0” values and the first 24 hours are removed.
 "아니오"열이 제거되고 각 열에 대해 더 명확한 이름이 지정됩니다. 마지막으로 NA 값이 "0"값으로 대체되고 처음 24 시간이 제거됩니다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+끝.
