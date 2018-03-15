@@ -62,6 +62,19 @@ na.omit() 함수는 결측값을 listwise deletion 하여 반환합니다.
 newdata <- na.omit(mydata)
 ```
 
-
-
 데이터에 NA, NaN, Inf 값이 있는 경우 실행되지 않는 분석들이 있습니다. `colSums(is.na(mydata))`, `colSums(is.nan(mydata))`, `colSums(is.infinite(mydata))` 혹은 `sum(is.na(mydata$myvar))`, `sum(is.nan(mydata$myvar))`, `sum(is.infinite(mydata$myvar))` 를 이용하여 해당되는 부분이 있는지 먼저 살펴봅시다.
+
+
+## Last Observation Carried Forward
+
+결측값을 다루는 여러가지 방법이 있습니다. 여기서는 최근 관측치를 그대로 입력하는 방법을 알아봅니다.
+
+```r
+# Function: Last Observation Carried Forward
+LOCF <- function(x) {
+  v <- !is.na(x)
+  c(NA, x[v])[cumsum(v)+1]
+}
+
+data.frame(lapply(MYDATA, LOCF))
+```
