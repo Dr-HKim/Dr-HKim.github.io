@@ -69,11 +69,14 @@ newdata <- na.omit(mydata)
 
 결측값을 다루는 여러가지 방법이 있습니다. 여기서는 최근 관측치를 그대로 입력하는 방법을 알아봅니다.
 
+다음을 참고하였습니다:
+[https://stackoverflow.com/questions/2776135/last-observation-carried-forward-in-a-data-frame](https://stackoverflow.com/questions/2776135/last-observation-carried-forward-in-a-data-frame)
+
 ```r
 # Function: Last Observation Carried Forward
-LOCF <- function(x) {
-  v <- !is.na(x)
-  c(NA, x[v])[cumsum(v)+1]
+LOCF <- function(MYVAR) {
+  X <- !is.na(MYVAR)
+  c(NA, MYVAR[X])[cumsum(X)+1]
 }
 
 data.frame(lapply(MYDATA, LOCF))
