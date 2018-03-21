@@ -11,6 +11,8 @@ headerImage: true
 
 ---
 
+***preface*** 이번 포스트에서는 자료의 분포를 한눈에 알아볼 수 있는 히스토그램에 대하여 설명합니다.
+
 다음 자료를 참고하였습니다:  
 - [https://www.statmethods.net/graphs/density.html](https://www.statmethods.net/graphs/density.html)
 
