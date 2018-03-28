@@ -64,6 +64,11 @@ newdata <- na.omit(mydata)
 
 데이터에 NA, NaN, Inf 값이 있는 경우 실행되지 않는 분석들이 있습니다. `colSums(is.na(mydata))`, `colSums(is.nan(mydata))`, `colSums(is.infinite(mydata))` 혹은 `sum(is.na(mydata$myvar))`, `sum(is.nan(mydata$myvar))`, `sum(is.infinite(mydata$myvar))` 를 이용하여 해당되는 부분이 있는지 먼저 살펴봅시다.
 
+```r
+MYDATA <- MYDATA[!is.na(rowSums(MYDATA)),] # NA 없는 관측치만 선택
+MYDATA <- MYDATA[!is.nan(rowSums(MYDATA)),] # NaN 없는 관측치만 선택
+MYDATA <- MYDATA[!is.infinite(rowSums(MYDATA)),] # Inf 없는 관측치만 선택
+```
 
 ## Last Observation Carried Forward
 
