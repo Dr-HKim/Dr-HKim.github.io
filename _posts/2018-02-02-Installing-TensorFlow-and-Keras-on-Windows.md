@@ -34,6 +34,19 @@ C:\> activate MYENV
 
 ### TensorFlow-GPU 설치
 
+이제 conda 로 설치하면 버전에 맞는 cuDNN 과 Cuda 를 설치해준다고 합니다!
+
+```
+# GPU를 사용하지 않는 경우
+(MYENV) C:\MYFOLDER> conda install tensorflow
+```
+
+```
+# GPU를 사용하는 경우 (GPU 사용을 위한 가상환경 MYENV_GPU 새로 생성)
+(MYENV_GPU) C:\MYFOLDER> conda install tensorflow-gpu
+```
+
+
 TensorFlow-GPU 설치에 앞서 자신의 그래픽 카드에 맞는 드라이버 설치가 필요합니다.
 
 자신의 그래픽카드가 NVIDIA 라면 NVIDIA CUDA Toolkit 설치가 필요합니다. 다만 최신버전(18.02.09 현재 9.1)은 TensorFlow 에서 지원을 하지 않아 에러가 발생하므로 9.0 버전을 깔아줍니다.
