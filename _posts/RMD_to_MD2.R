@@ -30,7 +30,7 @@ for (md_filename in MD_FILELIST) {
   
   for (i in 1:length(lines_md_filename)){
     if (startsWith(lines_md_filename[i],"![")) {
-      lines_md_filename[i] <- sub("FILES_", "/posts/FILES_", lines_md_filename[i])
+      lines_md_filename[i] <- sub("FILES_", "/_posts/FILES_", lines_md_filename[i])
     }
   }
   
