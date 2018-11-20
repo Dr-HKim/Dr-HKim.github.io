@@ -31,15 +31,8 @@ plot(cars)
 
 외부에서 불러오는 그림 2
 
-![test](../../_posts/FILES_2018-11-18-RMD-TEST-02/1541892243_423986816.jpg){width=400px}
+![test](FILES_2018-11-18-RMD-TEST-02/1541892243_423986816.jpg){width=400px}
 
 
-```{r}
-opts_knit$set(root.dir = "C:/Clouds/GitHub/Dr-HKim.github.io")
-getwd()
-setwd("C:/Clouds/GitHub/Dr-HKim.github.io")
-getwd()
-
-```
 
 
