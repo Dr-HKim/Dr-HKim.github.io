@@ -18,6 +18,5 @@ R 마크다운을 이용해서 블로깅이 가능한 것 같다.
 
 > R 마크다운을 이용한 블로깅 테스트.
 
-![test](assets/images/icon/iconmonstr-monitoring-6-240.png){width=400px}
 
-![test](./2018-11-18-R-Test-Page/1541892243_423986816.jpg){width=400px}
+![test](FILES_2018-11-18-RMD-TEST-02/1541892243_423986816.jpg){width=400px}
