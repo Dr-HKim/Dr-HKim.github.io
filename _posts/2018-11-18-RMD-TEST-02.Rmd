@@ -1,7 +1,7 @@
 ---
 layout: post  
 comments: true  
-title: "R Markdown 을 이용한 블로깅"  
+title: "R Markdown 을 이용한 블로깅 (RMD 파일)"  
 date: 2018-11-18  
 category: [R for Beginners]  
 tag: [R]  

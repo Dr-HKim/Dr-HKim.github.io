@@ -1,7 +1,7 @@
 ---
 layout: post  
 comments: true  
-title: R Markdown Test Page  
+title: "R Markdown Test Page (RMD)"  
 date: 2018-11-18  
 category: [R for Beginners]  
 tag: [R]  
