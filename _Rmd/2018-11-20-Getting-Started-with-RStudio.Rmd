@@ -1,7 +1,7 @@
 ---
 layout: post  
 title: R 기초 102 RStudio 와 친해지는 방법  
-date: 2018-11-19  
+date: 2018-11-20  
 category: [R for Beginners]  
 tag: [R]  
 author: hkim  
