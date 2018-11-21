@@ -20,15 +20,21 @@ Loan Credit Risk, Probability of Default, Loss-given-default, and Asset Pricing.
 
 ## Publications
 
-Kim, H., Cho, H. & Ryu, D. (forthcoming). An Empirical Study on Credit Card Loan Delinquency. *Economic Systems*.
+Kim, H., Cho, H. & Ryu, D. (2018). An Empirical Study on Credit Card Loan Delinquency. *Economic Systems* 42(3), pp. 437-449. [link](https://doi.org/10.1016/j.ecosys.2017.11.003)
 
-Kim, H., Cho, H. & Ryu, D. (2017). Characteristics of Mortgage Terminations: an Analysis of a Loan-Level Dataset. *Journal of Real Estate Finance and Economics*, pp. 1-30. [link](https://link.springer.com/article/10.1007/s11146-017-9620-5)
+Kim, H., Cho, H. & Ryu, D. (2018). Characteristics of Mortgage Terminations: an Analysis of a Loan-Level Dataset. *Journal of Real Estate Finance and Economics* 57(4), pp. 647-676. [link](https://doi.org/10.1007/s11146-017-9620-5)
 
-Kim, H., Kim, H. & Cho, H. (2016). 수익률 횡단면변동성(Return Dispersion)의 시장예측력에 관한 실증연구(An Empirical Study on Predictability of Return Dispersion). *한국증권학회지* 45(2), pp. 285-316. [link](http://www.iksa.or.kr/search/search01_view.php?num=1065&search=list&code=1100006&searchSub=&searchCon=&searchName=&searchYear1=&searchYear2=&searchCount1=&searchCount2=&searchCount3=&searchCount4=&page=1&PHPSESSID=a355d2f344ba17b3564c380eb5519740)
+김형준, 류두진, 조훈 (2018). 주택담보대출의 조기상환행태 분석 - 안심전환대출 출시 이후의 이상현상을 중심으로. *경영학연구* 47(4), pp. 865-887. [link](https://www.dbpia.co.kr/Journal/ArticleDetail/NODE07520947)
+
+김형준, 류두진, 조훈 (2018). 주택연금 유동화증권에 관한 연구 - 구조설계 및 예상현금흐름 분석을 중심으로. *한국증권학회지* 47(2), pp. 327-347. [link](https://www.dbpia.co.kr/Journal/ArticleDetail/NODE07419342)
+
+김현식, 김형준, 조훈 (2016). 수익률 횡단면변동성(Return Dispersion)의 시장예측력에 관한 실증연구. *한국증권학회지* 45(2), pp. 285-316. [link](https://www.dbpia.co.kr/Journal/ArticleDetail/NODE07228324)
+
+
 
 <br>
 
-## Selected Academic Presentations
+## Academic Presentations
 
 2015 재무금융 관련 5개 학회 학술연구발표회 및 특별심포지엄 in Cheonan, Korea (May 2015)  
 Paper presented: “An Empirical Study on Credit Card Loan Delinquency in Korea ”
