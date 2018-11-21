@@ -1,6 +1,6 @@
 ---
 layout: post  
-title: "R마크다운(R Markdown)으로 블로그하기"  
+title: "R마크다운(R Markdown)으로 블로그하는 방법"  
 date: 2018-11-18  
 category: [blog]  
 tag: [R, jekyll]  
