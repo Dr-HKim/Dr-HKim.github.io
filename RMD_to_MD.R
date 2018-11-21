@@ -52,3 +52,8 @@ for (md_filename in MD_FILELIST) {
   }
   write_lines(lines_md_filename, file)
 }
+
+
+## Rmd 파일 이름을 수정할 때를 대비하여, 기존의 md 파일을 모두 지우는 코드 필요
+
+## /_Rmd/ 하위폴더에 있는 그림 파일들을 /assets/article_images/ 로 복사하는 코드 필요
