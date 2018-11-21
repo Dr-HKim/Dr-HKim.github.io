@@ -37,9 +37,9 @@ summary(cars)
 ##  Max.   :25.0   Max.   :120.00
 {% endhighlight %}
 
-R 코드로 그린 그래프도 따로 그림으로 저장해서 불러오는 과정 없이 본문 중에 삽입할 수 있습니다. 아래 예시에서는 `echo=FALSE` 를 사용해 그림을 그리는 R 코드를 표시하지 않았습니다.
+R 코드로 그린 그래프도 따로 그림으로 저장해서 불러오는 과정 없이 본문 중에 삽입할 수 있습니다. 아래 예시에서는 `echo=FALSE` 옵션을 사용해 그림을 그리는 R 코드를 표시하지 않았습니다.
 
-![plot of chunk unnamed-chunk-2](/assets/article_images/FILES_2018-11-18-Blog-with-RMD/unnamed-chunk-2-1.png)
+![plot of chunk unnamed-chunk-7](/assets/article_images/FILES_2018-11-18-Blog-with-RMD/unnamed-chunk-7-1.png)
 
 
 물론 일반적인 마크다운과 같이 그림을 삽입할 수도 있습니다. 
