@@ -47,6 +47,8 @@ UNEMP <- getSymbols(Symbols = "LRHUTTTTKRA156N", src = "FRED", from = "1990-01-0
 다음은 quantmod 의 함수를 reverse engineering 하여 만들어낸 함수입니다.
 
 ```{r}
+library(data.table)
+
 # Function to fetch google stock data
 google_stocks <- function(sym, current = TRUE, sy = 2005, sm = 1, sd = 1, ey, em, ed)
 {

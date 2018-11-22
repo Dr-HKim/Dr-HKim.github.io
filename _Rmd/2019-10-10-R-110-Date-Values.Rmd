@@ -21,14 +21,24 @@ R에서 날짜는 1970-01-01 년 이후의 날짜 수로 표시되며, 이전 �
 ```{r}
 # use as.Date( ) to convert strings to dates
 mydates <- as.Date(c("2007-06-22", "2004-02-13"))
+mydates
+```
+
+```{r}
 # number of days between 6/22/07 and 2/13/04
 days <- mydates[1] - mydates[2]
+days
 ```
 
 `Sys.Date()` 는 오늘 날짜를 반환합니다.
-`date( )` 는 현재 날짜와 시간을 반환합니다.
+`date()` 는 현재 날짜와 시간을 반환합니다.
 
-다음 기호(symbols)를 사용하여 `format( )` 함수와 함께 사용하여 날짜를 출력할 수 있습니다.
+```{r}
+Sys.Date()
+date()
+```
+
+다음 기호(symbols)를 사용하여 `format()` 함수와 함께 사용하여 날짜를 출력할 수 있습니다.
 
 
 Symbol | Meaning                | Example
@@ -48,7 +58,6 @@ Symbol | Meaning                | Example
 # print today's date
 today <- Sys.Date()
 format(today, format="%B %d %Y")
-"June 20 2007"
 ```
 
 ## 날짜 자료 변환 (Date Conversion)
@@ -61,12 +70,14 @@ format(today, format="%B %d %Y")
 # convert date info in format 'mm/dd/yyyy'
 strDates <- c("01/05/1965", "08/16/1975")
 dates <- as.Date(strDates, "%m/%d/%Y")
+dates
 ```
 
 default format 은 yyyy-mm-dd 입니다.
 
 ```{r}
 mydates <- as.Date(c("2007-06-22", "2004-02-13"))
+mydates
 ```
 
 ### 날짜에서 문자로 (Date to Character)
@@ -76,6 +87,7 @@ as.Character() 함수를 사용하여 날짜를 문자 데이터로 변환 할 �
 ```{r}
 # convert dates to character data
 strDates <- as.character(dates)
+strDates
 ```
 
 ### YYYYMMDD 에서 날짜로 (YYYYMMDD to Date)
@@ -85,7 +97,9 @@ strDates <- as.character(dates)
 일반적으로 숫자를 Date 로 변경하는 경우 origin 을 입력하도록 합니다. YYYYMMDD 를 날짜로 변경할 때에는 우선 문자로 변경한 후 다시 날짜로 변경합시다.
 
 ```{r}
+YYYYMMDD <- 20181123
 mydates <- as.Date(as.character(YYYYMMDD), format = '%Y%m%d')
+mydates
 ```
 
 ## 날짜와 관련된 유용한 함수들
@@ -106,8 +120,10 @@ age = function(from, to) {
 }
 
 age(mydate1, mydate2)
+```
 
 
+```{r}
 # 만월령 구하는 함수
 age_month = function(from_YYYYMMDD, to_YYYYMMDD) {
 
