@@ -1,0 +1,98 @@
+---
+layout: post  
+title: R 기초 102 데이터 불러오기 (Importing Data)  
+date: 2017-10-02  
+category: [R for Beginners]  
+tag: [R]  
+author: hkim  
+image: /assets/images/icon/iconmonstr-monitoring-6-240.png
+headerImage: true
+
+---
+
+***preface*** 이번 포스트에서는 R에서 데이터를 불러오는 방법들에 대하여 설명합니다.
+
+# R Cheatsheet Data Importing
+
+다음 자료를 참고하였습니다:  
+- [http://www.statmethods.net/input/importingdata.html](http://www.statmethods.net/input/importingdata.html)
+
+# Importing Data
+
+데이터를 R로 가져 오는 것은 매우 간단합니다. Stata 및 Systat의 경우, foreign 패키지를 사용하십시오. SPSS 및 SAS의 경우 Hmisc 패키지를 권장합니다. 이러한 패키지를 구해서 설치하는 방법에 대한 정보는 Quick-R 의 [Packages](http://www.statmethods.net/interface/packages.html) 섹션을 참조하십시오.
+
+## From A Comma Delimited Text File (CSV)
+
+```{r}
+# first row contains variable names, comma is separator
+# assign the variable id to row names
+# note the / instead of \ on mswindows systems
+
+mydata <- read.table("c:/mydata.csv", header=TRUE, sep=",", row.names="id")
+
+# Error: EOF within quoted string
+# ";" seperated
+
+mydata <- read.table("c:/mydata.csv", header=TRUE, sep=";", row.names=NULL, quote="", stringsAsFactors=FALSE, nrows=1000)
+```
+
+## From Excel
+
+Excel 파일을 읽는 가장 좋은 방법 중 하나는 CSV 파일로 내보내고 위의 방법을 사용하여 가져 오는 것입니다. 또는 xlsx 패키지를 사용하여 Excel 파일에 액세스 할 수 있습니다. 첫 번째 행에는 변수 / 열 이름이 포함되어야합니다.
+
+```{r}
+# read in the first worksheet from the workbook myexcel.xlsx
+# first row contains variable names
+library(xlsx)
+mydata <- read.xlsx("c:/myexcel.xlsx", 1)
+
+# read in the worksheet named mysheet
+mydata <- read.xlsx("c:/myexcel.xlsx", sheetName = "mysheet")
+```
+
+
+## From SPSS
+
+```{r}
+# save SPSS dataset in trasport format
+get file='c:\mydata.sav'.
+export outfile='c:\mydata.por'.
+
+# in R
+library(Hmisc)
+mydata <- spss.get("c:/mydata.por", use.value.labels=TRUE)
+# last option converts value labels to R factors
+```
+
+## From SAS
+
+```SAS
+# save SAS dataset in trasport format
+libname out xport 'c:/mydata.xpt';
+data out.mydata;
+set sasuser.mydata;
+run;
+```
+
+```{r}
+# in R
+library(Hmisc)
+mydata <- sasxport.get("c:/mydata.xpt")
+# character variables are converted to R factors
+```
+
+## From Stata
+
+```{r}
+# input Stata file
+library(foreign)
+mydata <- read.dta("c:/mydata.dta")
+```
+
+## From systat
+
+```{r}
+# input Systat file
+library(foreign)
+mydata <- read.systat("c:/mydata.dta")
+```

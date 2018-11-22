@@ -1,0 +1,39 @@
+---
+layout: post  
+title: R 기초 208 데이터 합치기 (Aggregating Data)  
+date: 2017-10-18  
+category: [R for Beginners]  
+tag: [R]  
+author: hkim  
+image: /assets/images/icon/iconmonstr-monitoring-6-240.png
+headerImage: true
+
+---
+
+***preface*** 이번 포스트에서는 데이터를 합쳐 평균이나 합계 등을 계산하는 방법에 대하여 설명합니다.
+
+# Aggregating Data
+
+다음 자료를 참고하였습니다:  
+- [http://www.statmethods.net/management/aggregate.html](http://www.statmethods.net/management/aggregate.html)
+
+`BY ` 변수를 이용하여 그룹별 통계량 계산을 할 수 있습니다. 사용하는 함수에 따라 평균이나 합계, min, max 등을 계산할 수 있습니다.
+
+```{r}
+# Iris Data - Species 그룹별 Sepal.Length 평균 구하기
+aggregate(iris$Sepal.Length, by = list(iris$Species), min)
+
+
+# aggregate data frame mtcars by cyl and vs, returning means
+# for numeric variables
+attach(mtcars)
+aggdata <- aggregate(mtcars, by=list(cyl,vs), FUN=mean, na.rm=TRUE)
+print(aggdata)
+detach(mtcars)
+```
+
+`aggregate( )` 함수를 사용할 때, `BY ` 변수가 리스트 안에 있어야 합니다. 계산에 사용되는 함수는 내장 함수와 사용자 정의 함수 모두 사용 가능합니다.
+
+See also:
+- summarize() in the Hmisc package
+- summaryBy() in the doBy package

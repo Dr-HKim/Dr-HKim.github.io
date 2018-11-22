@@ -1,0 +1,39 @@
+---
+layout: post  
+title: R 기초 312 with( ) 와 by( ) 사용하기 (Using with( ) and by( ))  
+date: 2017-10-31  
+category: [R for Beginners]  
+tag: [R]  
+author: hkim  
+hidden: false # don't count this post in blog pagination  
+image: /assets/images/icon/iconmonstr-monitoring-6-240.png  
+headerImage: true
+
+---
+
+
+***preface*** `with( )` 와 `by( )` 함수를 활용하면 매우 심플하고 효율적인 코딩이 가능합니다.
+
+다음 자료를 참고하였습니다:  
+- [https://www.statmethods.net/stats/withby.html](https://www.statmethods.net/stats/withby.html)
+
+## with 함수
+
+`with( )` 함수는 특정 dataset 에 다른 계산을 적용할 때 사용합니다. SAS 에서의 `DATA =` 와 유사합니다.
+
+```{r}
+# with(data, expression)
+# example applying a t-test to a data frame mydata
+with(mydata, t.test(y ~ group))
+```
+
+## by 함수
+
+`by( )` 함수는 특정 계산을 각 factor 에 대하여 반복 적용할 때 사용합니다. 그룹별 계산을 할 때 유용합니다. SAS 에서의 `BY` 와 비슷합니다.
+
+```{r}
+# by(data, factorlist, function)
+# example obtain variable means separately for
+# each level of byvar in data frame mydata
+by(mydata, mydata$byvar, function(x) mean(x))
+```

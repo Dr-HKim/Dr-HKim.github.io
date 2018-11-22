@@ -1,0 +1,75 @@
+---
+layout: post  
+title: Pie Charts
+date: 2017-11-16  
+category: [R for Beginners]  
+tag: [R]  
+author: hkim  
+hidden: true # don't count this post in blog pagination  
+image: /assets/images/icon/iconmonstr-monitoring-6-240.png
+headerImage: true
+
+---
+
+다음 자료를 참고하였습니다:  
+- [https://www.statmethods.net/graphs/pie.html](https://www.statmethods.net/graphs/pie.html)
+
+# Pie Charts
+
+Pie charts are not recommended in the R documentation, and their features are somewhat limited. The authors recommend bar or dot plots over pie charts because people are able to judge length more accurately than volume. Pie charts are created with the function pie(x, labels=) where x is a non-negative numeric vector indicating the area of each slice and labels= notes a character vector of names for the slices.
+
+## Simple Pie Chart
+
+```{r}
+# Simple Pie Chart
+slices <- c(10, 12,4, 16, 8)
+lbls <- c("US", "UK", "Australia", "Germany", "France")
+pie(slices, labels = lbls, main="Pie Chart of Countries")
+```
+
+simple pie chart click to view
+
+
+## Pie Chart with Annotated Percentages
+
+```{r}
+# Pie Chart with Percentages
+slices <- c(10, 12, 4, 16, 8)
+lbls <- c("US", "UK", "Australia", "Germany", "France")
+pct <- round(slices/sum(slices)*100)
+lbls <- paste(lbls, pct) # add percents to labels
+lbls <- paste(lbls,"%",sep="") # ad % to labels
+pie(slices,labels = lbls, col=rainbow(length(lbls)),
+  	main="Pie Chart of Countries")
+```
+
+fancy pie chart click to view
+
+
+## 3D Pie Chart
+
+The pie3D( ) function in the plotrix package provides 3D exploded pie charts.
+
+```{r}
+# 3D Exploded Pie Chart
+library(plotrix)
+slices <- c(10, 12, 4, 16, 8)
+lbls <- c("US", "UK", "Australia", "Germany", "France")
+pie3D(slices,labels=lbls,explode=0.1,
+  	main="Pie Chart of Countries ")
+```
+
+3D pie chart click to view
+
+
+## Creating Annotated Pies from a data frame
+
+```{r}
+# Pie Chart from data frame with Appended Sample Sizes
+mytable <- table(iris$Species)
+lbls <- paste(names(mytable), "\n", mytable, sep="")
+pie(mytable, labels = lbls,
+  	main="Pie Chart of Species\n (with sample sizes)")
+```
+
+pie chart from data frame click to view

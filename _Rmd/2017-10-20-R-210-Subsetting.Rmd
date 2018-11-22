@@ -1,0 +1,102 @@
+---
+layout: post  
+title: R 기초 210 데이터 추출하기 (Subsetting Data)  
+date: 2017-10-20  
+category: [R for Beginners]  
+tag: [R]  
+author: hkim  
+image: /assets/images/icon/iconmonstr-monitoring-6-240.png
+headerImage: true
+
+---
+
+***preface*** 이번 포스트에서는 기존 자료에서 일정한 규칙에 따라 데이터를 추출하는 방법에 대하여 설명합니다.
+
+# Subsetting Data
+
+다음 자료를 참고하였습니다:  
+- [http://www.statmethods.net/management/subset.html](http://www.statmethods.net/management/subset.html)
+
+R has powerful indexing features for accessing object elements. These features can be used to select and exclude variables and observations. The following code snippets demonstrate ways to keep or delete variables and observations and to take random samples from a dataset.
+
+R에는 object 에 액세스하기 위한 강력한 색인 기능이 있습니다. 이러한 기능을 사용하여 특정 변수나 관측치를 선택/제외할 수 있습니다. 다음 코드는 변수나 관측치를 유지 또는 삭제하고 dataset 에서 임의의 샘플을 가져 오는 방법을 보여줍니다.
+
+
+## 변수 선택하기 (Selecting (Keeping) Variables)
+
+```{r}
+# select variables v1, v2, v3
+myvars <- c("v1", "v2", "v3")
+newdata <- mydata[myvars]
+
+# another method
+myvars <- paste("v", 1:3, sep="")
+newdata <- mydata[myvars]
+
+# select 1st and 5th thru 10th variables
+newdata <- mydata[c(1,5:10)]
+```
+
+
+## 변수 제외하기 (Excluding (DROPPING) Variables)
+
+```{r}
+# exclude variables v1, v2, v3
+myvars <- names(mydata) %in% c("v1", "v2", "v3")
+newdata <- mydata[!myvars]
+
+# exclude 3rd and 5th variable
+newdata <- mydata[c(-3,-5)]
+
+# delete variables v3 and v5
+mydata$v3 <- mydata$v5 <- NULL
+```
+
+
+## 관측치 선택하기 (Selecting Observations)
+
+```{r}
+# first 5 observations
+newdata <- mydata[1:5,]
+
+# based on variable values
+newdata <- mydata[ which(mydata$gender=='F' & mydata$age > 65), ]
+
+# which( ) 를 쓰지 않아도 선택 가능
+newdata <- mydata[ mydata$gender=='F' & mydata$age > 65 , ]
+
+```
+
+만약 selecting 결과에 알수없는 NA 열들이 추가된다면, `which()` 를 써서 해결되는지 살펴봅니다.([링크](https://stackoverflow.com/questions/14261619/subsetting-r-data-frame-results-in-mysterious-na-rows))
+
+
+## subset 함수를 사용한 관측치 선택하기 (Selection using the Subset Function)
+
+`subset( )` 함수는 변수와 관측치를 선택하는 가장 쉬운 방법입니다. 다음 예에서는 20보다 크거나 같은 age 또는 10보다 적은 age의 값을 가진 모든 행을 선택합니다. ID 및 Weight 변수를 유지합니다.
+
+```{r}
+# using subset function
+newdata <- subset(mydata, age >= 20 | age < 10, select=c(ID, Weight))
+```
+
+다음 예에서는 25 세 이상의 모든 남성을 선택하고, 체중, 소득 및 그들 사이의 모든 변수를 선택합니다.
+
+```{r}
+# using subset function (part 2)
+newdata <- subset(mydata, sex=="m" & age > 25, select=weight:income)
+```
+
+`subset( )` 함수를 사용하는 것보다 `mydata[condition, ]` 를 사용하는 것이 더 낫다는 지적이 있습니다.
+Hadley Wickham 가 `subset( )` 함수를 사용할 때의 위험성을 [이곳](http://adv-r.had.co.nz/Computing-on-the-language.html)에서 설명하고 있습니다.
+[이곳](https://stackoverflow.com/questions/9860090/why-is-better-than-subset)에서도 같은 내용을 보다 간단히 설명하고 있습니다.
+
+
+## 랜덤 샘플 (Random Samples)
+
+`sample( )` 함수를 사용하여 데이터 세트에서 n 사이즈의 무작위 샘플을 가져올 수 있습니다.
+
+```{r}
+# take a random sample of size 50 from a dataset mydata
+# sample without replacement
+mysample <- mydata[sample(1:nrow(mydata), 50, replace=FALSE),]
+```

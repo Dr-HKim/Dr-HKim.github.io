@@ -1,0 +1,170 @@
+---
+layout: post  
+comments: true  
+title: R 기초 110 날짜 다루기 (Date Values)  
+date: 2017-10-10  
+category: [R for Beginners]  
+tag: [R]  
+author: hkim  
+image: /assets/images/icon/iconmonstr-monitoring-6-240.png
+headerImage: true
+
+---
+
+***preface*** 날짜는 데이터 분석에서 매우 중요한 자료 형태 가운데 하나입니다. 이번 포스트에서는 R에서 날짜 자료를 다루는 방법에 대하여 설명합니다.
+
+다음 자료를 참고하였습니다:  
+- [http://www.statmethods.net/input/dates.html](http://www.statmethods.net/input/dates.html)
+
+R에서 날짜는 1970-01-01 년 이후의 날짜 수로 표시되며, 이전 날짜는 음수로 표시됩니다.
+
+```{r}
+# use as.Date( ) to convert strings to dates
+mydates <- as.Date(c("2007-06-22", "2004-02-13"))
+# number of days between 6/22/07 and 2/13/04
+days <- mydates[1] - mydates[2]
+```
+
+`Sys.Date()` 는 오늘 날짜를 반환합니다.
+`date( )` 는 현재 날짜와 시간을 반환합니다.
+
+다음 기호(symbols)를 사용하여 `format( )` 함수와 함께 사용하여 날짜를 출력할 수 있습니다.
+
+
+Symbol | Meaning                | Example
+-------|------------------------|-------------
+%d     | day as a number (0-31) | 01-31
+%a     | abbreviated weekday    | Mon
+%A     | unabbreviated weekday  | Monday
+%m     | month (00-12)          | 00-12
+%b     | abbreviated month      | Jan
+%B     | unabbreviated month    | January
+%y     | 2-digit year           | 07
+%Y     | 4-digit year           | 2007
+
+다음은 그 예입니다.
+
+```{r}
+# print today's date
+today <- Sys.Date()
+format(today, format="%B %d %Y")
+"June 20 2007"
+```
+
+## 날짜 자료 변환 (Date Conversion)
+
+### 문자에서 날짜로 (Character to Date)
+
+문자 데이터를 날짜로 변환하려면 as.Date() 함수를 사용합니다. 형식은 as.Date(x, "format") 입니다. 여기서 x는 문자 데이터이고 format은 적절한 형식을 입력합니다.
+
+```{r}
+# convert date info in format 'mm/dd/yyyy'
+strDates <- c("01/05/1965", "08/16/1975")
+dates <- as.Date(strDates, "%m/%d/%Y")
+```
+
+default format 은 yyyy-mm-dd 입니다.
+
+```{r}
+mydates <- as.Date(c("2007-06-22", "2004-02-13"))
+```
+
+### 날짜에서 문자로 (Date to Character)
+
+as.Character() 함수를 사용하여 날짜를 문자 데이터로 변환 할 수 있습니다.
+
+```{r}
+# convert dates to character data
+strDates <- as.character(dates)
+```
+
+### YYYYMMDD 에서 날짜로 (YYYYMMDD to Date)
+
+많은 경우 날짜를 YYYYMMDD 형태의 숫자로 표기합니다. (예: 20171001)
+
+일반적으로 숫자를 Date 로 변경하는 경우 origin 을 입력하도록 합니다. YYYYMMDD 를 날짜로 변경할 때에는 우선 문자로 변경한 후 다시 날짜로 변경합시다.
+
+```{r}
+mydates <- as.Date(as.character(YYYYMMDD), format = '%Y%m%d')
+```
+
+## 날짜와 관련된 유용한 함수들
+
+연령 혹은 나이를 구하는 함수
+
+```{r}
+## 연령(나이) 구하는 함수
+age = function(from, to) {
+  from_lt = as.POSIXlt(from)
+  to_lt = as.POSIXlt(to)
+
+  age = to_lt$year - from_lt$year
+
+  ifelse(to_lt$mon < from_lt$mon |
+           (to_lt$mon == from_lt$mon & to_lt$mday < from_lt$mday),
+         age - 1, age)
+}
+
+age(mydate1, mydate2)
+
+
+# 만월령 구하는 함수
+age_month = function(from_YYYYMMDD, to_YYYYMMDD) {
+
+  from_date = as.Date(as.character(from_YYYYMMDD), format = '%Y%m%d')
+  to_date = as.Date(as.character(to_YYYYMMDD), format = '%Y%m%d')
+
+  from_lt = as.POSIXlt(from_date)
+  to_lt = as.POSIXlt(to_date)
+
+  year_gap  <- to_lt$year - from_lt$year
+  month_gap <- to_lt$mon  - from_lt$mon
+  day_gap   <- to_lt$mday - from_lt$mday
+
+  adj <- day_gap
+  adj[day_gap <  0] <- -1
+  adj[day_gap >= 0] <-  0
+
+  age_month <- year_gap*12 + month_gap + adj
+}
+
+```
+
+month number 를 구하는 함수
+```{r}
+# Date (YYYYMMDD) to Month Number
+mnumber = function(INPUT_YYYYMMDD){
+  INPUT_DATE <- as.Date(as.character(INPUT_YYYYMMDD), format = '%Y%m%d')
+  month <- as.numeric(strftime(INPUT_DATE, "%m"))
+  year  <- as.numeric(strftime(INPUT_DATE, "%Y"))
+  month_number <- (year - 1900)*12 + month
+}
+
+# Date (YYYYMMDD) to Quarter Number
+qnumber = function(INPUT_YYYYMMDD){
+  INPUT_DATE <- as.Date(as.character(INPUT_YYYYMMDD), format = '%Y%m%d')
+  month <- as.numeric(strftime(INPUT_DATE, "%m"))
+  year  <- as.numeric(strftime(INPUT_DATE, "%Y"))
+  month_number <- (year - 1900)*4 + (month-1 %/% 3)
+}
+
+
+# Date (YYYY-MM-DD) to Month Number
+mnumber = function(INPUT_DATE){
+  month <- as.numeric(strftime(INPUT_DATE, "%m"))
+  year  <- as.numeric(strftime(INPUT_DATE, "%Y"))
+  month_number <- (year - 1900)*12 + month
+}
+```
+
+YYYYMMDD 를 YYYY-MM 으로
+```{r}
+YYYYMM <- format(as.Date(as.character(YYYYMMDD),format="%Y%m%d"),"%Y-%m")
+```
+
+
+
+
+## Learning More
+
+문자 데이터를 날짜로 변환하는 것에 대한 자세한 내용은 help(as.Date) 및 help(strftime)를 참조하십시오. 날짜/시간 형식 지정에 대한 자세한 내용은 help(ISOdatetime)를 참조하십시오.

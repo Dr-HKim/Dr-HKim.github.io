@@ -1,6 +1,6 @@
 ---
 layout: post  
-title: Open API 사용하기 (Using Open API)  
+title: Open API 사용하는 방법 (Using Open API)  
 date: 2017-12-09  
 category: [Data Analysis]  
 tag: [R]  
@@ -17,19 +17,19 @@ headerImage: true
 ## 공공데이터 포털 - 아파트매매 실거래 상세 자료
 
 다음 자료를 참고하였습니다:  
-- [R 에서 open API 사용하기 _ 국토교통부 실거래가 정보를 가지고](http://blog.naver.com/PostView.nhn?blogId=juhy9212&logNo=221007989739&categoryNo=0&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=postView)
+- [R 에서 open API 사용하기 _ 국토교통부 실거래가 정보를 가지고](http://juhy9212.blog.me/221007989739)
 - [부동산 매매가격 추이 분석](http://www.rpubs.com/lth1011/246453)
 
 1. [공공데이터포털](https://www.data.go.kr/)에 접속하여 회원가입을 합니다.  
 2. [국토교통부 실거래가정보 Open API](https://www.data.go.kr/dataset/3050988/openapi.do)에 들어갑니다.  
 3. 아파트매매 실거래 상세 자료를 **활용 신청** 합니다.  
 4. 바로 뜨는 안내 링크 혹은 마이페이지 > OPEN API > 개발계정 상세보기 에서 일반 인증키를 발급받습니다.  
-5. 계발계정 상세보기 하단에 있는 개발가이드를 클릭하면 상세한 기술 문서를 얻을 수 있습니다.  
+5. 개발계정 상세보기 하단에 있는 개발가이드를 클릭하면 상세한 기술 문서를 얻을 수 있습니다.  
  - 요청주소: http://openapi.molit.go.kr/OpenAPI_ToolInstallPackage/service/rest/RTMSOBJSvc/getRTMSDataSvcAptTradeDev
  - 요청변수 항목을 보면 서비스키(ServiceKey), 지역코드(LAWD_CD), 계약월(DEAL_YMD) 이 필수임을 알 수 있습니다.
 
 
-```r
+```{r}
 library(XML)
 library(data.table)
 library(stringr)
@@ -152,7 +152,7 @@ names(RESULTS_APT_SALES) <- c("시군구코드","시군구","날짜","거래금�
 
 아래 예제는 한국은행 100대 통계지표를 불러오는 코드입니다. 시계열 자료가 아니라 현재 snapshot 이므로 활용가치는 다소 떨어집니다.
 
-```r
+```{r}
 # 한국은행 100대 통계지표 불러오기
 
 library(XML)
@@ -199,7 +199,7 @@ RESULTS <- rbindlist(BOK_total)
 아래 예제는 한국은행 4.1.2 시장금리(월,분기,년)를 월별로 불러오는 코드입니다.
 여러 통계 지표를 테스트해보니 자료에 따라 601 SQL 에러가 뜨는 경우도 있었습니다.
 
-```r
+```{r}
 # 한국은행 4.1.2 시장금리(월,분기,년)
 
 library(XML)
