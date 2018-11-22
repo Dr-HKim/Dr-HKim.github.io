@@ -2,8 +2,8 @@
 layout: post  
 title: 모니터 밖으로 사라진 창 복구하는 방법   
 date: 2018-02-02  
-category:   
-tag:   
+category: []  
+tag: []   
 author: hkim  
 hidden: false # don't count this post in blog pagination  
 image: /assets/images/icon/iconmonstr-monitoring-6-240.png  
