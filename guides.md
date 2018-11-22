@@ -13,10 +13,10 @@ layout: page
 
 ## Python 기초
 
-[파이썬 기초 01 설치 및 환경설정](https://dr-hkim.github.io/Python-Enviornment-Setting/)
-[파이썬 기초 02 변수의 종류](https://dr-hkim.github.io/Python-Variables/)
-[파이썬 기초 03 제어문 if, while, for](https://dr-hkim.github.io/Python-Control-Structures/)
-[파이썬 기초 04 numpy and array](https://dr-hkim.github.io/Python-numpy-and-array/)
-[파이썬 기초 05 Pandas and DataFrame](https://dr-hkim.github.io/Python-pandas-and-dataframe/)
+[파이썬 기초 01 설치 및 환경설정](https://dr-hkim.github.io/Python-Enviornment-Setting/)  
+[파이썬 기초 02 변수의 종류](https://dr-hkim.github.io/Python-Variables/)  
+[파이썬 기초 03 제어문 if, while, for](https://dr-hkim.github.io/Python-Control-Structures/)  
+[파이썬 기초 04 numpy and array](https://dr-hkim.github.io/Python-numpy-and-array/)  
+[파이썬 기초 05 Pandas and DataFrame](https://dr-hkim.github.io/Python-pandas-and-dataframe/)  
 
 <br>
