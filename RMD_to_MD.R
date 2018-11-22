@@ -5,6 +5,14 @@
 library(knitr)
 library(readr)
 
+## R Markdown 을 실행하다보면 아래와 같은 Warning message 가 뜰 때가 있다.
+## Warning message:
+##  In strsplit(code, "\n", fixed = TRUE) :
+##  input string 1 is invalid in this locale
+## 그럴 때는 아래 코드를 사용하자
+Sys.setlocale('LC_ALL','en_US.UTF-8')
+
+
 ## jekyll 블로그 디렉토리 설정
 base.dir <- "C:/Clouds/GitHub/Dr-HKim.github.io"
 setwd(base.dir)
@@ -14,7 +22,7 @@ rmds <- "_Rmd"
 
 ## 파일 이름 지정
 FILELIST <- list.files(path= "./_Rmd", pattern = ".*.Rmd") # subdirectory 에 있는 *.Rmd 파일 리스트 작성
-CONV_FILELIST <- FILELIST[1:3] # 한꺼번에 모두 하면 시간이 오래 걸리므로 변환할 파일을 따로 지정
+CONV_FILELIST <- FILELIST[1:4] # 한꺼번에 모두 하면 시간이 오래 걸리므로 변환할 파일을 따로 지정
 CONV_FILELIST
 
 for (filename in CONV_FILELIST){
@@ -78,3 +86,6 @@ for (md_filename in MD_FILELIST) {
 ## Rmd 파일 이름을 수정할 때를 대비하여, 기존의 md 파일을 모두 지우는 코드 필요
 
 ## /_Rmd/ 하위폴더에 있는 그림 파일들을 /assets/article_images/ 로 복사하는 코드 필요
+
+
+

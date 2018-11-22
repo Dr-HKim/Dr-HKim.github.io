@@ -1,0 +1,27 @@
+---
+layout: post  
+title: R 에서 생성한 데이터를 클립보드에 붙이는 방법  
+date: 2018-11-22  
+category: [Data Analysis]  
+tag: [R]  
+author: hkim  
+hidden: false
+image: /assets/images/icon/iconmonstr-monitoring-6-240.png
+headerImage: true
+
+---
+
+***preface*** (last update: 2018.11.22) 이번 포스트에서는 R 데이터를 클립보드로 붙이는 방법에 대하여 알아봅니다.
+
+R 에서 데이터 분석 작업을 하다보면 R 에서 생성한 데이터를 엑셀 등에 간단히 옮겨붙여야할 때가 있습니다. 그럴 때에는 아래 코드를 실행한 뒤 원하는 곳에 `Ctrl+V` 하여 붙여넣기 할 수 있습니다.
+
+
+
+{% highlight r %}
+MYDATA <- iris
+
+# 데이터프레임을 엑셀에 붙여넣을 수 있게 클립보드로 복사
+write.table(MYDATA, "clipboard", sep="\t", row.names=FALSE) # row.names 가 필요없을 때 
+write.table(MYDATA, "clipboard", sep="\t", row.names=TRUE)  # row.names 가 필요할 때 
+{% endhighlight %}
+<!-- Sys.setlocale('LC_ALL','C') 를 사용하면 Warning 을 없앨 수 있다 -->
