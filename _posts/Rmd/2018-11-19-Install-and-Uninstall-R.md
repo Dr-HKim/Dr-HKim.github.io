@@ -1,6 +1,6 @@
 ---
 layout: post  
-title: R 기초 101 R 과 RStudio 설치하는 방법  
+title: R 과 RStudio 설치하는 방법  
 date: 2018-11-19  
 category: [R for Beginners]  
 tag: [R]  
@@ -10,7 +10,7 @@ headerImage: true
 
 ---
 
-***preface*** (last update: 2018.11.21) 이번 포스트에서는 R 과 RStudio 를 설치하고 삭제하는 방법에 대하여 설명합니다.
+***preface*** (last update: 2018.11.22) 이번 포스트에서는 R 과 RStudio 를 설치하고 삭제하는 방법에 대하여 설명합니다.
 
 ## R 설치하기
 
