@@ -20,9 +20,9 @@ Loan Credit Risk, Probability of Default, Loss-given-default, and Asset Pricing.
 
 ## Publications
 
-Kim, H., Cho, H. & Ryu, D. (2018). An Empirical Study on Credit Card Loan Delinquency. *Economic Systems* 42(3), pp. 437-449. [link](https://doi.org/10.1016/j.ecosys.2017.11.003)
-
 Kim, H., Cho, H. & Ryu, D. (2018). Characteristics of Mortgage Terminations: an Analysis of a Loan-Level Dataset. *Journal of Real Estate Finance and Economics* 57(4), pp. 647-676. [link](https://doi.org/10.1007/s11146-017-9620-5)
+
+Kim, H., Cho, H. & Ryu, D. (2018). An Empirical Study on Credit Card Loan Delinquency. *Economic Systems* 42(3), pp. 437-449. [link](https://doi.org/10.1016/j.ecosys.2017.11.003)
 
 김형준, 류두진, 조훈 (2018). 주택담보대출의 조기상환행태 분석 - 안심전환대출 출시 이후의 이상현상을 중심으로. *경영학연구* 47(4), pp. 865-887. [link](https://www.dbpia.co.kr/Journal/ArticleDetail/NODE07520947)
 
