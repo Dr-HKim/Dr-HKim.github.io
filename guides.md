@@ -1,3 +1,7 @@
+---
+title: Guides
+layout: page
+---
 ![Profile Image]({{ site.url }}/{{ site.picture }})
 
 <br>
@@ -46,4 +50,4 @@ Data Analysis w/ R, python, SAS, MATLAB, Excel VBA, and E-Views
 
 <br>
 
-(last update: 2018.11.21) 
+(last update: 2018.11.21)
