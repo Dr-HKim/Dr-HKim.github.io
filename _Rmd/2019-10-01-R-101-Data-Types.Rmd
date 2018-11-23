@@ -45,7 +45,12 @@ a[c(2,4)] # 2nd and 4th elements of vector
 행렬의 모든 열은 동일한 종류 (숫자, 문자 등) 및 동일한 길이를 가져야합니다. 일반적인 형식은 다음과 같습니다.
 
 ```{r}
-mymatrix <- matrix(vector, nrow=r, ncol=c, byrow=FALSE, dimnames=list(char_vector_rownames, char_vector_colnames))  
+vector <- 1:12
+char_vector_rownames <- c("a","b","c")
+char_vector_colnames <- c("A","B","C","D")
+mymatrix <- matrix(vector, nrow=3, ncol=4, byrow=FALSE, dimnames=list(char_vector_rownames, char_vector_colnames))  
+
+mymatrix
 ```
 
 **byrow=TRUE** indicates that the matrix should be filled by rows.  
