@@ -10,7 +10,8 @@ library(readr)
 ##  In strsplit(code, "\n", fixed = TRUE) :
 ##  input string 1 is invalid in this locale
 ## 그럴 때는 아래 코드를 사용하자
-Sys.setlocale('LC_ALL','en_US.UTF-8')
+# Sys.setlocale('LC_ALL','en_US.UTF-8')
+Sys.setlocale('LC_ALL','C')
 
 
 ## jekyll 블로그 디렉토리 설정

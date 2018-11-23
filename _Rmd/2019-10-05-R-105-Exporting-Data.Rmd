@@ -1,6 +1,6 @@
 ---
 layout: post  
-title: R 기초 105 데이터 출력하기 (Exporting Data)  
+title: R 데이터를 엑셀(xlsx), 텍스트(txt), CSV 등으로 출력하는 방법  
 date: 2017-10-05  
 category: [R for Beginners]  
 tag: [R]  
@@ -9,6 +9,9 @@ image: /assets/images/icon/iconmonstr-monitoring-6-240.png
 headerImage: true
 
 ---
+
+(구) title: R 기초 105 데이터 출력하기 (Exporting Data)  
+
 
 ***preface*** 이번 포스트에서는 R에서 작성한 데이터를 출력하는 방법에 대하여 설명합니다.
 
@@ -24,14 +27,14 @@ R 데이터를 다른 형식으로 내보내는 데는 여러 가지 방법이 �
 ## To A Tab Delimited Text File
 
 ```{r}
-write.table(mydata, "c:/mydata.txt", sep="\t")
+write.table(mydata, "c:/MYFOLDER/mydata.txt", sep="\t")
 ```
 
 ## To an Excel Spreadsheet
 
 ```{r}
 library(xlsx)
-write.xlsx(mydata, "c:/mydata.xlsx")
+write.xlsx(mydata, "c:/MYFOLDER/mydata.xlsx")
 ```
 
 ## To SPSS
@@ -40,7 +43,7 @@ write.xlsx(mydata, "c:/mydata.xlsx")
 # write out text datafile and
 # an SPSS program to read it
 library(foreign)
-write.foreign(mydata, "c:/mydata.txt", "c:/mydata.sps",   package="SPSS")
+write.foreign(mydata, "c:/MYFOLDER/mydata.txt", "c:/MYFOLDER/mydata.sps",   package="SPSS")
 ```
 
 
@@ -50,7 +53,7 @@ write.foreign(mydata, "c:/mydata.txt", "c:/mydata.sps",   package="SPSS")
 # write out text datafile and
 # an SAS program to read it
 library(foreign)
-write.foreign(mydata, "c:/mydata.txt", "c:/mydata.sas", package="SAS")
+write.foreign(mydata, "c:/MYFOLDER/mydata.txt", "c:/MYFOLDER/mydata.sas", package="SAS")
 ```
 
 ## To Stata
@@ -58,5 +61,5 @@ write.foreign(mydata, "c:/mydata.txt", "c:/mydata.sas", package="SAS")
 ```{r}
 # export data frame to Stata binary format
 library(foreign)
-write.dta(mydata, "c:/mydata.dta")
+write.dta(mydata, "c:/MYFOLDER/mydata.dta")
 ```
