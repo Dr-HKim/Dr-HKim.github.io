@@ -11,7 +11,7 @@ headerImage: true
 
 ---
 
-***preface*** 이번 포스트에서는 R에서 사용되는 데이터의 종류들에 대하여 설명합니다.
+***preface*** 이번 포스트에서는 R에서 사용하는 데이터의 종류들에 대하여 설명합니다.
 
 # Data Types
 
@@ -23,7 +23,7 @@ R 은 스칼라, 벡터 (숫자, 문자, 논리), 행렬, 데이터 프레임 �
 
 ## Vectors
 
-벡터의 원소를 직접 입력할 수 있습니다. 숫자, 문자, 논리 벡터를 만들 수 있습니다.
+벡터는 숫자의 나열로 구성된 데이터를 말합니다. 벡터의 원소를 직접 입력할 수 있습니다. 숫자, 문자, 논리 벡터를 만들 수 있습니다.
 
 
 {% highlight r %}
@@ -79,7 +79,7 @@ a[c(2,4)] # 2nd and 4th elements of vector
 
 ## Matrices
 
-행렬의 모든 열은 동일한 종류 (숫자, 문자 등) 및 동일한 길이를 가져야합니다. 일반적인 형식은 다음과 같습니다.
+행렬은 숫자를 2차원으로 나열한 데이터를 말합니다. 행렬의 모든 열은 동일한 종류 (숫자, 문자 등) 및 동일한 길이를 가져야합니다. 일반적인 형식은 다음과 같습니다.
 
 
 {% highlight r %}
@@ -291,42 +291,48 @@ v <- c(list1,list2)
 
 [[]]를 이용하여 리스트의 특정 요소를 반환할 수 있습니다.
 
-```
+
+{% highlight r %}
 mylist[[2]] # 2nd component of the list
 mylist[["mynumbers"]] # component named mynumbers in list
-```
+{% endhighlight %}
 
 ## Factors
 
 명목 변수(nominal variable)는 factor 로 지정하여 분석할 수 있습니다. factor 는 명목 변수를 정수 벡터 [1, ..., k] (where k is the number of unique values in the nominal variable) 로 저장합니다.
 
-```
+
+{% highlight r %}
 # variable gender with 20 "male" entries and
 # 30 "female" entries
 gender <- c(rep("male",20), rep("female", 30))
 gender <- factor(gender)
+
 # stores gender as 20 1s and 30 2s and associates
 # 1=female, 2=male internally (alphabetically)
 # R now treats gender as a nominal variable
 summary(gender)
-```
+{% endhighlight %}
 
 ordinal variable 는 factor 에 `ordered( )`를 사용하여 표현할 수 있습니다.
 
-```
+
+{% highlight r %}
 # variable rating coded as "large", "medium", "small'
 rating <- ordered(rating)
+
 # recodes rating to 1,2,3 and associates
 # 1=large, 2=medium, 3=small internally
 # R now treats rating as ordinal
-```
+{% endhighlight %}
 
 앞으로 실시할 퉁계 분석과 그래프 작업에서 factor 는 nominal variable 로, ordered factors 는 ordinal variable 로 사용됩니다. `factor( )` 및 `ordered( )` 함수의 옵션을 이용하여 문자에 정수를 할당하는 방법을 변경할 수 있습니다.(default 는 alphabetical) 변수 레이블(value label)을 만들기 위해 factor 를 사용할 수 있습니다.
 
 
 ## Useful Functions
 
-```
+
+{% highlight r %}
 length(object) # number of elements or components
 str(object)    # structure of an object
 class(object)  # class or type of an object
@@ -343,4 +349,4 @@ rm(object) # delete an object
 
 newobject <- edit(object) # edit copy and save as newobject
 fix(object)               # edit in place
-```
+{% endhighlight %}
