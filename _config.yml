@@ -96,6 +96,7 @@ related: true
 # post-advance-links: [blog]
 post-advance-links:
   - blog
+  - Getting Started with R
   - Python for Beginners
   - R for Beginners
   - Data Analysis

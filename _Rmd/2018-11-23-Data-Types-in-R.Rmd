@@ -1,10 +1,11 @@
 ---
 layout: post  
-title: R 기초 101 데이터의 종류들 (Data Types)  
-date: 2017-10-01  
-category: [R for Beginners]  
+title: R 에서 사용하는 데이터의 종류들  
+date: 2018-11-23  
+category: [Getting Started with R]  
 tag: [R]  
 author: hkim  
+hidden: false  
 image: /assets/images/icon/iconmonstr-monitoring-6-240.png
 headerImage: true
 
@@ -110,16 +111,16 @@ mydata
 다양한 방법으로 데이터 프레임의 특정 요소를 반환할 수 있습니다.
 
 ```{r}
-myframe[3:5] # columns 3,4,5 of data frame
-myframe[c("ID","Age")] # columns ID and Age from data frame
-myframe$X1 # variable x1 in the data frame
+mydata[2:3] # columns 2, 3 of data frame
+mydata[c("ID","Color")] # columns ID and Age from data frame
+mydata$Passed # variable "Passed"" in the data frame
 ```
 
 ## Lists
 
 list 는 여러 요소를 순서대로 저장합니다. 여러 형태의 자료를 하나의 변수로 저장할 수 있습니다.
 
-```{r}
+```{r, eval=FALSE}
 # example of a list with 4 components -
 # a string, a numeric vector, a matrix, and a scaler
 w <- list(name="Fred", mynumbers=a, mymatrix=y, age=5.3)
@@ -130,7 +131,7 @@ v <- c(list1,list2)
 
 [[]]를 이용하여 리스트의 특정 요소를 반환할 수 있습니다.
 
-```{r}
+```
 mylist[[2]] # 2nd component of the list
 mylist[["mynumbers"]] # component named mynumbers in list
 ```
@@ -139,7 +140,7 @@ mylist[["mynumbers"]] # component named mynumbers in list
 
 명목 변수(nominal variable)는 factor 로 지정하여 분석할 수 있습니다. factor 는 명목 변수를 정수 벡터 [1, ..., k] (where k is the number of unique values in the nominal variable) 로 저장합니다.
 
-```{r}
+```
 # variable gender with 20 "male" entries and
 # 30 "female" entries
 gender <- c(rep("male",20), rep("female", 30))
@@ -152,7 +153,7 @@ summary(gender)
 
 ordinal variable 는 factor 에 `ordered( )`를 사용하여 표현할 수 있습니다.
 
-```{r}
+```
 # variable rating coded as "large", "medium", "small'
 rating <- ordered(rating)
 # recodes rating to 1,2,3 and associates
@@ -165,7 +166,7 @@ rating <- ordered(rating)
 
 ## Useful Functions
 
-```{r}
+```
 length(object) # number of elements or components
 str(object)    # structure of an object
 class(object)  # class or type of an object

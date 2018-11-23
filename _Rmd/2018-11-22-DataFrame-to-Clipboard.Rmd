@@ -2,7 +2,7 @@
 layout: post  
 title: R 에서 생성한 데이터를 클립보드에 붙이는 방법  
 date: 2018-11-22  
-category: [Data Analysis]  
+category: [Getting Started with R]  
 tag: [R]  
 author: hkim  
 hidden: false

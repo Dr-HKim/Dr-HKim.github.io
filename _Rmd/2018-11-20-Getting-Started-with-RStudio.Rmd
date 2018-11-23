@@ -1,8 +1,8 @@
 ---
 layout: post  
-title: RStudio 처음 사용하는 방법  
+title: R 과 RStudio 처음 사용하는 방법  
 date: 2018-11-20  
-category: [R for Beginners]  
+category: [Getting Started with R]  
 tag: [R]  
 author: hkim  
 image: /assets/images/icon/iconmonstr-monitoring-6-240.png
