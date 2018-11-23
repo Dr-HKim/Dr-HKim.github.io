@@ -3,7 +3,7 @@ layout: post
 comments: true  
 title: R 기초 110 날짜 다루기 (Date Values)  
 date: 2017-10-10  
-category: [R for Beginners]  
+category: [Getting Started with R]  
 tag: [R]  
 author: hkim  
 image: /assets/images/icon/iconmonstr-monitoring-6-240.png

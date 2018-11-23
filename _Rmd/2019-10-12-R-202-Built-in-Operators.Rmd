@@ -2,7 +2,7 @@
 layout: post  
 title: R 기초 202 내장 연산자들 (Built-in Operators)  
 date: 2017-10-12  
-category: [R for Beginners]  
+category: [Getting Started with R]  
 tag: [R]  
 author: hkim  
 image: /assets/images/icon/iconmonstr-monitoring-6-240.png
@@ -53,18 +53,15 @@ Operator    | Description
 # An example
 x <- c(1:10)
 x[(x>8) | (x<5)]
-## 1 2 3 4 9 10
+```
 
+```{r}
 # How it works
 x <- c(1:10)
+
 x
-## 1 2 3 4 5 6 7 8 9 10
 x > 8
-## F F F F F F F F T T
 x < 5
-## T T T T F F F F F F
 x > 8 | x < 5
-## T T T T F F F F T T
 x[c(T,T,T,T,F,F,F,F,T,T)]
-## 1 2 3 4 9 10
 ```

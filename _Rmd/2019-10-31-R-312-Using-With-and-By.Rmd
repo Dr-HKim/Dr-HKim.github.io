@@ -2,7 +2,7 @@
 layout: post  
 title: R 기초 312 with( ) 와 by( ) 사용하기 (Using with( ) and by( ))  
 date: 2017-10-31  
-category: [R for Beginners]  
+category: [Getting Started with R]  
 tag: [R]  
 author: hkim  
 hidden: false # don't count this post in blog pagination  

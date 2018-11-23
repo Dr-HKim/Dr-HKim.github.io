@@ -2,7 +2,7 @@
 layout: post  
 title: R 기초 303 Correlations  
 date: 2017-12-11  
-category: [R for Beginners]  
+category: [Getting Started with R]  
 tag: [R]  
 author: hkim  
 hidden: true # don't count this post in blog pagination  

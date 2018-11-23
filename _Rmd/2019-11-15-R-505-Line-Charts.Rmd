@@ -2,7 +2,7 @@
 layout: post  
 title: Line Charts
 date: 2017-11-15  
-category: [R for Beginners]  
+category: [Getting Started with R]  
 tag: [R]  
 author: hkim  
 hidden: true # don't count this post in blog pagination  

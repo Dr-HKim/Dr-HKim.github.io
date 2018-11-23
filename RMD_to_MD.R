@@ -73,33 +73,33 @@ for (md_filename in MD_FILELIST) {
 # Rmd_FILELIST <- list.files(path= "./_Rmd", pattern = ".*.Rmd") # subdirectory 에 있는 *.Rmd 파일 리스트 작성
 # 
 # library(readr)
-# for (Rmd_filename in Rmd_FILELIST) {
+# for (Rmd_filename in Rmd_FILELIST[6:70]) {
 #   file <- paste0("_Rmd/", Rmd_filename)
 #   lines_Rmd_filename <- read_lines(file)
 # 
 #   for (i in 1:length(lines_Rmd_filename)){
-#     if (startsWith(lines_Rmd_filename[i],"```r")) {
-#       lines_Rmd_filename[i] <- sub("```r", "```{r}", lines_Rmd_filename[i])
+#     if (startsWith(lines_Rmd_filename[i],"```\\{r\\}")) {
+#       lines_Rmd_filename[i] <- sub("```\\{r\\}", "```\\{r, eval=FALSE\\}", lines_Rmd_filename[i])
 #     }
 #   }
 #   write_lines(lines_Rmd_filename, file)
 # }
 # 
-## Rmd 파일을 읽고 ```r 을 ```{r} 로 변경
-Rmd_FILELIST <- list.files(path= "./_Rmd", pattern = ".*.Rmd") # subdirectory 에 있는 *.Rmd 파일 리스트 작성
-
-library(readr)
-for (Rmd_filename in Rmd_FILELIST) {
-  file <- paste0("_Rmd/", Rmd_filename)
-  lines_Rmd_filename <- read_lines(file)
-
-  for (i in 1:length(lines_Rmd_filename)){
-    if (startsWith(lines_Rmd_filename[i],"category:")) {
-      lines_Rmd_filename[i] <- sub("category: [R for Beginners]", "category: [Getting Started with R]", lines_Rmd_filename[i])
-    }
-  }
-  write_lines(lines_Rmd_filename, file)
-}
+# ## Rmd 파일을 읽고 ```r 을 ```{r} 로 변경
+# Rmd_FILELIST <- list.files(path= "./_Rmd", pattern = ".*.Rmd") # subdirectory 에 있는 *.Rmd 파일 리스트 작성
+# 
+# library(readr)
+# for (Rmd_filename in Rmd_FILELIST) {
+#   file <- paste0("_Rmd/", Rmd_filename)
+#   lines_Rmd_filename <- read_lines(file)
+# 
+#   for (i in 1:length(lines_Rmd_filename)){
+#     if (startsWith(lines_Rmd_filename[i],"category:")) {
+#       lines_Rmd_filename[i] <- sub("category: \\[R for Beginners\\]", "category: \\[Getting Started with R\\]", lines_Rmd_filename[i])
+#     }
+#   }
+#   write_lines(lines_Rmd_filename, file)
+# }
 
 ## Rmd 파일 이름을 수정할 때를 대비하여, 기존의 md 파일을 모두 지우는 코드 필요
 

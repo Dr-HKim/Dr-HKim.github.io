@@ -2,7 +2,7 @@
 layout: post  
 title: 주성분 분석과 요인 분석 (Principal Components and Factor Analysis)  
 date: 2017-11-04  
-category: [R for Beginners]  
+category: [Getting Started with R]  
 tag: [R]  
 author: hkim  
 hidden: true # don't count this post in blog pagination  

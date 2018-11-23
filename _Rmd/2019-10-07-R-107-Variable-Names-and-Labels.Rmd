@@ -2,7 +2,7 @@
 layout: post  
 title: R 기초 107 변수 이름 및 레이블 (Variable Names and Labels)  
 date: 2017-10-07  
-category: [R for Beginners]  
+category: [Getting Started with R]  
 tag: [R]  
 author: hkim  
 image: /assets/images/icon/iconmonstr-monitoring-6-240.png

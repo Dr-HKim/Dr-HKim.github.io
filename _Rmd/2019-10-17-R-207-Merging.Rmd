@@ -2,7 +2,7 @@
 layout: post  
 title: R 기초 207 데이터 합치기 (Merging Data)  
 date: 2017-10-17  
-category: [R for Beginners]  
+category: [Getting Started with R]  
 tag: [R]  
 author: hkim  
 image: /assets/images/icon/iconmonstr-monitoring-6-240.png

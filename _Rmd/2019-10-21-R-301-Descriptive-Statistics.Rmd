@@ -2,7 +2,7 @@
 layout: post  
 title: R 기초 301 기술통계량 (Descriptive Statistics)  
 date: 2017-10-21  
-category: [R for Beginners]  
+category: [Getting Started with R]  
 tag: [R]  
 author: hkim  
 hidden: true # don't count this post in blog pagination  

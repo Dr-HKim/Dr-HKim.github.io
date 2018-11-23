@@ -2,7 +2,7 @@
 layout: post  
 title: R 기초 109 결측치 처리 (Missing Data)  
 date: 2017-10-09  
-category: [R for Beginners]  
+category: [Getting Started with R]  
 tag: [R]  
 author: hkim  
 image: /assets/images/icon/iconmonstr-monitoring-6-240.png

@@ -2,7 +2,7 @@
 layout: post  
 title: Multiple (Linear) Regression
 date: 2017-10-26  
-category: [R for Beginners]  
+category: [Getting Started with R]  
 tag: [R, regression]  
 author: hkim  
 hidden: true # don't count this post in blog pagination  

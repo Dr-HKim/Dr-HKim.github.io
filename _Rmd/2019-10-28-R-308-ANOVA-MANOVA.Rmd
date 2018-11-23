@@ -2,7 +2,7 @@
 layout: post  
 title: ANOVA
 date: 2017-10-28  
-category: [R for Beginners]  
+category: [Getting Started with R]  
 tag: [R]  
 author: hkim  
 hidden: true # don't count this post in blog pagination  
