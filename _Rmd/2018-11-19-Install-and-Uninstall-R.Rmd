@@ -11,7 +11,7 @@ comments: true
 
 ---
 
-***preface*** (last update: 2018.11.22) 이번 포스트에서는 R 과 RStudio 를 설치하고 삭제하는 방법에 대하여 설명합니다.
+***preface*** (last update: 2018.11.24) 이번 포스트에서는 R 과 RStudio 를 설치하고 삭제하는 방법에 대하여 설명합니다.
 
 ## R 설치하기
 

@@ -7,10 +7,11 @@ tag: [R]
 author: hkim  
 image: /assets/images/icon/iconmonstr-monitoring-6-240.png
 headerImage: true
+comments: true
 
 ---
 
-***preface*** (last update: 2018.11.22) 이번 포스트에서는 RStudio 를 실행하고 사용하는 방법에 대하여 설명합니다.
+***preface*** (last update: 2018.11.24) 이번 포스트에서는 RStudio 를 실행하고 사용하는 방법에 대하여 설명합니다.
 
 
 ## RStudio 실행하기

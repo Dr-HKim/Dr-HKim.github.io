@@ -8,10 +8,11 @@ author: hkim
 hidden: false  
 image: /assets/images/icon/iconmonstr-monitoring-6-240.png
 headerImage: true
+comments: true
 
 ---
 
-***preface*** 이번 포스트에서는 R에서 사용하는 데이터의 종류들에 대하여 설명합니다.
+***preface*** (last update: 2018.11.24) 이번 포스트에서는 R에서 사용하는 데이터의 종류들에 대하여 설명합니다.
 
 # Data Types
 

@@ -7,10 +7,11 @@ tag: [R, jekyll]
 author: hkim   
 image: /assets/images/icon/iconmonstr-monitoring-6-240.png  
 headerImage: true
+comments: true
 
 ---
 
-***preface*** (last update: 2018.11.21) 이번 포스트에서는 R 마크다운(R Markdown)을 이용하여 블로깅하는 방법을 알아보겠습니다. 
+***preface*** (last update: 2018.11.24) 이번 포스트에서는 R 마크다운(R Markdown)을 이용하여 블로깅하는 방법을 알아보겠습니다. 
 
 
 마크다운(Markdown)은 마크업 언어의 일종으로, 텍스트 안에서 헤더(header)나 코드블럭(codeblock)을 지정할 수 있는 등 작성자 입장에서 편리할 뿐만 아니라 읽기도 쉽다는 장점을 가지고 있습니다.

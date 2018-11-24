@@ -8,10 +8,11 @@ author: hkim
 hidden: false
 image: /assets/images/icon/iconmonstr-monitoring-6-240.png
 headerImage: true
+comments: true
 
 ---
 
-***preface*** (last update: 2018.11.22) 이번 포스트에서는 R 데이터를 클립보드로 붙이는 방법에 대하여 알아봅니다.
+***preface*** (last update: 2018.11.24) 이번 포스트에서는 R 데이터를 클립보드로 붙이는 방법에 대하여 알아봅니다.
 
 다음 자료를 참고하였습니다:  
 - [Moving data between R and Excel via the clipboard](https://www.johndcook.com/blog/r_excel_clipboard/)
