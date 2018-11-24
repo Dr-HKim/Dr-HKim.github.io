@@ -1,6 +1,6 @@
 ---
 layout: post  
-title: R 에서 원하는 키워드의 네이버 뉴스를 웹크롤링 하는 방법  
+title: R 에서 원하는 키워드의 네이버 뉴스를 웹크롤링(스크래핑) 하는 방법  
 date: 2018-11-24  
 category: [Advanced R Tutorial]  
 tag: [R]  
@@ -11,7 +11,7 @@ headerImage: true
 
 ---
 
-***preface*** 이번 포스트에서는 R을 이용하여 네이버 뉴스에서 원하는 키워드의 검색 결과를 웹크롤링 하는 방법에 대하여 설명합니다.
+***preface*** 이번 포스트에서는 R을 이용하여 네이버 뉴스에서 원하는 키워드의 검색 결과를 웹크롤링(스크래핑) 하는 방법에 대하여 설명합니다.
 
 # Naver News Crawling in R
 
@@ -230,7 +230,7 @@ save(NEWS, file="./DATA0/NEWS.RData") # working directory 아래 subfolder "DATA
 
 ## 전체 코드
 
-이번 포스트에서 다룬 R을 이용하여 네이버 뉴스에서 원하는 키워드의 검색 결과를 웹크롤링 하기 위한 전체 코드는 아래와 같습니다. 
+이번 포스트에서 다룬 R을 이용하여 네이버 뉴스에서 원하는 키워드의 검색 결과를 웹크롤링(스크래핑) 하기 위한 전체 코드는 아래와 같습니다. 
 
 ```{r, eval=FALSE}
 ## 패키지 불러오기
