@@ -8,13 +8,13 @@ author: hkim
 hidden: false  
 image: /assets/images/icon/iconmonstr-monitoring-6-240.png
 headerImage: true
-comments: false
+comments: true
 
 ---
 
 ***preface*** (last update: 2018.11.24) 이번 포스트에서는 R을 이용하여 네이버 뉴스에서 원하는 키워드의 검색 결과를 웹크롤링(스크래핑) 하는 방법에 대하여 설명합니다.
 
-# Naver News Web Scraping in R (with keywords)
+# Naver News Web Scraping using Keywords in R
 
 다음 자료를 참고하였습니다:  
 - [https://blog.naver.com/knowch/221060289410](https://blog.naver.com/knowch/221060289410)
