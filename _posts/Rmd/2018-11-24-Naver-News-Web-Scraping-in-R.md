@@ -114,8 +114,8 @@ naver_url
 
 {% highlight r %}
 ## 날짜 리스트 만들기
-DATE_START <- as.Date(as.character(20181119),format="%Y%m%d") # 시작일자
-DATE_END   <- as.Date(as.character(20181121),  format="%Y%m%d") # 종료일자
+DATE_START <- as.Date(as.character(20181119), format="%Y%m%d") # 시작일자
+DATE_END   <- as.Date(as.character(20181121), format="%Y%m%d") # 종료일자
 DATE <- DATE_START:DATE_END
 DATE <- as.Date(DATE,origin="1970-01-01")
 DATE
