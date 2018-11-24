@@ -32,7 +32,9 @@ analytics-google: 'UA-108453160-1'
 # if you don't want comments in your posts, leave categories empty
 disqus:
   shortname: dr-hkim # enter this from your disqus account
-  categories: ["Getting Started with R"] # only show disqus for posts that have these categories
+  categories: # categories: ["Getting Started with R"]  only show disqus for posts that have these categories
+    - Getting Started with R
+
 
 # if you don't have any of social below, comment the line
 # facebook: myfacebook
