@@ -55,8 +55,7 @@ X \beta &=& \log \left( \frac{F\left(X\right)}{1-F\left(X\right)} \right) \\
 $\text{odds}$ : the probability of the event divided by the probability of the event not occurring.
 
 $$\begin{eqnarray*}
-\text{odds}
-& = & \frac{\pi}{1-\pi} \\
+\text{odds} & = & \frac{\pi}{1-\pi} \\
 & = & \exp \left( \text{logit} \left( \pi \right) \right) \\
 & = & \frac{\text{logistic} \left( x \right) }{1-\text{logistic} \left( x \right) } \\
 &=& \exp \left( X \beta \right) \\
@@ -67,8 +66,7 @@ $$\begin{eqnarray*}
 $\text{odds ratio}$ :
 
 $$\begin{eqnarray*}
-\text{odds ratio}
-&=& \frac{ \text{odds} \left( x+1 \right) }{\text{odds} \left(x\right) } \\
+\text{odds ratio} &=& \frac{ \text{odds} \left( x+1 \right) }{\text{odds} \left(x\right) } \\
 &=& \frac{e^{\beta_0 + \beta_1 \left(x_1+1\right)}}{e^{\beta_0 + \beta_1 x_1}} \\
 &=& e^{\beta_1}
 \end{eqnarray*}$$
@@ -79,15 +77,13 @@ $$\begin{eqnarray*}
 
 
 $$\begin{eqnarray*}
-\text{Pr} \left( Y_i = y_i | X_i \right)
-&=& p_i^{y_i} \left( 1-p_i \right)^{1-y_i} \\
+\text{Pr} \left( Y_i = y_i | X_i \right) &=& p_i^{y_i} \left( 1-p_i \right)^{1-y_i} \\
 &=& \left( \frac{1}{1+e^{-X\beta}} \right)^{y_i} \left( 1- \frac{1}{1+e^{-X\beta}} \right)^{1-y_i}
 \end{eqnarray*}$$
 
 
 $$\begin{eqnarray*}
-L \left( \beta | x \right)
-&=& Pr \left( Y | X ; \beta \right) \\
+L \left( \beta | x \right) &=& Pr \left( Y | X ; \beta \right) \\
 &=& \prod_i Pr \left( y_i | x_i ; \beta \right) \\
 &=& \prod_i \left( \frac{1}{1+e^{-X\beta}} \right)^{y_i} \left( 1- \frac{1}{1+e^{-X\beta}} \right)^{1-y_i}
 \end{eqnarray*}$$
@@ -95,8 +91,7 @@ L \left( \beta | x \right)
 Log Likelihood
 
 $$\begin{eqnarray*}
-\frac{1}{N} \text{log} \left( L \left( \beta | x \right) \right)
-&=& \frac{1}{N} \text{log} \left( \prod_i Pr \left( y_i | x_i ; \beta \right) \right) \\
+\frac{1}{N} \text{log} \left( L \left( \beta | x \right) \right) &=& \frac{1}{N} \text{log} \left( \prod_i Pr \left( y_i | x_i ; \beta \right) \right) \\
 &=& \frac{1}{N} \sum_i \text{log} \left( Pr \left( y_i | x_i ; \beta \right) \right) \\
 
 &=& \frac{1}{N} \sum_i \text{log} \left( \left( \frac{1}{1+e^{-X\beta}} \right)^{y_i} \left( 1- \frac{1}{1+e^{-X\beta}} \right)^{1-y_i} \right) \\
