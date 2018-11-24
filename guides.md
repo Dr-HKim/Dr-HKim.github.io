@@ -7,10 +7,16 @@ layout: page
 
 (last update: 2018.11.22)
 
-## R 기초
+## Getting Started with R
 
 [R 과 RStudio 설치하는 방법](https://dr-hkim.github.io/Install-and-Uninstall-R/)  
-[RStudio 처음 사용하는 방법](https://dr-hkim.github.io/Getting-Started-with-RStudio/)  
+[R 과 RStudio 처음 사용하는 방법](https://dr-hkim.github.io/Getting-Started-with-RStudio/)  
+
+<br>
+
+## Advanced R Tutorial
+
+[R 에서 원하는 키워드의 네이버 뉴스를 웹크롤링(스크래핑) 하는 방법](https://dr-hkim.github.io/Naver-News-Web-Scraping-in-R/)
 
 <br>
 
@@ -21,6 +27,5 @@ layout: page
 [파이썬 기초 103 제어문 if, while, for](https://dr-hkim.github.io/Python-Control-Structures/)  
 [파이썬 기초 104 numpy and array](https://dr-hkim.github.io/Python-numpy-and-array/)  
 [파이썬 기초 105 Pandas and DataFrame](https://dr-hkim.github.io/Python-pandas-and-dataframe/)  
-
 
 <br>
