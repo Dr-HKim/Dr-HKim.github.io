@@ -34,5 +34,5 @@ plot(cars)
 
 물론 일반적인 마크다운과 같이 그림을 삽입할 수도 있습니다. 
 
-![test](FILES_2018-11-18-Blog-with-RMD/e49800898d2f9707b169a87227fef51e.jpg)
+![test](FILES_2018-11-18-Blog-with-R-Markdown/e49800898d2f9707b169a87227fef51e.jpg)
 
