@@ -24,9 +24,9 @@ headerImage: true
 
 $\text{logit function}$ :  
 .  
-$$
-\text{logit} \left( x \right) = \log \left( \frac{x}{1-x} \right)
-$$
+
+$$ \text{logit} \left( x \right) = \log \left( \frac{x}{1-x} \right) $$
+
 
 ![logit function](http://mathworld.wolfram.com/images/eps-gif/LogitTransformation_1000.gif)
 .  

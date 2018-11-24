@@ -15,8 +15,8 @@ Sys.setlocale('LC_ALL','C')
 
 
 ## jekyll 블로그 디렉토리 설정
-#base.dir <- "C:/Clouds/GitHub/Dr-HKim.github.io" # Windows
-base.dir <- "/Users/hkim/Documents/GitHub/Dr-HKim.github.io" # Mac
+base.dir <- "C:/Clouds/GitHub/Dr-HKim.github.io" # Windows
+# base.dir <- "/Users/hkim/Documents/GitHub/Dr-HKim.github.io" # Mac
 
 setwd(base.dir)
 

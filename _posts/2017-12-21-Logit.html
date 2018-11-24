@@ -143,26 +143,36 @@ $(document).ready(function () {
 <span class="math display">\[
 \text{logit} \left( x \right) = \log \left( \frac{x}{1-x} \right)
 \]</span></p>
-<p><img src="data:image/gif;base64,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" alt="logit function" /> .<br />
-<span class="math inline">\(\text{logistic function}\)</span> :<br />
+<div class="figure">
+<img src="data:image/gif;base64,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" alt="logit function" />
+<p class="caption">logit function</p>
+</div>
+<p>.</p>
+<p><span class="math inline">\(\text{logistic function}\)</span> :<br />
 .<br />
 <span class="math display">\[
 \text{logistic} \left( x \right) = \frac{ e^{x} }{ 1+e^{x} } = \frac{1}{1+e^{-x}}
 \]</span></p>
 <p>.<br />
 <span class="math inline">\(\pi = F\left(X\right) = P \left( Y_i = 1 | X \right)\)</span> : the probability of the event given <span class="math inline">\(X\)</span></p>
-<p><span class="math display">\[\begin{eqnarray*}
-F\left(X\right) &amp;=&amp; \text{logistic} \left( X \beta \right) \\
-                &amp;=&amp; \frac{1}{1+e^{- X \beta }} \\
-F\left(X\right) \left( 1+e^{- X \beta } \right)&amp; = &amp; 1\\
-F\left(X\right)  + F\left(X\right) e^{- X \beta } &amp;=&amp; 1 \\
-e^{- X \beta } &amp;=&amp; \frac{1-F\left(X\right)}{F\left(X\right)}\\
-e^{ X \beta } &amp;=&amp; \frac{F\left(X\right)}{1-F\left(X\right)}\\
-X \beta &amp;=&amp; \log \left( \frac{F\left(X\right)}{1-F\left(X\right)} \right) \\
-        &amp;=&amp; \text{logit} \left( \pi \right)
-\end{eqnarray*}\]</span></p>
+<p><span class="math display">\[\begin{aligned}
+F \left( X \right) &amp;= \text{logistic} \left( X \beta \right) \\
+                &amp;= \frac{1}{1+e^{- X \beta }} \\
+F\left(X\right) \left( 1+e^{- X \beta } \right) &amp;= 1\\
+F\left(X\right)  + F\left(X\right) e^{- X \beta } &amp;= 1 \\
+e^{- X \beta } &amp;= \frac{1-F\left(X\right)}{F\left(X\right)}\\
+e^{ X \beta } &amp;= \frac{F\left(X\right)}{1-F\left(X\right)}\\
+X \beta &amp;= \log \left( \frac{F\left(X\right)}{1-F\left(X\right)} \right) \\
+        &amp;= \text{logit} \left( \pi \right)
+\end{aligned}\]</span></p>
 <p><span class="math display">\[ F \left( X \right) = \text{logistic} \left( X \beta \right) \]</span><br />
 <span class="math display">\[  \phantom{00}     = \frac{1}{1+e^{- X \beta }} \]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+ AR(p): Y_i &amp;= c + \epsilon_i + \phi_i Y_{i-1} \dots \\
+ Y_{i} &amp;= c + \phi_i Y_{i-1} \dots
+\end{aligned}
+\]</span></p>
 <p><span class="math inline">\(\text{odds}\)</span> : the probability of the event divided by the probability of the event not occurring.</p>
 <p><span class="math display">\[\begin{eqnarray*}
 \text{odds}
@@ -199,12 +209,9 @@ L \left( \beta | x \right)
 <p>Log Likelihood</p>
 $$
 <span class="math display">\[\begin{eqnarray*}
-\frac{1}{N} \text{log} \left( L \left( \beta | x \right) \right)
-&amp;=&amp; \frac{1}{N} \text{log} \left( \prod_i Pr \left( y_i | x_i ; \beta \right) \right) \\
+\frac{1}{N} \text{log} \left( L \left( \beta | x \right) \right) &amp;=&amp; \frac{1}{N} \text{log} \left( \prod_i Pr \left( y_i | x_i ; \beta \right) \right) \\
 &amp;=&amp; \frac{1}{N} \sum_i \text{log} \left( Pr \left( y_i | x_i ; \beta \right) \right) \\
-
 &amp;=&amp; \frac{1}{N} \sum_i \text{log} \left( \left( \frac{1}{1+e^{-X\beta}} \right)^{y_i} \left( 1- \frac{1}{1+e^{-X\beta}} \right)^{1-y_i} \right) \\
-
 &amp;=&amp; \frac{1}{N} \sum_i \left(
   y_i \text{log} \left( \frac{1}{1+e^{-X\beta}} \right) +
   \left( 1-y_i \right) \text{log} \left( 1- \frac{1}{1+e^{-X\beta}} \right)
@@ -212,7 +219,7 @@ $$
 
 \end{eqnarray*}\]</span>
 <p>$$</p>
-<p>..</p>
+<p>.</p>
 </div>
 <div id="logistic-regression-in-r-using-glm" class="section level2">
 <h2>Logistic Regression in R using glm()</h2>
