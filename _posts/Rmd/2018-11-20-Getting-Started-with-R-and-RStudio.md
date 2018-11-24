@@ -7,7 +7,7 @@ tag: [R]
 author: hkim  
 image: /assets/images/icon/iconmonstr-monitoring-6-240.png
 headerImage: true
-comments: true
+comments: false
 
 ---
 
@@ -20,7 +20,7 @@ RStudio 를 실행하려면 시작 > RStudio > RStudio 를 클릭합니다.
 
 RStudio 를 처음 실행하면 화면이 크게 3등분 되어있습니다.
 
-좌측은 콘솔(Console), 우측 상단은 Environment, 우측 하단은 Files 탭이 표시됩니다. 
+좌측은 콘솔(Console), 우측 상단은 Environment, 우측 하단은 Files 탭이 표시됩니다.
 
 Console 창에는 아마도 아래와 비슷한 메세지가 출력될 것입니다.
 
@@ -41,7 +41,7 @@ Type 'demo()' for some demos, 'help()' for on-line help, or
 'help.start()' for an HTML browser interface to help.
 Type 'q()' to quit R.
 
-> 
+>
 ```
 
 ## Console 창 사용하기
@@ -94,10 +94,3 @@ x+y
 {% highlight text %}
 ## [1] 101
 {% endhighlight %}
-
-
-
-
-
-
-
