@@ -36,9 +36,6 @@ layout: page
     </div>
 {% endif %}
 
-{% include disqus.html %}
-
-
 {% if site.related %}
     {% include related.html %}
 {% endif %}
@@ -59,13 +56,14 @@ layout: page
 
 </section>
 
-{% include disqus.html %}
-
 {% if site.show-author %}
     {% include author.html %}
 {% endif %}
 
-
 {% if site.disqus.categories contains page.category %}
+    {% include disqus.html %}
+{% endif %}
+
+{% if page.comments %}
     {% include disqus.html %}
 {% endif %}
