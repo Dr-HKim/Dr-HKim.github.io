@@ -60,10 +60,6 @@ layout: page
     {% include author.html %}
 {% endif %}
 
-{% if site.disqus.categories contains page.category %}
-    {% include disqus.html %}
-{% endif %}
-
 {% if page.comments %}
     {% include disqus.html %}
 {% endif %}
