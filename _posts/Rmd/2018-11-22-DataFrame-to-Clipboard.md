@@ -25,6 +25,23 @@ MYDATA <- head(iris,10)
 
 # 데이터프레임을 엑셀에 붙여넣을 수 있게 클립보드로 복사
 write.table(MYDATA, "clipboard", sep="\t", row.names=FALSE) # row.names 가 필요없을 때 
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Error in file(file, ifelse(append, "a", "w")): 'mode' for the clipboard must be 'r' on Unix
+{% endhighlight %}
+
+
+
+{% highlight r %}
 write.table(MYDATA, "clipboard", sep="\t", row.names=TRUE)  # row.names 가 필요할 때 
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Error in file(file, ifelse(append, "a", "w")): 'mode' for the clipboard must be 'r' on Unix
 {% endhighlight %}
 <!-- Sys.setlocale('LC_ALL','C') 를 사용하면 Warning 을 없앨 수 있다 -->
