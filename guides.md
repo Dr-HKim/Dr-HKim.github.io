@@ -5,7 +5,7 @@ layout: page
 
 # The Hitchhiker's Guide to the Data Galaxy
 
-(last update: 2018.11.26)
+(last update: 2018.11.26) 
 
 ## Getting Started with R
 
@@ -19,6 +19,7 @@ layout: page
 ## Advanced R Tutorial
 
 - [R 에서 원하는 키워드의 네이버 뉴스를 웹크롤링(스크래핑) 하는 방법](https://dr-hkim.github.io/Naver-News-Web-Scraping-using-Keywords-in-R/)
+- [R 에서 네이버 뉴스 검색 결과로 워드 클라우드를 만드는 방법](https://dr-hkim.github.io/Naver-News-Word-Cloud-in-R/)
 - [R 마크다운(R Markdown)으로 블로그하는 방법](https://dr-hkim.github.io/Blog-with-R-Markdown/)
 
 <br>
