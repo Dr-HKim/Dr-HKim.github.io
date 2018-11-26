@@ -5,7 +5,7 @@ layout: page
 
 # The Hitchhiker's Guide to the Data Galaxy
 
-(last update: 2018.11.22)
+(last update: 2018.11.26)
 
 ## Getting Started with R
 
