@@ -5,7 +5,7 @@ date: 2018-11-28
 category: [Advanced R Tutorial]  
 tag: [R]  
 author: hkim  
-hidden: false  
+hidden: true    
 image: /assets/images/icon/iconmonstr-monitoring-6-240.png
 headerImage: true
 comments: true
@@ -14,7 +14,7 @@ comments: true
 
 ***preface*** (last update: 2018.11.26) 이번 포스트에서는 오프라인 환경에서 R 패키지를 설치하는 방법에 대하여 설명합니다.
 
-많은 기업 및 기관들이 보안 강화를 위하여 업무전산망을 사용하는 업무용PC와 외부 인터넷을 사용하는 인터넷용PC를 분리하는 이른바 망분리 솔루션을 사용합니다. 업무용PC에 R 을 설치하기 위해서는 우선 인터넷용PC를 통해 R 과 RStudio 를 다운받고 설치해야 합니다.[참고]() 
+많은 기업 및 기관들이 보안 강화를 위하여 업무전산망을 사용하는 업무용PC와 외부 인터넷을 사용하는 인터넷용PC를 분리하는 이른바 망분리 솔루션을 사용합니다. 업무용PC에 R 을 설치하기 위해서는 우선 인터넷용PC를 통해 R 과 RStudio 를 다운받고 설치해야 합니다.[참고](https://dr-hkim.github.io/Install-R-and-RStudio/) 
 
 # Naver News Web Scraping using Keywords in R
 
