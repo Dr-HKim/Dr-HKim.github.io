@@ -1,0 +1,95 @@
+---
+layout: post  
+title: R 에서 한국은행 Open API를 활용하여 원하는 자료를 받는 방법  
+date: 2018-11-25  
+category: [Advanced R Tutorial]  
+tag: [R]  
+author: hkim  
+hidden: false  
+image: /assets/images/icon/iconmonstr-monitoring-6-240.png
+headerImage: true
+comments: true
+
+---
+
+***preface*** (last update: 2018.11.25) 이번 포스트에서는 R을 이용하여 한국은행 Open API 서비스를 통해 원하는 자료를 다운받는 방법에 대하여 설명합니다.
+
+# Using BOK Open API in R
+
+```{r}
+## BOK Open API 를 이용하여 원하는 자료를 받는 함수
+## 제작: hkim (dr-hkim.github.io)
+MYBOK <- function(AUTH_KEY,REQ_TYPE,LANG,START_COUNT,END_COUNT,STAT_CODE,CYCLE_TYPE,START_DATE,END_DATE,ITEM_1,ITEM_2,ITEM_3){
+  BOK_urllist <- list()
+  BOK_urllist[[1]] <- paste0("http://ecos.bok.or.kr/api/StatisticSearch/",
+                             AUTH_KEY,"/",REQ_TYPE,"/",LANG,"/",START_COUNT,"/",END_COUNT,"/",
+                             STAT_CODE,"/",CYCLE_TYPE,"/",START_DATE,"/",END_DATE,"/",ITEM_1,"/",ITEM_2,"/",ITEM_3)
+  BOK_raw.data <- list()
+  BOK_rootNode <- list()
+  BOK_raw.data[[1]] <- xmlTreeParse(BOK_urllist[1], useInternalNodes = TRUE,encoding = "utf-8") # 생성한 URL 대로 XML 을 요청
+  BOK_rootNode[[1]] <- xmlRoot(BOK_raw.data[[1]])
+  BOK_total <- list()
+  
+  for(i in 1:length(BOK_urllist)){
+    BOK_item <- list()
+    BOK_item_temp_dt <- data.table()
+    BOK_items <- BOK_rootNode[[i]]
+    BOK_size <- xmlSize(BOK_items) # 몇개의 item 이 있는지 확인
+    
+    for(j in 1:BOK_size){
+      BOK_item_temp <- xmlSApply(BOK_items[[j]],xmlValue)
+      BOK_item_temp_dt <- data.table(VAR1=BOK_item_temp[1],
+                                     VAR2=BOK_item_temp[2],
+                                     VAR3=BOK_item_temp[3],
+                                     VAR4=BOK_item_temp[4],
+                                     VAR5=BOK_item_temp[5],
+                                     VAR6=BOK_item_temp[6],
+                                     VAR7=BOK_item_temp[7],
+                                     VAR8=BOK_item_temp[8],
+                                     VAR9=BOK_item_temp[9],
+                                     VAR10=BOK_item_temp[10],
+                                     VAR11=BOK_item_temp[11])
+      BOK_item[[j]]<-BOK_item_temp_dt
+    }
+    BOK_total[[i]] <- rbindlist(BOK_item)
+  }
+  RESULTS <- rbindlist(BOK_total)
+  RESULTS <- RESULTS[which(!is.na(RESULTS$VAR2)),]
+  RESULTS$VAR12 <- as.numeric(as.character(RESULTS$VAR10))
+  RESULTS$VAR13 <- as.numeric(as.character(RESULTS$VAR11))
+  names(RESULTS) <- c("STAT","STAT_note","ITEM1","ITEM1_note","ITEM2","ITEM2_note","ITEM3","ITEM3_note","VAR9","VAR10","VAR11","DATE","VALUE")
+  RESULTS$ITEMCODE <- trimws(paste0(RESULTS$ITEM1,RESULTS$ITEM2,RESULTS$ITEM3)) # ITEM 코드를 합친 뒤 공백 제거
+  RESULTS$ITEMNOTE <- trimws(paste0(RESULTS$ITEM1_note,RESULTS$ITEM2_note,RESULTS$ITEM3_note)) # ITEM 코드를 합친 뒤 공백 제거
+  return(RESULTS)
+}
+```
+
+```{r}
+library(XML)
+library(data.table)
+library(stringr)
+library(reshape)
+library(dplyr)
+```
+
+
+```{r}
+## 전체자료: 3.6.1 가계신용(분기별)
+## MY_BOK_AUTH_KEY <- "YOURBOKAUTHKEY" ## 할당받은 인증키를 입력해야 합니다
+
+BOK361 <- MYBOK(AUTH_KEY=MY_BOK_AUTH_KEY,REQ_TYPE="xml",LANG="kr",START_COUNT="1",END_COUNT="100000",
+                CYCLE_TYPE="QQ",START_DATE="20031",END_DATE="20184",
+                STAT_CODE="008Y001", 
+                ITEM_1="?",ITEM_2="?",ITEM_3="?")
+```
+
+
+```{r}
+tmp <- BOK361[which(BOK361$ITEM1_note == "가계신용"),c("DATE","VALUE")]
+myts <- ts(tmp$VALUE/1000, start=c(2003, 1), end=c(2018, 3), frequency=4)
+plot.ts(myts)
+```
+```{r}
+diff_myts <- diff(myts,lag=4)
+plot.ts(diff_myts)
+```

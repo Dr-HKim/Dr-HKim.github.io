@@ -1,0 +1,41 @@
+---
+layout: post  
+title: Jupyter Notebook 에서 R 실행하는 방법
+date: 2018-11-24  
+category: [Advanced R Tutorial]  
+tag: [R]  
+author: hkim  
+hidden: true  
+image: /assets/images/icon/iconmonstr-monitoring-6-240.png
+headerImage: true
+comments: true
+
+---
+
+
+참고: http://yahwang.tk/posts/27
+
+```{r, eval=FALSE}
+install.packages('IRkernel')
+IRkernel::installspec()
+```
+
+다음과 같은 에러 메세지가 출력되는 경우가 있다.
+
+```
+Error in IRkernel::installspec() :
+jupyter-client has to be installed but “jupyter kernelspec –version” exited with code 127.
+```
+
+환경변수의 PATH 에 anaconda 관련 경로를 추가해야 한다.
+
+내 PC - 우클릭 - 속성 - 고급 시스템 설정 - 환경 변수 - 시스템 변수 중 Path 편집
+
+
+```
+C:\ProgramData\Anaconda3
+C:\ProgramData\Anaconda3\Scripts
+C:\ProgramData\Anaconda3\Library\bin
+```
+
+

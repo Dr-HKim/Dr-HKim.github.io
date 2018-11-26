@@ -5,6 +5,8 @@
 library(knitr)
 library(readr)
 
+source("C:/Clouds/Dropbox/Programs_R/171209_Open_API/181105_USING_API.R")
+
 ## R Markdown 을 실행하다보면 아래와 같은 Warning message 가 뜰 때가 있다.
 ## Warning message:
 ##  In strsplit(code, "\n", fixed = TRUE) :
