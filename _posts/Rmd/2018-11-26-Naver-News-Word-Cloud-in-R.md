@@ -20,7 +20,7 @@ comments: true
 - [최대한 친절하게 쓴 R로 낱말구름, 의미연결망 그리기](https://kuduz.tistory.com/1090)
 - [R을 이용한 한글 텍스트마이닝 & 워드클라우드](https://kutar37.tistory.com/entry/R%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A7%88%EC%9D%B4%EB%8B%9D-%EC%9B%8C%EB%93%9C%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C)
 
-[지난번 포스트](https://dr-hkim.github.io/Naver-News-Web-Scraping-using-Keywords-in-R/)에서는 R을 이용하여 네이버 뉴스에서 원하는 키워드의 검색 결과를 웹크롤링(스크래핑) 하는 방법에 대하여 알아보았습니다. 이번 포스트에서는 지난번에 수집한 텍스트 자료를 분석하는 방법에 대하여 살펴보겠습니다.
+[지난번 포스트](https://dr-hkim.github.io/Naver-News-Web-Scraping-using-Keywords-in-R/)에서는 R을 이용하여 네이버 뉴스에서 원하는 키워드의 검색 결과를 웹크롤링(스크래핑) 하는 방법에 대하여 알아보았습니다. 이번 포스트에서는 지난번에 수집한 텍스트 자료를 분석하고, 이 결과를 토대로 워드 클라우드를 만드는 방법에 대하여 살펴보겠습니다.
 
 
 ## 패키지 설치

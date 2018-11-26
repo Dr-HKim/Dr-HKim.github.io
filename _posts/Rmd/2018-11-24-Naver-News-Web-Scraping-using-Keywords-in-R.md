@@ -20,6 +20,8 @@ comments: true
 - [https://blog.naver.com/knowch/221060289410](https://blog.naver.com/knowch/221060289410)
 - [Beginner’s Guide on Web Scraping in R (using rvest) with hands-on example](https://www.analyticsvidhya.com/blog/2017/03/beginners-guide-on-web-scraping-in-r-using-rvest-with-hands-on-knowledge/)
 
+웹 크롤링, 혹은 웹 스크래핑은 SNS, 블로그, 인터넷 뉴스 등의 웹페이지에서 원하는 정보를 긁어오는 데이터 마이닝 방법입니다. 기존에는 python 등을 이용했지만, 이제  `rvest` 패키지를 통해 R 에서도 웹 스크래핑을 쉽게 할 수 있게 되었습니다.
+
 먼저 필요한 패키지를 설치합니다. 이번 가이드에서 사용하는 패키지는 `rvest` 와 `dplyr` 입니다.
 
 

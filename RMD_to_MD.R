@@ -27,7 +27,7 @@ rmds <- "_Rmd"
 
 ## 파일 이름 지정
 FILELIST <- list.files(path= "./_Rmd", pattern = ".*.Rmd") # subdirectory 에 있는 *.Rmd 파일 리스트 작성
-CONV_FILELIST <- FILELIST[1:7] # 한꺼번에 모두 하면 시간이 오래 걸리므로 변환할 파일을 따로 지정
+CONV_FILELIST <- FILELIST[1:8] # 한꺼번에 모두 하면 시간이 오래 걸리므로 변환할 파일을 따로 지정
 CONV_FILELIST
 
 for (filename in CONV_FILELIST){
