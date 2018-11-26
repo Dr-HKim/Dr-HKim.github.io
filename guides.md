@@ -9,8 +9,8 @@ layout: page
 
 ## Getting Started with R
 
-- [R 과 RStudio 설치하는 방법](https://dr-hkim.github.io/Install-and-Uninstall-R/)  
-- [R 과 RStudio 처음 사용하는 방법](https://dr-hkim.github.io/Getting-Started-with-RStudio/)  
+- [R 과 RStudio 설치하는 방법](https://dr-hkim.github.io/Install-R-and-RStudio/)  
+- [R 과 RStudio 처음 사용하는 방법](https://dr-hkim.github.io/Getting-Started-with-R-and-RStudio/)  
 - [R 에서 사용하는 데이터의 종류들](https://dr-hkim.github.io/Basic-Data-Types-in-R/)  
 - [R 에서 생성한 데이터를 클립보드에 붙이는 방법](https://dr-hkim.github.io/DataFrame-to-Clipboard-in-R/)  
 
@@ -18,7 +18,7 @@ layout: page
 
 ## Advanced R Tutorial
 
-- [R 에서 원하는 키워드의 네이버 뉴스를 웹크롤링(스크래핑) 하는 방법](https://dr-hkim.github.io/Naver-News-Web-Scraping-in-R/)
+- [R 에서 원하는 키워드의 네이버 뉴스를 웹크롤링(스크래핑) 하는 방법](https://dr-hkim.github.io/Naver-News-Web-Scraping-using-Keywords-in-R/)
 - [R 마크다운(R Markdown)으로 블로그하는 방법](https://dr-hkim.github.io/Blog-with-R-Markdown/)
 
 <br>
