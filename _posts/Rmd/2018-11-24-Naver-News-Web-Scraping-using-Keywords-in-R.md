@@ -12,12 +12,13 @@ comments: true
 
 ---
 
-***preface*** (last update: 2018.11.24) 이번 포스트에서는 R을 이용하여 네이버 뉴스에서 원하는 키워드의 검색 결과를 웹크롤링(스크래핑) 하는 방법에 대하여 설명합니다.
+***preface*** (last update: 2018.11.26) 이번 포스트에서는 R을 이용하여 네이버 뉴스에서 원하는 키워드의 검색 결과를 웹크롤링(스크래핑) 하는 방법에 대하여 설명합니다.
 
 # Naver News Web Scraping using Keywords in R
 
 다음 자료를 참고하였습니다:  
 - [https://blog.naver.com/knowch/221060289410](https://blog.naver.com/knowch/221060289410)
+- [Beginner’s Guide on Web Scraping in R (using rvest) with hands-on example](https://www.analyticsvidhya.com/blog/2017/03/beginners-guide-on-web-scraping-in-r-using-rvest-with-hands-on-knowledge/)
 
 먼저 필요한 패키지를 설치합니다. 이번 가이드에서 사용하는 패키지는 `rvest` 와 `dplyr` 입니다.
 
@@ -105,7 +106,7 @@ naver_url
 
 
 {% highlight text %}
-## [1] "https://search.naver.com/search.naver?&where=news&query=\353\257\270\352\265\255+\352\270\260\354\244\200\352\270\210\353\246\254&pd=3&ds=2018.11.19&de=2018.11.19&start=1"
+## [1] "https://search.naver.com/search.naver?&where=news&query=미국+기준금리&pd=3&ds=2018.11.19&de=2018.11.19&start=1"
 {% endhighlight %}
 
 그럼 원하는 주소의 리스트를 만들어 봅시다. 날짜는 11월 19일부터 21일까지 3일간, 게시물은 첫 5 페이지를 살펴보는 것으로 제한하겠습니다.
@@ -163,11 +164,11 @@ head(naver_url_list,5)
 
 
 {% highlight text %}
-## [1] "https://search.naver.com/search.naver?&where=news&query=\353\257\270\352\265\255+\352\270\260\354\244\200\352\270\210\353\246\254&pd=3&ds=2018.11.19&de=2018.11.19&start=1" 
-## [2] "https://search.naver.com/search.naver?&where=news&query=\353\257\270\352\265\255+\352\270\260\354\244\200\352\270\210\353\246\254&pd=3&ds=2018.11.19&de=2018.11.19&start=11"
-## [3] "https://search.naver.com/search.naver?&where=news&query=\353\257\270\352\265\255+\352\270\260\354\244\200\352\270\210\353\246\254&pd=3&ds=2018.11.19&de=2018.11.19&start=21"
-## [4] "https://search.naver.com/search.naver?&where=news&query=\353\257\270\352\265\255+\352\270\260\354\244\200\352\270\210\353\246\254&pd=3&ds=2018.11.19&de=2018.11.19&start=31"
-## [5] "https://search.naver.com/search.naver?&where=news&query=\353\257\270\352\265\255+\352\270\260\354\244\200\352\270\210\353\246\254&pd=3&ds=2018.11.19&de=2018.11.19&start=41"
+## [1] "https://search.naver.com/search.naver?&where=news&query=미국+기준금리&pd=3&ds=2018.11.19&de=2018.11.19&start=1" 
+## [2] "https://search.naver.com/search.naver?&where=news&query=미국+기준금리&pd=3&ds=2018.11.19&de=2018.11.19&start=11"
+## [3] "https://search.naver.com/search.naver?&where=news&query=미국+기준금리&pd=3&ds=2018.11.19&de=2018.11.19&start=21"
+## [4] "https://search.naver.com/search.naver?&where=news&query=미국+기준금리&pd=3&ds=2018.11.19&de=2018.11.19&start=31"
+## [5] "https://search.naver.com/search.naver?&where=news&query=미국+기준금리&pd=3&ds=2018.11.19&de=2018.11.19&start=41"
 {% endhighlight %}
 
 우리가 웹크롤링하고자 하는 주소 리스트가 생성되었습니다. 
@@ -211,8 +212,9 @@ head(temp,5)
 ## [5] "https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=004&oid=008&aid=0004134391"
 ```
 
-
 `news.naver.com` 으로 시작하는 웹사이트 외에도 많은 사이트들이 들어가있는 것을 확인할 수 있습니다. 이것들을 지우는 것은 나중에 한꺼번에 처리하겠습니다.
+
+그럼 지금까지 작성한 코드들을 토대로, 1) 원하는 키워드를 포함한 네이버 뉴스 기사를, 2) 원하는 날짜 범위 안에서, 3) 원하는 페이지 수 만큼 찾아서 여기에 포함된 네이버 뉴스 기사 링크 목록을 만들어 보겠습니다.
 
 
 {% highlight r %}
@@ -271,6 +273,17 @@ for (i in 1:dim(NEWS2)[1]){
 
 NEWS2$news_content <- gsub("// flash 오류를 우회하기 위한 함수 추가\nfunction _flash_removeCallback()", "", NEWS2$news_content) # 중복된 문자열 제거
 NEWS <- NEWS2 # 최종 결과 저장
+{% endhighlight %}
+
+지금까지 원하는 기간 동안의 원하는 키워드를 네이버 뉴스에서 검색한 결과를 기사 제목과 기사 내용으로 구분하여 저장하였습니다. 이렇게 수집한 기사를 분석하기 위해서는 비정형 데이터 분석 방법 가운데 하나인 자연어 처리 기법이 필요합니다. 여기에 대해서든 다음 포스트에서 다루도록 하겠습니다.
+
+이번 포스트에서 수집한 데이터를 다음 포스트에서 활용할 수 있도록, 데이터 파일을 하드드라이브에 따로 저장하도록 하겠습니다. 작업을 수행하는 working directory 아래에 `DATA0` 이라는 subfolder 를 만들고 여기에 저장하는 경우를 가정하겠습니다. 폴더를 만들 때에는 탐색기에서 작업하시거나, 우측 하단 Files 탭에서 New Folder 항목을 클릭하면 새 폴더를 만들 수 있습니다.
+
+파일 위치를 working directory 에 대한 상대경로로 설정하여 저장하는 방법은 다음과 같습니다.
+
+
+
+{% highlight r %}
 save(NEWS, file="./DATA0/NEWS.RData") # working directory 아래 subfolder "DATA0" 에 저장
 {% endhighlight %}
 
@@ -281,6 +294,9 @@ save(NEWS, file="./DATA0/NEWS.RData") # working directory 아래 subfolder "DATA
 
 
 {% highlight r %}
+## 네이버 뉴스에서 원하는 키워드의 검색 결과를 웹크롤링(스크래핑)하는 코드
+## 제작: hkim (dr-hkim.github.io)
+
 ## 패키지 불러오기
 library(rvest)
 library(dplyr)
@@ -348,6 +364,7 @@ for (i in 1:dim(NEWS2)[1]){
 
 NEWS2$news_content <- gsub("// flash 오류를 우회하기 위한 함수 추가\nfunction _flash_removeCallback()", "", NEWS2$news_content)
 NEWS <- NEWS2 # 최종 결과 저장
+
 save(NEWS, file="./DATA0/NEWS.RData") # working directory 아래 subfolder "DATA0" 에 저장
 {% endhighlight %}
 
