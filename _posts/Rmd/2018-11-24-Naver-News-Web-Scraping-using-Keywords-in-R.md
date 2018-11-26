@@ -106,7 +106,7 @@ naver_url
 
 
 {% highlight text %}
-## [1] "https://search.naver.com/search.naver?&where=news&query=미국+기준금리&pd=3&ds=2018.11.19&de=2018.11.19&start=1"
+## [1] "https://search.naver.com/search.naver?&where=news&query=\353\257\270\352\265\255+\352\270\260\354\244\200\352\270\210\353\246\254&pd=3&ds=2018.11.19&de=2018.11.19&start=1"
 {% endhighlight %}
 
 그럼 원하는 주소의 리스트를 만들어 봅시다. 날짜는 11월 19일부터 21일까지 3일간, 게시물은 첫 5 페이지를 살펴보는 것으로 제한하겠습니다.
@@ -164,11 +164,11 @@ head(naver_url_list,5)
 
 
 {% highlight text %}
-## [1] "https://search.naver.com/search.naver?&where=news&query=미국+기준금리&pd=3&ds=2018.11.19&de=2018.11.19&start=1" 
-## [2] "https://search.naver.com/search.naver?&where=news&query=미국+기준금리&pd=3&ds=2018.11.19&de=2018.11.19&start=11"
-## [3] "https://search.naver.com/search.naver?&where=news&query=미국+기준금리&pd=3&ds=2018.11.19&de=2018.11.19&start=21"
-## [4] "https://search.naver.com/search.naver?&where=news&query=미국+기준금리&pd=3&ds=2018.11.19&de=2018.11.19&start=31"
-## [5] "https://search.naver.com/search.naver?&where=news&query=미국+기준금리&pd=3&ds=2018.11.19&de=2018.11.19&start=41"
+## [1] "https://search.naver.com/search.naver?&where=news&query=\353\257\270\352\265\255+\352\270\260\354\244\200\352\270\210\353\246\254&pd=3&ds=2018.11.19&de=2018.11.19&start=1" 
+## [2] "https://search.naver.com/search.naver?&where=news&query=\353\257\270\352\265\255+\352\270\260\354\244\200\352\270\210\353\246\254&pd=3&ds=2018.11.19&de=2018.11.19&start=11"
+## [3] "https://search.naver.com/search.naver?&where=news&query=\353\257\270\352\265\255+\352\270\260\354\244\200\352\270\210\353\246\254&pd=3&ds=2018.11.19&de=2018.11.19&start=21"
+## [4] "https://search.naver.com/search.naver?&where=news&query=\353\257\270\352\265\255+\352\270\260\354\244\200\352\270\210\353\246\254&pd=3&ds=2018.11.19&de=2018.11.19&start=31"
+## [5] "https://search.naver.com/search.naver?&where=news&query=\353\257\270\352\265\255+\352\270\260\354\244\200\352\270\210\353\246\254&pd=3&ds=2018.11.19&de=2018.11.19&start=41"
 {% endhighlight %}
 
 우리가 웹크롤링하고자 하는 주소 리스트가 생성되었습니다. 
@@ -275,7 +275,7 @@ NEWS2$news_content <- gsub("// flash 오류를 우회하기 위한 함수 추가
 NEWS <- NEWS2 # 최종 결과 저장
 {% endhighlight %}
 
-지금까지 원하는 기간 동안의 원하는 키워드를 네이버 뉴스에서 검색한 결과를 기사 제목과 기사 내용으로 구분하여 저장하였습니다. 이렇게 수집한 기사를 분석하기 위해서는 비정형 데이터 분석 방법 가운데 하나인 자연어 처리 기법이 필요합니다. 여기에 대해서든 다음 포스트에서 다루도록 하겠습니다.
+지금까지 원하는 기간 동안의 원하는 키워드를 네이버 뉴스에서 검색한 결과를 기사 제목과 기사 내용으로 구분하여 저장하였습니다. 이렇게 수집한 기사를 분석하기 위해서는 비정형 데이터 분석 방법 가운데 하나인 **자연어 처리 기법**이 필요합니다. 여기에 대해서든 다음 포스트에서 다루도록 하겠습니다.
 
 이번 포스트에서 수집한 데이터를 다음 포스트에서 활용할 수 있도록, 데이터 파일을 하드드라이브에 따로 저장하도록 하겠습니다. 작업을 수행하는 working directory 아래에 `DATA0` 이라는 subfolder 를 만들고 여기에 저장하는 경우를 가정하겠습니다. 폴더를 만들 때에는 탐색기에서 작업하시거나, 우측 하단 Files 탭에서 New Folder 항목을 클릭하면 새 폴더를 만들 수 있습니다.
 
