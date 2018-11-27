@@ -1,6 +1,6 @@
 ---
 layout: post  
-title: R 과 RStudio 처음 사용하는 방법  
+title: R 과 RStudio 처음 사용할 때 알아야 하는 것들  
 date: 2018-11-20  
 category: [Getting Started with R]  
 tag: [R]  
@@ -11,8 +11,9 @@ comments: true
 
 ---
 
-***preface*** (last update: 2018.11.24) 이번 포스트에서는 RStudio 를 실행하고 사용하는 방법에 대하여 설명합니다.
+***preface*** (last update: 2018.11.24) 이번 포스트에서는 R 과 RStudio 처음 사용할 때 알아야 하는 것들에 대하여 설명합니다.
 
+# Getting Started with R and RStudio
 
 ## RStudio 실행하기
 

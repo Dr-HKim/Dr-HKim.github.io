@@ -27,8 +27,8 @@ rmds <- "_Rmd"
 
 ## 파일 이름 지정
 FILELIST <- list.files(path= "./_Rmd", pattern = ".*.Rmd") # subdirectory 에 있는 *.Rmd 파일 리스트 작성
-CONV_FILELIST <- FILELIST[1:8] # 한꺼번에 모두 하면 시간이 오래 걸리므로 변환할 파일을 따로 지정
-CONV_FILELIST
+# CONV_FILELIST <- FILELIST[1:8] # 한꺼번에 모두 하면 시간이 오래 걸리므로 변환할 파일을 따로 지정
+CONV_FILELIST <- FILELIST[startsWith(FILELIST,"2018")|startsWith(FILELIST,"2019")] # 2018 혹은 2019 로 시작하는 파일만 변환 대상으로 선정
 
 for (filename in CONV_FILELIST){
   ## 폴더 경로들

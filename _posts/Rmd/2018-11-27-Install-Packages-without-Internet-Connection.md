@@ -1,6 +1,6 @@
 ---
 layout: post  
-title: 오프라인 환경에서 R 패키지 설치하는 방법 
+title: R 패키지를 오프라인 환경에서 설치하는 방법 
 date: 2018-11-27  
 category: [Getting Started with R]  
 tag: [R]  

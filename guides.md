@@ -5,12 +5,13 @@ layout: page
 
 # The Hitchhiker's Guide to the Data Galaxy
 
-(last update: 2018.11.26) 
+(last update: 2018.11.27) 
 
 ## Getting Started with R
 
 - [R 과 RStudio 설치하는 방법](https://dr-hkim.github.io/Install-R-and-RStudio/)  
-- [R 과 RStudio 처음 사용하는 방법](https://dr-hkim.github.io/Getting-Started-with-R-and-RStudio/)  
+- [R 패키지를 오프라인 환경에서 설치하는 방법](https://dr-hkim.github.io/Install-Packages-without-Internet-Connection/)
+- [R 과 RStudio 처음 사용할 때 알아야 하는 것들](https://dr-hkim.github.io/Getting-Started-with-R-and-RStudio/)  
 - [R 에서 사용하는 데이터의 종류들](https://dr-hkim.github.io/Basic-Data-Types-in-R/)  
 - [R 에서 생성한 데이터를 클립보드에 붙이는 방법](https://dr-hkim.github.io/DataFrame-to-Clipboard-in-R/)  
 

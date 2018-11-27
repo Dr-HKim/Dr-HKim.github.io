@@ -108,7 +108,7 @@ naver_url
 
 
 {% highlight text %}
-## [1] "https://search.naver.com/search.naver?&where=news&query=\353\257\270\352\265\255+\352\270\260\354\244\200\352\270\210\353\246\254&pd=3&ds=2018.11.19&de=2018.11.19&start=1"
+## [1] "https://search.naver.com/search.naver?&where=news&query=미국+기준금리&pd=3&ds=2018.11.19&de=2018.11.19&start=1"
 {% endhighlight %}
 
 그럼 원하는 주소의 리스트를 만들어 봅시다. 날짜는 11월 19일부터 21일까지 3일간, 게시물은 첫 5 페이지를 살펴보는 것으로 제한하겠습니다.
@@ -166,11 +166,11 @@ head(naver_url_list,5)
 
 
 {% highlight text %}
-## [1] "https://search.naver.com/search.naver?&where=news&query=\353\257\270\352\265\255+\352\270\260\354\244\200\352\270\210\353\246\254&pd=3&ds=2018.11.19&de=2018.11.19&start=1" 
-## [2] "https://search.naver.com/search.naver?&where=news&query=\353\257\270\352\265\255+\352\270\260\354\244\200\352\270\210\353\246\254&pd=3&ds=2018.11.19&de=2018.11.19&start=11"
-## [3] "https://search.naver.com/search.naver?&where=news&query=\353\257\270\352\265\255+\352\270\260\354\244\200\352\270\210\353\246\254&pd=3&ds=2018.11.19&de=2018.11.19&start=21"
-## [4] "https://search.naver.com/search.naver?&where=news&query=\353\257\270\352\265\255+\352\270\260\354\244\200\352\270\210\353\246\254&pd=3&ds=2018.11.19&de=2018.11.19&start=31"
-## [5] "https://search.naver.com/search.naver?&where=news&query=\353\257\270\352\265\255+\352\270\260\354\244\200\352\270\210\353\246\254&pd=3&ds=2018.11.19&de=2018.11.19&start=41"
+## [1] "https://search.naver.com/search.naver?&where=news&query=미국+기준금리&pd=3&ds=2018.11.19&de=2018.11.19&start=1" 
+## [2] "https://search.naver.com/search.naver?&where=news&query=미국+기준금리&pd=3&ds=2018.11.19&de=2018.11.19&start=11"
+## [3] "https://search.naver.com/search.naver?&where=news&query=미국+기준금리&pd=3&ds=2018.11.19&de=2018.11.19&start=21"
+## [4] "https://search.naver.com/search.naver?&where=news&query=미국+기준금리&pd=3&ds=2018.11.19&de=2018.11.19&start=31"
+## [5] "https://search.naver.com/search.naver?&where=news&query=미국+기준금리&pd=3&ds=2018.11.19&de=2018.11.19&start=41"
 {% endhighlight %}
 
 우리가 웹크롤링하고자 하는 주소 리스트가 생성되었습니다. 
